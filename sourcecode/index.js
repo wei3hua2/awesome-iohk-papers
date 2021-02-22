@@ -41,7 +41,7 @@ const byYears = () => _.chain(readPapers())
 
 
 const formatPaper = (paperItem) => `
-- ${paperItem.title} ${paperItem.url ? '[link]('+paperItem.url+')' : ''}  
+### ${paperItem.title} (${getYear(paperItem.dateAdded)}) ${paperItem.url ? '[link]('+paperItem.url+')' : ''}  
 
 ${paperItem.abstractNote}
 `
