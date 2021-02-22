@@ -4,6 +4,8 @@ const dayjs = require("dayjs");
 const { reverse } = require("lodash");
 
 
+const getYear = (dateStr) => dayjs(dateStr).year(); 
+
 // https://iohk.io/page-data/en/research/library/page-data.json
 const readPapers = () => JSON.parse(fs.readFileSync("./data/papers.json","utf8")).result.pageContext.items;
 
@@ -12,9 +14,6 @@ const getAllTags = () => _.chain(readPapers()).map("tags").flatten().uniq().valu
 const getAllProceedings = () => _.chain(readPapers()).map("proceedingsTitle").uniq().value();
 const getAllConferenceName = () => _.chain(readPapers()).map("conferenceName").uniq().value();
 const getAllTypes = () => _.chain(readPapers()).map("type").uniq().value();
-
-
-const getYear = (dateStr) => dayjs(dateStr).year(); 
 
 
 
@@ -45,7 +44,6 @@ const formatPaper = (paperItem) => `
 
 ${paperItem.abstractNote}
 `
-
 const formatSection = (group) => `
 ## ${group.title}
 ${_.map(group.list, formatPaper).join("")}
@@ -60,13 +58,27 @@ ${_.map(groups, g => '- ['+g.title+'](#'+g.title+')').join('\n')}
 ${_.map(groups, formatSection).join("")}
 `
 
+const formatREADME = (papers) => `
+# Awesome Cardano Papers
+
+[Sort By Years](./sort_by_year.md)  
+[Sort By Tags](./sort_by_tags.md)  
+[Sort By Types](./sort_by_type.md)  
+[Sort By Authors](./sort_by_authors.md)  
+
+---
+
+${_.map(papers, p => '* '+p.title+'('+getYear(p.dateAdded)+')').join('\n')}
+
+`
+
+
+//***********************************************
 
 const types = byTypes();
 const tags = byTags();
 const authors = byAuthors()
 const years = byYears();
-
-
 
 var content = formatGroup('Sort By Types', types);
 fs.writeFileSync("../sort_by_type.md",content);
@@ -80,8 +92,5 @@ fs.writeFileSync("../sort_by_authors.md",content);
 content = formatGroup('Sort By Years', years);
 fs.writeFileSync("../sort_by_year.md", content);
 
-
-
-
-// console.log(content);
-
+content = formatREADME(readPapers());
+fs.writeFileSync("../README.md", content);
