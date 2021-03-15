@@ -68,7 +68,7 @@ const formatREADME = (papers) => `
 
 ---
 
-${_.map(papers, p => '* '+p.title+'('+getYear(p.dateAdded)+')').join('\n')}
+${_.map(papers, p => '* '+p.title+' ('+getYear(p.dateAdded)+')').join('\n')}
 
 `
 

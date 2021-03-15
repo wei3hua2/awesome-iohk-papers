@@ -3,8 +3,8 @@
 ---
 ## Table of Contents
 - [Aggelos Kiayias](#Aggelos Kiayias)
-- [Alexander Russell](#Alexander Russell)
 - [Peter Gaži](#Peter Gaži)
+- [Alexander Russell](#Alexander Russell)
 - [Dionysis Zindros](#Dionysis Zindros)
 - [Roman Oliynykov](#Roman Oliynykov)
 - [Mario Larangeira](#Mario Larangeira)
@@ -16,19 +16,19 @@
 - [Philip Wadler](#Philip Wadler)
 - [James Chapman](#James Chapman)
 - [Markulf Kohlweiss](#Markulf Kohlweiss)
+- [Simon Thompson](#Simon Thompson)
+- [Keisuke Tanaka](#Keisuke Tanaka)
 - [Alexander Chepurnoy](#Alexander Chepurnoy)
 - [Mariia Rodinko](#Mariia Rodinko)
-- [Simon Thompson](#Simon Thompson)
 - [Michael Peyton Jones](#Michael Peyton Jones)
 - [Kenneth MacKenzie](#Kenneth MacKenzie)
 - [Dmytro Kaidalov](#Dmytro Kaidalov)
-- [Dimitris Karakostas](#Dimitris Karakostas)
 - [Manuel Chakravarty](#Manuel Chakravarty)
-- [Keisuke Tanaka](#Keisuke Tanaka)
+- [Pablo Lamela Seijas](#Pablo Lamela Seijas)
+- [Dimitris Karakostas](#Dimitris Karakostas)
 - [Rafael Dowsley](#Rafael Dowsley)
 - [Oleksiy Shevtsov](#Oleksiy Shevtsov)
 - [Andrii Nastenko](#Andrii Nastenko)
-- [Pablo Lamela Seijas](#Pablo Lamela Seijas)
 - [Matthias Fitzi](#Matthias Fitzi)
 - [Hong-sheng Zhou](#Hong-sheng Zhou)
 - [Yuyu Wang](#Yuyu Wang)
@@ -42,12 +42,14 @@
 - [Juan A. Garay](#Juan A. Garay)
 - [Thomas Kerber](#Thomas Kerber)
 - [Maxim Jourenko](#Maxim Jourenko)
+- [Sarah Meiklejohn](#Sarah Meiklejohn)
+- [Alexei Zamyatin](#Alexei Zamyatin)
+- [Alexander Nemish](#Alexander Nemish)
 - [Tuyet Duong](#Tuyet Duong)
 - [Goichiro Hanaoka](#Goichiro Hanaoka)
 - [Takahiro Matsuda](#Takahiro Matsuda)
 - [Dmitry Meshkov](#Dmitry Meshkov)
 - [Rebecca Valentine](#Rebecca Valentine)
-- [Alexander Nemish](#Alexander Nemish)
 - [Juan Garay](#Juan Garay)
 - [Bingsheng Zhang](#Bingsheng Zhang)
 - [Marcin Szamotulski](#Marcin Szamotulski)
@@ -64,7 +66,13 @@
 - [Alexandru Cojocaru](#Alexandru Cojocaru)
 - [Nikos Karayannidis](#Nikos Karayannidis)
 - [Philipp Kant](#Philipp Kant)
+- [Aydin Abadi](#Aydin Abadi)
+- [Edgar Weippl](#Edgar Weippl)
+- [Itay Tsabary](#Itay Tsabary)
+- [Nicholas Stifter](#Nicholas Stifter)
+- [Aljosha Judmayer](#Aljosha Judmayer)
 - [William J. Knottenbelt](#William J. Knottenbelt)
+- [Eleftherios Kokoris-Kogias](#Eleftherios Kokoris-Kogias)
 - [Darryl McAdams](#Darryl McAdams)
 - [Sasha Ivanov](#Sasha Ivanov)
 - [Leonid Reyzin](#Leonid Reyzin)
@@ -89,7 +97,6 @@
 - [Orfeas Stefanos Thyfronitis Litos](#Orfeas Stefanos Thyfronitis Litos)
 - [Fang Song](#Fang Song)
 - [Vasilis Gkoumas](#Vasilis Gkoumas)
-- [Sarah Meiklejohn](#Sarah Meiklejohn)
 - [Sean Bowe](#Sean Bowe)
 - [Mary Maller](#Mary Maller)
 - [James McKinna](#James McKinna)
@@ -120,7 +127,6 @@
 - [Stelios Daveas](#Stelios Daveas)
 - [Hanna Nelasa](#Hanna Nelasa)
 - [Yuri Bespalov](#Yuri Bespalov)
-- [Aydin Abadi](#Aydin Abadi)
 - [Murdoch, J. Gabbay](#Murdoch, J. Gabbay)
 - [Giorgos Panagiotakos](#Giorgos Panagiotakos)
 - [Björn Tackmann](#Björn Tackmann)
@@ -133,14 +139,25 @@
 - [Mikhail Volkhov](#Mikhail Volkhov)
 - [Janno Siim](#Janno Siim)
 - [Karim Baghery](#Karim Baghery)
+- [Roger Wattenhofer](#Roger Wattenhofer)
+- [Zeta Avarikioti](#Zeta Avarikioti)
 - [Sandro Coretti](#Sandro Coretti)
+- [Ittay Eyal](#Ittay Eyal)
 - [Pedro Moreno-Sanchez](#Pedro Moreno-Sanchez)
-- [Eleftherios Kokoris-Kogias](#Eleftherios Kokoris-Kogias)
 - [Mustafa Al-Bassam](#Mustafa Al-Bassam)
-- [Alexei Zamyatin](#Alexei Zamyatin)
+- [Dmytro Kondratiuk](#Dmytro Kondratiuk)
+- [Xiangyu Su](#Xiangyu Su)
+- [Jonathan Katz](#Jonathan Katz)
+- [Xinyu Zhou](#Xinyu Zhou)
+- [Francisco Marmolejo-Cossio](#Francisco Marmolejo-Cossio)
+- [Philip Lazos](#Philip Lazos)
 ---
 
 ## Aggelos Kiayias
+
+### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
+
+Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
 
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
 
@@ -149,6 +166,10 @@ Enabling secure communication across distributed systems is usually studied unde
 We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
 
 This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+
+### Multi-instance Publicly Verifiable Time-lock Puzzle and its Applications (2021) [link](https://fc21.ifca.ai/papers/115.pdf)  
+
+Time-lock puzzles are elegant protocols that enable a party to lock a message such that no one else can unlock it until a certain time elapses. Nevertheless, existing schemes are not suitable for the case where a server is given multiple instances of a puzzle scheme at once and it must unlock them at different points in time. If the schemes are naively used in this setting, then the server has to start solving all puzzles as soon as it receives them, that ultimately imposes significant computation cost and demands a high level of parallelisation. We put forth and formally define a primitive called “multi-instance time-lock puzzle” which allows composing a puzzle’s instances. We propose a candidate construction: “chained time-lock puzzle” (C-TLP). It allows the server, given instances’ composition, to solve puzzles sequentially, without having to run parallel computations on them. C-TLP makes black-box use of a standard time-lock puzzle scheme and is accompanied by a lightweight publicly verifiable algorithm. It is the first time-lock puzzle that offers a combination of the above features. We use C-TLP to build the first “outsourced proofs of retrievability” that can support real-time detection and fair payment while having lower overhead than the state of the art. As another application of C-TLP, we illustrate in certain cases, one can substitute a “verifiabledelay function” with C-TLP, to gain much better efficiency.
 
 ### Mining for Privacy: How to Bootstrap a Snarky Blockchain (2021) [link](https://eprint.iacr.org/2020/401.pdf)  
 
@@ -164,7 +185,7 @@ In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydr
 
 We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
 
-### Efficient State Management in Distributed Ledgers (2021) [link](https://api.zotero.org/groups/478201/items/3MGKFKWE/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
 
 Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
 
@@ -245,10 +266,6 @@ Nakamoto consensus, arguably the most exciting development in distributed comput
 While the original formulation was only accompanied by rudimentary analysis, significant and steady progress has been made in abstracting out the protocol’s properties and providing a formal analysis under various restrictions, starting with the work by Garay, Kiayias and Leonardos [Eurocrypt ’15], for a simplified version of the protocol which excluded PoW difficulty adjustment and assumed a fixed number of parties as well as synchronous communication rounds. These assumptions have since been somewhat relaxed, first by Pass, Seeman and Shelat [Eurocrypt ’17] who also focused on the simplified version of the protocol but on the bounded-delay model of communication, and by Garay, Kiayias and Leonardos [Crypto ’17] who looked into the full protocol including the PoW difficulty adjustment mechanism with a variable number of parties but assuming synchronous communication and a predetermined schedule of participation. Despite the above progress, the full analysis of the protocol in the more realistic setting of bounded delays and dynamic participation has remained elusive.
 
 This paper’s main result is the proof that Nakamoto’s protocol achieves, under suitable conditions, consistency and liveness in bounded-delay networks with adaptive (as opposed to predetermined) dynamic participation assuming, as before, that the majority of the computational power favors the honest parties. While our techniques draw from previous analyses, our objective is significantly more challenging, demanding the introduction of new techniques and insights in order to realize it.
-
-### Securing Proof-of-Work Ledgers via Checkpointing (2020) [link](https://eprint.iacr.org/2020/173.pdf)  
-
-Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
 
 ### Proof-of-Burn (2020) [link](https://eprint.iacr.org/2019/1096.pdf)  
 
@@ -389,6 +406,96 @@ https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
 
 ---
 
+## Peter Gaži
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
+
+State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
+
+A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
+
+In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
+
+We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
+
+### Tight Consistency Bounds for Bitcoin (2020) [link](https://eprint.iacr.org/2020/661.pdf)  
+
+We establish the optimal security threshold for the Bitcoin protocol in terms of adversarial hashing power, honest hashing power, and network delays. Specifically, we prove that the protocol is secure if
+r<sub>a</sub> < 1/Δ+1/r<sub>h</sub>,
+where r<sub>h</sub> is the expected number of honest proof-of-work successes in unit time, r<sub>a</sub> is the expected number of adversarial successes, and no message is delayed by more than Δ time units. In this regime, the protocol guarantees consistency and liveness with exponentially decaying failure probabilities. Outside this region, the simple private chain attack prevents consensus.
+
+Our analysis immediately applies to any Nakamoto-style proof-of-work protocol; we also present the adaptations needed to apply it in the proof-of-stake setting, establishing a similar threshold there.
+
+### Ledger Combiners for Fast Settlement (2020) [link](https://eprint.iacr.org/2020/675.pdf)  
+
+Blockchain protocols based on variations of the longest-chain rule--whether following the proof-of-work paradigm or one of its alternatives--suffer from a fundamental latency barrier. This arises from the need to collect a sufficient number of blocks on top of a transaction-bearing block to guarantee the transaction's stability while limiting the rate at which blocks can be created in order to prevent security-threatening forks.
+
+Our main result is a black-box security-amplifying combiner based on parallel composition of m blockchains that achieves Θ(m)-fold security amplification or, equivalently, Θ(m)-fold reduction in latency. Our construction breaks the latency barrier to achieve, for the first time, a worst-case constant-time-settlement ledger based purely on Nakamoto longest-chain consensus: Transaction settlement can be accelerated to a constant multiple of block propagation time with negligible error.
+
+Operationally, our construction shows how to view any family of blockchains as a unified, virtual ledger without requiring any coordination among the chains or any new protocol metadata. Users of the system have the option to inject a transaction into a single constituent blockchain or--if they desire accelerated settlement--all of the constituent blockchains. Our presentation and proofs introduce a new formalism for reasoning about blockchains, the dynamic ledger, and articulate our constructions as transformations of dynamic ledgers that amplify security. We additionally illustrate the versatility of this formalism by presenting a class of robust-combiner constructions for blockchains that can protect against complete adversarial control of a minority of a family of blockchains.
+
+### Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy (2020) [link](https://eprint.iacr.org/2020/1021.pdf)  
+
+Distributed ledgers, such as those arising from blockchain protocols, have been touted as the centerpiece of an upcoming security-critical information technology infrastructure. Their basic properties---consistency and liveness---can be guaranteed under specific constraints about the resources of an adversary relative to the resources of the nodes that follow the protocol. Given the intended long-livedness of these protocols, perhaps the most fundamental open security question currently is their behavior and potential resilience to temporary spikes in adversarial resources.
+
+In this work we give the first thorough treatment of self-healing properties of distributed ledgers covering both proof-of-work (PoW) and proof-of-stake (PoS) protocols. Our results quantify the vulnerability period that corresponds to an adversarial spike and classify three types of currently deployed protocols with respect to their self-healing ability: PoW-based blockchains, PoS-based blockchains, and iterated Byzantine Fault Tolerant (iBFT) protocols.
+
+### Stake Shift in Major Cryptocurrencies: An Empirical Study (2020) [link](https://arxiv.org/pdf/2001.04187.pdf)  
+
+In the proof-of-stake (PoS) paradigm for maintaining decentralized, permissionless cryptocurrencies, Sybil attacks are prevented by basing the distribution of roles in the protocol execution on the stake distribution recorded in the ledger itself. However, for various reasons this distribution cannot be completely up-to-date, introducing a gap between the present stake distribution, which determines the parties' current incentives, and the one used by the protocol. In this paper, we investigate this issue, and empirically quantify its effects. We survey existing provably secure PoS proposals to observe that the above time gap between the two stake distributions, which we call stake distribution lag, amounts to several days for each of these protocols. Based on this, we investigate the ledgers of four major cryptocurrencies (Bitcoin, Bitcoin Cash, Litecoin and Zcash) and compute the average stake shift (the statistical distance of the two distributions) for each value of stake distribution lag between 1 and 14 days, as well as related statistics. We also empirically quantify the sublinear growth of stake shift with the length of the considered lag interval. Finally, we turn our attention to unusual stake-shift spikes in these currencies: we observe that hard forks trigger major stake shifts and that single real-world actors, mostly exchanges, account for major stake shifts in established cryptocurrency ecosystems.
+
+### Proof-of-Stake Blockchain Protocols with Near-Optimal Throughput (2020) [link](https://eprint.iacr.org/2020/037.pdf)  
+
+One of the most significant challenges in the design of blockchain protocols is increasing their transaction-processing throughput. In this work we put forth for the first time a formal execution model that enables to express transaction throughput while supporting formal security arguments regarding persistence and liveness. We then present a protocol in the proof-of-stake setting achieving near-optimal throughput under adaptive active corruption of any minority of the stake.
+
+### Ouroboros Chronos: Permissionless Clock Synchronization via Proof-of-Stake (2019) [link](https://eprint.iacr.org/2019/838.pdf)  
+
+Clock synchronization allows parties to establish a common notion of global time by leveraging a weaker synchrony assumption, i.e., local clocks with approximately the same speed. The problem has long been a prominent goal for fault-tolerant distributed computing with a number of ingenious solutions in various settings. However, despite intensive investigation, the existing solutions do not apply to common blockchain protocols, which are designed to tolerate variable---and potentially adversarial---participation patterns, e.g., sleepiness and dynamic availability. Furthermore, because such blockchain protocols rely on freshly joining (or re-joining) parties to have a common notion of time, e.g., a global clock which allows knowledge of the current protocol round, it is not clear if or how they can operate without such a strong synchrony assumption.
+
+In this work, we show how to solve the global synchronization problem by leveraging proof of stake (PoS). Concretely, we design and analyze a PoS blockchain protocol in the above dynamic-participation setting, that does not require a global clock but merely assumes that parties have local clocks advancing at approximately the same speed. Central to our construction is a novel synchronization mechanism that can be thought as the blockchain-era analogue of classical synchronizers: It enables joining parties---even if upon joining their local time is off by an arbitrary amount---to quickly calibrate their local clocks so that they all show approximately the same time. As a direct implication of our blockchain construction---since the blockchain can be joined and observed by any interested party---we obtain a permissionless PoS implementation of a global clock that may be used by higher level protocols that need access to global time.
+
+### Proof-of-Stake Sidechains (2019) [link](https://eprint.iacr.org/2018/1239.pdf)  
+
+Sidechains have long been heralded as the key enabler of blockchain scalability and interoperability. However, no modeling of the concept or a provably secure construction has so far been attempted.
+We provide the first formal definition of what a sidechain system is and how assets can be moved between sidechains securely. We put forth a security definition that augments the known transaction ledger properties of persistence and liveness to hold across multiple ledgers and enhance them with a new “firewall” security property which safeguards each blockchain from its sidechains, limiting the impact of an otherwise catastrophic sidechain failure.
+We then provide a sidechain construction that is suitable for proof-of-stake (PoS) sidechain systems. As an exemplary concrete instantiation we present our construction for an epoch-based PoS system consistent with Ouroboros (Crypto 2017), the PoS blockchain protocol used in Cardano which is one of the largest pure PoS systems by market capitalisation, and we also comment how the construction can be adapted for other protocols such as Ouroboros Praos (Eurocrypt 2018), Ouroboros Genesis (CCS 2018), Snow White and Algorand. An important feature of our construction is merged-staking that prevents “goldfinger” attacks against a sidechain that is only carrying a small amount of stake. An important technique for pegging chains that we use in our construction is cross-chain certification which is facilitated by a novel cryptographic primitive we introduce called ad-hoc threshold multisignatures (ATMS) which may be of independent interest. We show how ATMS can be securely instantiated by regular and aggregate digital signatures as well as succinct arguments of knowledge such as STARKs and bulletproofs with varying degrees of storage efficiency.
+
+### Parallel Chains: Improving Throughput and Latency of Blockchain Protocols via Parallel Composition (2018) [link](https://eprint.iacr.org/2018/1119.pdf)  
+
+Two of the most significant challenges in the design of blockchain protocols is increasing their transaction processing throughput and minimising latency in terms of transaction settlement. In this work we put forth for the first time a formal execution model that enables to express transac- tion throughput while supporting formal security arguments regarding safety and liveness. We then introduce parallel-chains, a simple yet powerful non-black-box composition technique for blockchain protocols. We showcase our technique by providing two parallel-chains protocol variants, one for the PoS and one for PoW setting, that exhibit optimal throughput under adaptive fail-stop corruptions while they retain their resiliency in the face of Byzantine adversity assuming honest majority of stake or computational power, respectively. We also apply our parallel-chains composition method to improve settlement latency; combining parallel composition with a novel transaction weighing mechanism we show that it is possible to scale down the time required for a transaction to settle by any given constant while maintaining the same level of security.
+
+### Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability (2018) [link](https://eprint.iacr.org/2018/378.pdf)  
+
+Proof-of-stake-based (in short, PoS-based) blockchains aim to overcome scalability, efficiency, and composability limitations of the proof-of-work paradigm, which underlies the security of several mainstream cryptocurrencies including Bitcoin.
+Our work puts forth the first (global universally) composable (GUC) treatment of PoS-based blockchains in a setting that captures—for the first time in GUC—arbitrary numbers of parties that may not be fully operational, e.g., due to network problems, reboots, or updates of their OS that affect all or just some of their local resources including their network interface and clock. This setting, which we refer to as dynamic availability, naturally captures decentralized environments within which real-world deployed blockchain protocols are assumed to operate.
+We observe that none of the existing PoS-based blockchain protocols can realize the ledger functionality under dynamic availability in the same way that bitcoin does (using only the information available in the genesis block). To address this we propose a new PoS-based protocol, “Ouroboros Genesis”, that adapts one of the latest cryptographically-secure PoS-based blockchain protocols with a novel chain selection rule. The rule enables new or offline parties to safely (re-)join and bootstrap their blockchain from the genesis block without any trusted advice—such as checkpoints—or assumptions regarding past availability. We say that such a blockchain protocol can “bootstrap from genesis.”
+We prove the GUC security of Ouroboros Genesis against a fully adaptive adversary controlling less than half of the total stake. Our model allows adversarial scheduling of messages in a network with delays and captures the dynamic availability of participants in the worst case. Importantly, our protocol is effectively independent of both the maximum network delay and the minimum level of availability— both of which are run-time parameters. Proving the security of our construction against an adaptive adversary requires a novel martingale technique that may be of independent interest in the analysis of blockchain protocols.
+
+### Stake-Bleeding Attacks on Proof-of-Stake Blockchains (2018) [link](https://eprint.iacr.org/2018/248.pdf)  
+
+We describe a general attack on proof-of-stake (PoS) blockchains without checkpointing. Our attack leverages transaction fees, the ability to treat transactions "out of context," and the standard longest chain rule to completely dominate a blockchain. The attack grows in power with the number of honest transactions and the stake held by the adversary, and can be launched by an adversary controlling any constant fraction of the stake.
+
+With the present statistical profile of blockchain protocols, the attack can be launched given a few years of prior blockchain operation; hence it is within the realm of feasibility for PoS protocols. Most importantly, it demonstrates how closely transaction fees and rewards are coupled with the security properties of PoS protocols. More broadly, our attack must be reflected and countered in any future PoS design that avoids checkpointing, as well as any effort to remove checkpointing from existing protocols. We describe several mechanisms for protecting against the attack that include context-sensitivity of transactions and chain density statistics.
+
+### Ouroboros Praos: An adaptively-secure, semi-synchronous proof-of-stake protocol (2018) [link](https://eprint.iacr.org/2017/573.pdf)  
+
+We present “Ouroboros Praos”, a proof-of-stake blockchain protocol that, for the first time, provides security against fully-adaptive corruption in the semi-synchronous setting: Specifically, the adversary can corrupt any participant of a dynamically evolving population of stakeholders at any moment as long the stakeholder distribution maintains an honest majority of stake; furthermore, the protocol tolerates an adversarially-controlled message delivery delay unknown to protocol participants. 
+
+To achieve these guarantees we formalize and realize in the universal composition setting a suitable form of forward secure digital signatures and a new type of verifiable random function that maintains unpredictability under malicious key generation. Our security proof develops a general combinatorial framework for the analysis of semi-synchronous blockchains that may be of independent interest. We prove our protocol secure under standard cryptographic assumptions in the random oracle model. 
+ 
+ 
+https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
+
+---
+
 ## Alexander Russell
 
 ### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
@@ -483,88 +590,6 @@ https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
 
 ---
 
-## Peter Gaži
-
-### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
-
-State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
-
-A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
-
-In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
-
-We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
-
-### Tight Consistency Bounds for Bitcoin (2020) [link](https://eprint.iacr.org/2020/661.pdf)  
-
-We establish the optimal security threshold for the Bitcoin protocol in terms of adversarial hashing power, honest hashing power, and network delays. Specifically, we prove that the protocol is secure if
-r<sub>a</sub> < 1/Δ+1/r<sub>h</sub>,
-where r<sub>h</sub> is the expected number of honest proof-of-work successes in unit time, r<sub>a</sub> is the expected number of adversarial successes, and no message is delayed by more than Δ time units. In this regime, the protocol guarantees consistency and liveness with exponentially decaying failure probabilities. Outside this region, the simple private chain attack prevents consensus.
-
-Our analysis immediately applies to any Nakamoto-style proof-of-work protocol; we also present the adaptations needed to apply it in the proof-of-stake setting, establishing a similar threshold there.
-
-### Ledger Combiners for Fast Settlement (2020) [link](https://eprint.iacr.org/2020/675.pdf)  
-
-Blockchain protocols based on variations of the longest-chain rule--whether following the proof-of-work paradigm or one of its alternatives--suffer from a fundamental latency barrier. This arises from the need to collect a sufficient number of blocks on top of a transaction-bearing block to guarantee the transaction's stability while limiting the rate at which blocks can be created in order to prevent security-threatening forks.
-
-Our main result is a black-box security-amplifying combiner based on parallel composition of m blockchains that achieves Θ(m)-fold security amplification or, equivalently, Θ(m)-fold reduction in latency. Our construction breaks the latency barrier to achieve, for the first time, a worst-case constant-time-settlement ledger based purely on Nakamoto longest-chain consensus: Transaction settlement can be accelerated to a constant multiple of block propagation time with negligible error.
-
-Operationally, our construction shows how to view any family of blockchains as a unified, virtual ledger without requiring any coordination among the chains or any new protocol metadata. Users of the system have the option to inject a transaction into a single constituent blockchain or--if they desire accelerated settlement--all of the constituent blockchains. Our presentation and proofs introduce a new formalism for reasoning about blockchains, the dynamic ledger, and articulate our constructions as transformations of dynamic ledgers that amplify security. We additionally illustrate the versatility of this formalism by presenting a class of robust-combiner constructions for blockchains that can protect against complete adversarial control of a minority of a family of blockchains.
-
-### Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy (2020) [link](https://eprint.iacr.org/2020/1021.pdf)  
-
-Distributed ledgers, such as those arising from blockchain protocols, have been touted as the centerpiece of an upcoming security-critical information technology infrastructure. Their basic properties---consistency and liveness---can be guaranteed under specific constraints about the resources of an adversary relative to the resources of the nodes that follow the protocol. Given the intended long-livedness of these protocols, perhaps the most fundamental open security question currently is their behavior and potential resilience to temporary spikes in adversarial resources.
-
-In this work we give the first thorough treatment of self-healing properties of distributed ledgers covering both proof-of-work (PoW) and proof-of-stake (PoS) protocols. Our results quantify the vulnerability period that corresponds to an adversarial spike and classify three types of currently deployed protocols with respect to their self-healing ability: PoW-based blockchains, PoS-based blockchains, and iterated Byzantine Fault Tolerant (iBFT) protocols.
-
-### Stake Shift in Major Cryptocurrencies: An Empirical Study (2020) [link](https://arxiv.org/pdf/2001.04187.pdf)  
-
-In the proof-of-stake (PoS) paradigm for maintaining decentralized, permissionless cryptocurrencies, Sybil attacks are prevented by basing the distribution of roles in the protocol execution on the stake distribution recorded in the ledger itself. However, for various reasons this distribution cannot be completely up-to-date, introducing a gap between the present stake distribution, which determines the parties' current incentives, and the one used by the protocol. In this paper, we investigate this issue, and empirically quantify its effects. We survey existing provably secure PoS proposals to observe that the above time gap between the two stake distributions, which we call stake distribution lag, amounts to several days for each of these protocols. Based on this, we investigate the ledgers of four major cryptocurrencies (Bitcoin, Bitcoin Cash, Litecoin and Zcash) and compute the average stake shift (the statistical distance of the two distributions) for each value of stake distribution lag between 1 and 14 days, as well as related statistics. We also empirically quantify the sublinear growth of stake shift with the length of the considered lag interval. Finally, we turn our attention to unusual stake-shift spikes in these currencies: we observe that hard forks trigger major stake shifts and that single real-world actors, mostly exchanges, account for major stake shifts in established cryptocurrency ecosystems.
-
-### Proof-of-Stake Blockchain Protocols with Near-Optimal Throughput (2020) [link](https://eprint.iacr.org/2020/037.pdf)  
-
-One of the most significant challenges in the design of blockchain protocols is increasing their transaction-processing throughput. In this work we put forth for the first time a formal execution model that enables to express transaction throughput while supporting formal security arguments regarding persistence and liveness. We then present a protocol in the proof-of-stake setting achieving near-optimal throughput under adaptive active corruption of any minority of the stake.
-
-### Ouroboros Chronos: Permissionless Clock Synchronization via Proof-of-Stake (2019) [link](https://eprint.iacr.org/2019/838.pdf)  
-
-Clock synchronization allows parties to establish a common notion of global time by leveraging a weaker synchrony assumption, i.e., local clocks with approximately the same speed. The problem has long been a prominent goal for fault-tolerant distributed computing with a number of ingenious solutions in various settings. However, despite intensive investigation, the existing solutions do not apply to common blockchain protocols, which are designed to tolerate variable---and potentially adversarial---participation patterns, e.g., sleepiness and dynamic availability. Furthermore, because such blockchain protocols rely on freshly joining (or re-joining) parties to have a common notion of time, e.g., a global clock which allows knowledge of the current protocol round, it is not clear if or how they can operate without such a strong synchrony assumption.
-
-In this work, we show how to solve the global synchronization problem by leveraging proof of stake (PoS). Concretely, we design and analyze a PoS blockchain protocol in the above dynamic-participation setting, that does not require a global clock but merely assumes that parties have local clocks advancing at approximately the same speed. Central to our construction is a novel synchronization mechanism that can be thought as the blockchain-era analogue of classical synchronizers: It enables joining parties---even if upon joining their local time is off by an arbitrary amount---to quickly calibrate their local clocks so that they all show approximately the same time. As a direct implication of our blockchain construction---since the blockchain can be joined and observed by any interested party---we obtain a permissionless PoS implementation of a global clock that may be used by higher level protocols that need access to global time.
-
-### Proof-of-Stake Sidechains (2019) [link](https://eprint.iacr.org/2018/1239.pdf)  
-
-Sidechains have long been heralded as the key enabler of blockchain scalability and interoperability. However, no modeling of the concept or a provably secure construction has so far been attempted.
-We provide the first formal definition of what a sidechain system is and how assets can be moved between sidechains securely. We put forth a security definition that augments the known transaction ledger properties of persistence and liveness to hold across multiple ledgers and enhance them with a new “firewall” security property which safeguards each blockchain from its sidechains, limiting the impact of an otherwise catastrophic sidechain failure.
-We then provide a sidechain construction that is suitable for proof-of-stake (PoS) sidechain systems. As an exemplary concrete instantiation we present our construction for an epoch-based PoS system consistent with Ouroboros (Crypto 2017), the PoS blockchain protocol used in Cardano which is one of the largest pure PoS systems by market capitalisation, and we also comment how the construction can be adapted for other protocols such as Ouroboros Praos (Eurocrypt 2018), Ouroboros Genesis (CCS 2018), Snow White and Algorand. An important feature of our construction is merged-staking that prevents “goldfinger” attacks against a sidechain that is only carrying a small amount of stake. An important technique for pegging chains that we use in our construction is cross-chain certification which is facilitated by a novel cryptographic primitive we introduce called ad-hoc threshold multisignatures (ATMS) which may be of independent interest. We show how ATMS can be securely instantiated by regular and aggregate digital signatures as well as succinct arguments of knowledge such as STARKs and bulletproofs with varying degrees of storage efficiency.
-
-### Parallel Chains: Improving Throughput and Latency of Blockchain Protocols via Parallel Composition (2018) [link](https://eprint.iacr.org/2018/1119.pdf)  
-
-Two of the most significant challenges in the design of blockchain protocols is increasing their transaction processing throughput and minimising latency in terms of transaction settlement. In this work we put forth for the first time a formal execution model that enables to express transac- tion throughput while supporting formal security arguments regarding safety and liveness. We then introduce parallel-chains, a simple yet powerful non-black-box composition technique for blockchain protocols. We showcase our technique by providing two parallel-chains protocol variants, one for the PoS and one for PoW setting, that exhibit optimal throughput under adaptive fail-stop corruptions while they retain their resiliency in the face of Byzantine adversity assuming honest majority of stake or computational power, respectively. We also apply our parallel-chains composition method to improve settlement latency; combining parallel composition with a novel transaction weighing mechanism we show that it is possible to scale down the time required for a transaction to settle by any given constant while maintaining the same level of security.
-
-### Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability (2018) [link](https://eprint.iacr.org/2018/378.pdf)  
-
-Proof-of-stake-based (in short, PoS-based) blockchains aim to overcome scalability, efficiency, and composability limitations of the proof-of-work paradigm, which underlies the security of several mainstream cryptocurrencies including Bitcoin.
-Our work puts forth the first (global universally) composable (GUC) treatment of PoS-based blockchains in a setting that captures—for the first time in GUC—arbitrary numbers of parties that may not be fully operational, e.g., due to network problems, reboots, or updates of their OS that affect all or just some of their local resources including their network interface and clock. This setting, which we refer to as dynamic availability, naturally captures decentralized environments within which real-world deployed blockchain protocols are assumed to operate.
-We observe that none of the existing PoS-based blockchain protocols can realize the ledger functionality under dynamic availability in the same way that bitcoin does (using only the information available in the genesis block). To address this we propose a new PoS-based protocol, “Ouroboros Genesis”, that adapts one of the latest cryptographically-secure PoS-based blockchain protocols with a novel chain selection rule. The rule enables new or offline parties to safely (re-)join and bootstrap their blockchain from the genesis block without any trusted advice—such as checkpoints—or assumptions regarding past availability. We say that such a blockchain protocol can “bootstrap from genesis.”
-We prove the GUC security of Ouroboros Genesis against a fully adaptive adversary controlling less than half of the total stake. Our model allows adversarial scheduling of messages in a network with delays and captures the dynamic availability of participants in the worst case. Importantly, our protocol is effectively independent of both the maximum network delay and the minimum level of availability— both of which are run-time parameters. Proving the security of our construction against an adaptive adversary requires a novel martingale technique that may be of independent interest in the analysis of blockchain protocols.
-
-### Stake-Bleeding Attacks on Proof-of-Stake Blockchains (2018) [link](https://eprint.iacr.org/2018/248.pdf)  
-
-We describe a general attack on proof-of-stake (PoS) blockchains without checkpointing. Our attack leverages transaction fees, the ability to treat transactions "out of context," and the standard longest chain rule to completely dominate a blockchain. The attack grows in power with the number of honest transactions and the stake held by the adversary, and can be launched by an adversary controlling any constant fraction of the stake.
-
-With the present statistical profile of blockchain protocols, the attack can be launched given a few years of prior blockchain operation; hence it is within the realm of feasibility for PoS protocols. Most importantly, it demonstrates how closely transaction fees and rewards are coupled with the security properties of PoS protocols. More broadly, our attack must be reflected and countered in any future PoS design that avoids checkpointing, as well as any effort to remove checkpointing from existing protocols. We describe several mechanisms for protecting against the attack that include context-sensitivity of transactions and chain density statistics.
-
-### Ouroboros Praos: An adaptively-secure, semi-synchronous proof-of-stake protocol (2018) [link](https://eprint.iacr.org/2017/573.pdf)  
-
-We present “Ouroboros Praos”, a proof-of-stake blockchain protocol that, for the first time, provides security against fully-adaptive corruption in the semi-synchronous setting: Specifically, the adversary can corrupt any participant of a dynamically evolving population of stakeholders at any moment as long the stakeholder distribution maintains an honest majority of stake; furthermore, the protocol tolerates an adversarially-controlled message delivery delay unknown to protocol participants. 
-
-To achieve these guarantees we formalize and realize in the universal composition setting a suitable form of forward secure digital signatures and a new type of verifiable random function that maintains unpredictability under malicious key generation. Our security proof develops a general combinatorial framework for the analysis of semi-synchronous blockchains that may be of independent interest. We prove our protocol secure under standard cryptographic assumptions in the random oracle model. 
- 
- 
-https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
-
----
-
 ## Dionysis Zindros
 
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
@@ -574,6 +599,12 @@ Enabling secure communication across distributed systems is usually studied unde
 We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
 
 This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+
+### BRICK: Asynchronous Payment Channels (2021) [link](https://fc21.ifca.ai/papers/168.pdf)  
+
+Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack. In this paper, we introduce Brick, the first payment channel that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee’s approval for the last valid state.
+
+Additionally, Brick provides sub-second latency because it does not employ heavy-weight consensus. Instead, Brick uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties. We formally define and prove for Brick the properties a payment channel construction should fulfill. We also design incentives for Brick such that honest and rational behavior aligns. Finally, we provide a reference implementation of the smart contracts in Solidity.
 
 ### A Gas-Efficient Superlight Bitcoin Client in Solidity (2020) [link](https://eprint.iacr.org/2020/927.pdf)  
 
@@ -670,6 +701,10 @@ https://www.youtube.com/watch?v=zxZoSjnHN84
 ---
 
 ## Mario Larangeira
+
+### How to Prove Work: With Time or Memory (Extended Abstract) (2021) [link](https://api.zotero.org/groups/478201/items/77Z47JJT/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Proposed by Dwork and Naor (Crypto’ 92) as an anti-spam technique, proof-of-work is attracting more attention with the boom of cryptocurrencies. A proof-of-work scheme involves two kinds of participants, provers and verifiers. Provers intend to solve a puzzle with a solution, while verifiers are in charge of checking the puzzle’s correctness and solution pair. The widely adopted hash-based construction achieves an optimal gap in computational complexity between provers and verifiers. However, in industry, proof-of-work is done by highly dedicated hardware, e.g., “ASIC”, which is not generally accessible, let alone the high energy consumption rates. In this work, we turn our eyes back on the original meaning of “proof of work”. Under a trusted setting, our proposed framework and its constructions are based on computationally hard problems and the unified definition of hard cryptographic primitives by Biryukov and Perrin (Asiacrypt’ 17). The new framework enables us to have a proof-of-work scheme with time-hardness or memory-hardness while cutting down power consumption and reducing the impact of dedicated hardwares.
 
 ### Payment Trees: Low Collateral Payments for Payment Channel Networks (2021) [link](https://eprint.iacr.org/2020/1313.pdf)  
 
@@ -1036,7 +1071,7 @@ System F, also known as the polymorphic λ-calculus, is a typed λ-calculus inde
 
 Non-interactive zero-knowledge proofs, and more specifically succinct non-interactive zero-knowledge arguments (zk-SNARKS), have been proven to be the “swiss army knife” of the blockchain and distributed ledger space, with a variety of applications in privacy, interoperability and scalability. Many commonly used SNARK systems rely on a structured reference string, the secure generation of which turns out to be their Achilles heel: If the randomness used for the generation is known, the soundness of the proof system can be broken with devastating consequences for the underlying blockchain system that utilises them. In this work we describe and analyze, for the first time, a blockchain mechanism that produces a secure SRS with the characteristic that security is shown for the exact same conditions under which the blockchain protocol is proven to be secure. Our mechanism makes use of the recent discovery of updateable structure reference strings to perform this secure generation in a fully distributed manner. In this way, the SRS emanates from the normal operation of the blockchain protocol itself without the need of additional security assumptions or off-chain computation and/or verification. We provide concrete guidelines for the parameterisation of this system which allows for the completion of a secure setup in a reasonable period of time. We also provide an incentive scheme that, when paired with the update mechanism, properly incentivises participants into contributing to secure reference string generation.
 
-### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://eprint.iacr.org/2020/811.pdf)  
+### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
 
 Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
 To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
@@ -1062,6 +1097,69 @@ Smart contracts present a uniform approach for deploying distributed computation
 ### Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake (2019) [link](https://eprint.iacr.org/2018/1132.pdf)  
 
 We present Ouroboros Crypsinous, the first formally analyzed privacy-preserving proof-of-stake blockchain protocol. To model its security we give a thorough treatment of private ledgers in the (G)UC setting that might be of independent interest. To prove our protocol secure against adaptive attacks, we introduce a new coin evolution technique relying on SNARKs, and key-private forward-secure encryption. The latter primitive—and the associated construction—can be of independent interest. We stress that existing approaches to private blockchain, such as the proof-of-work-based Zerocash are analyzed only against static corruptions.
+
+---
+
+## Simon Thompson
+
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
+
+### Efficient static analysis of Marlowe contracts (2020) [link](https://api.zotero.org/groups/478201/items/B93MINW6/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+SMT solvers can verify properties automatically and efficiently, and they offer increasing flexibility on the ways those properties can be described. But it is hard to predict how those ways of describing the properties affect the computational cost of verifying them.
+In this paper, we discuss what we learned while implementing and optimising the static analysis for Marlowe, a domain specific language for self-enforcing financial smart-contracts that can be deployed on a blockchain.
+
+### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
+Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
+
+### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
+
+This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
+
+Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
+
+### Marlowe: financial contracts on blockchain (2018) [link](https://api.zotero.org/groups/478201/items/L65KWDLX/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Blockchains allow the specification of contracts in the form of programs that guarantee their fulfilment. Nevertheless, errors in those programs can cause important, and often irretrievable, monetary loss. General-purpose languages provide a platform on which contracts can be built, but by their very generality they have the potential to exhibit behaviours of an unpredictable kind, and are also not easy to read or comprehend for general users.
+An alternative solution is provided by domain-specific languages (DSLs), which are designed to express programs in a particular field. This paper explores the design of one DSL, Marlowe, targeted at the execution of financial contracts in the style of Peyton Jones et al on blockchains. We present an executable semantics of Marlowe in Haskell, an example of Marlowe in practice, and describe the Meadow tool that allows users to interact in-browser with simulations of Marlowe contracts.
+
+### Scripting smart contracts for distributed ledger technology (2016) [link](http://eprint.iacr.org/2016/1156)  
+
+We give an overview of the scripting languages used in existing cryptocurrencies, and in particular we review in some detail the scripting languages of Bitcoin, Nxt and Ethereum, in the context of a high-level overview of Distributed Ledger Technology and cryptocurrencies. We survey different approaches, and give an overview of critiques of existing languages. We also cover technologies that might be used to underpin extensions and innovations in scripting and contracts, including technologies for verification, such as zero knowledge proofs, proof-carrying code and static analysis, as well as approaches to making systems more efficient, e.g. Merkelized Abstract Syntax Trees.
+
+---
+
+## Keisuke Tanaka
+
+### How to Prove Work: With Time or Memory (Extended Abstract) (2021) [link](https://api.zotero.org/groups/478201/items/77Z47JJT/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Proposed by Dwork and Naor (Crypto’ 92) as an anti-spam technique, proof-of-work is attracting more attention with the boom of cryptocurrencies. A proof-of-work scheme involves two kinds of participants, provers and verifiers. Provers intend to solve a puzzle with a solution, while verifiers are in charge of checking the puzzle’s correctness and solution pair. The widely adopted hash-based construction achieves an optimal gap in computational complexity between provers and verifiers. However, in industry, proof-of-work is done by highly dedicated hardware, e.g., “ASIC”, which is not generally accessible, let alone the high energy consumption rates. In this work, we turn our eyes back on the original meaning of “proof of work”. Under a trusted setting, our proposed framework and its constructions are based on computationally hard problems and the unified definition of hard cryptographic primitives by Biryukov and Perrin (Asiacrypt’ 17). The new framework enables us to have a proof-of-work scheme with time-hardness or memory-hardness while cutting down power consumption and reducing the impact of dedicated hardwares.
+
+### Payment Trees: Low Collateral Payments for Payment Channel Networks (2021) [link](https://eprint.iacr.org/2020/1313.pdf)  
+
+The security of blockchain based decentralized ledgers relies on consensus protocols executed between mutually distrustful parties. Such protocols incur delays which severely limit the throughput of such ledgers. Payment and state channels enable execution of offchain protocols that allow interaction between parties without involving the consensus protocol. Protocols such as Hashed Timelock Contracts (HTLC) and Sprites (FC’19) connect channels into Payment Channel Networks (PCN) allowing payments across a path of payment channels. Such a payment requires each party to lock away funds for an amount of time. The product of funds and locktime is the collateral of the party, i.e., their cost of opportunity to forward a payment. In the case of HTLC, the locktime is linear to the length of the path, making the total collateral invested across the path quadratic in size of its length. Sprites improved on this by reducing the locktime to a constant by utilizing smart contracts. Atomic Multi-Channel Updates (AMCU), published at CCS’19, introduced constant collateral payments without smart contracts. In this work we present the Channel Closure attack on AMCU that allows a malicious adversary to make honest parties lose funds. Furthermore, we propose the Payment Trees protocol that allows payments across a PCN with linear total collateral without the aid of smart contracts. A competitive performance similar to Sprites, and yet compatible to Bitcoin.
+
+### Lightweight Virtual Payment Channels (2020) [link](https://eprint.iacr.org/2020/998.pdf)  
+
+Blockchain systems have severe scalability limitations e.g., long confirmation delays. Layer-2 protocols are designed to address such limitations. The most prominent class of such protocols are payment channel networks e.g., the Lightning Network for Bitcoin where pairs of participants create channels that can be concatenated into networks. These allow payments across the network without interaction with the blockchain. A drawback is that all intermediary nodes within a payment path must be online. Virtual Channels, as recently proposed by Dziembowski et al. (CCS'18), allow payments without this limitation. However, these can only be implemented on blockchains with smart contract capability therefore limiting its applicability. Our work proposes the notion of --Lightweight-- Virtual Payment Channels, i.e. only requiring timelocks and multisignatures, enabling Virtual Channels on a larger range of blockchain systems of which a prime example is Bitcoin. More concretely, other contributions of this work are (1) to introduce a fully-fledged formalization of our construction, and (2) to present a simulation based proof of security in Canetti's UC Framework.
+
+### SoK: A Taxonomy for Layer-2 Scalability Related Protocols for Cryptocurrencies (2019) [link](https://eprint.iacr.org/2019/352.pdf)  
+
+Blockchain based systems, in particular cryptocurrencies, face a serious limitation: scalability. This holds, especially, in terms of number of transactions per second. Several alternatives are currently being pursued by both the research and practitioner communities. One venue for exploration is on protocols that do not constantly add transactions on the blockchain and therefore do not consume the blockchain’s resources. This is done using off-chain transactions, i.e., protocols that minimize the interaction with the blockchain, also commonly known as Layer-2 approaches. This work relates several existing off-chain channel methods, also known as payment and state channels, channel network constructions methods, and other components as channel and network management protocols, e.g., routing nodes. All these components are crucial to keep the usability of the channel, and are often overlooked. For the best of our knowledge, this work is the first to propose a taxonomy for all the components of the Layer-2. We provide an extensive coverage on the state-of-art protocols available. We also outline their respective approaches, and discuss their advantages and disadvantages.
+
+### Impossibility on Tamper-Resilient Cryptography with Uniqueness Properties (2018) [link](https://eprint.iacr.org/2018/564.pdf)  
+
+In this work, we show negative results on the tamper-resilience of a wide class of cryptographic primitives with uniqueness properties, such as unique signatures, verifiable random functions, signatures with unique keys, injective one-way functions, and encryption schemes with a property we call unique-message property. Concretely, we prove that for these primitives, it is impossible to derive their (even extremely weak) tamper-resilience from any common assumption, via black-box reductions. Our proofs exploit the simulatable attack paradigm proposed by Wichs (ITCS ’13), and the tampering model we treat is the plain model, where public parameters and public/secret key pairs are potentially tampered with.
+
+### Memory Lower Bounds of Reductions Revisited (2018) [link](https://eprint.iacr.org/2018/155.pdf)  
+
+In Crypto 2017, Auerbach et al. initiated the study on memory-tight reductions and proved two negative results on the memory-tightness of restricted black-box reductions from multi-challenge security to single-challenge security for signatures and an artificial hash function. In this paper, we revisit the results by Auerbach et al. and show that for a large class of reductions treating multi-challenge security, it is impossible to avoid loss of memory-tightness unless we sacrifice the efficiency of their running-time. Specifically, we show three lower bound results. Firstly, we show a memory lower bound of natural black-box reductions from the multi-challenge unforgeability of unique signatures to any computational assumption. Then we show a lower bound of restricted reductions from multi-challenge security to single-challenge security for a wide class of cryptographic primitives with unique keys in the multi-user setting. Finally, we extend the lower bound result shown by Auerbach et al. treating a hash function to one treating any hash function with a large domain.
 
 ---
 
@@ -1123,37 +1221,6 @@ We propose three methods for determination of required number of confirmation bl
 We propose the Ethereum Classic Treasury System (ECTS) whose main purpose is to establish a decentralized funding mechanism for development and maintenance of the Ethereum Classic platform. Anyone can submit a project proposal and the stakeholders will decide on its necessity through a transparent voting procedure. The system is fully verifiable, having no significant influence on ETC performance. The report also takes into account ECIP 1017 that changes Ethereum Classic monetary policy and emission schedule. We expect that the ECTS implementation will increase stability and the outlook of the system, providing additional benefits both for stakeholders and miners from a more stable and predictable system. 
  
 https://www.youtube.com/watch?v=zxZoSjnHN84
-
----
-
-## Simon Thompson
-
-### Efficient static analysis of Marlowe contracts (2020) [link](https://api.zotero.org/groups/478201/items/B93MINW6/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-SMT solvers can verify properties automatically and efficiently, and they offer increasing flexibility on the ways those properties can be described. But it is hard to predict how those ways of describing the properties affect the computational cost of verifying them.
-In this paper, we discuss what we learned while implementing and optimising the static analysis for Marlowe, a domain specific language for self-enforcing financial smart-contracts that can be deployed on a blockchain.
-
-### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
-Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
-
-### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
-
-This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
-
-Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
-
-### Marlowe: financial contracts on blockchain (2018) [link](https://api.zotero.org/groups/478201/items/L65KWDLX/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Blockchains allow the specification of contracts in the form of programs that guarantee their fulfilment. Nevertheless, errors in those programs can cause important, and often irretrievable, monetary loss. General-purpose languages provide a platform on which contracts can be built, but by their very generality they have the potential to exhibit behaviours of an unpredictable kind, and are also not easy to read or comprehend for general users.
-An alternative solution is provided by domain-specific languages (DSLs), which are designed to express programs in a particular field. This paper explores the design of one DSL, Marlowe, targeted at the execution of financial contracts in the style of Peyton Jones et al on blockchains. We present an executable semantics of Marlowe in Haskell, an example of Marlowe in practice, and describe the Meadow tool that allows users to interact in-browser with simulations of Marlowe contracts.
-
-### Scripting smart contracts for distributed ledger technology (2016) [link](http://eprint.iacr.org/2016/1156)  
-
-We give an overview of the scripting languages used in existing cryptocurrencies, and in particular we review in some detail the scripting languages of Bitcoin, Nxt and Ethereum, in the context of a high-level overview of Distributed Ledger Technology and cryptocurrencies. We survey different approaches, and give an overview of critiques of existing languages. We also cover technologies that might be used to underpin extensions and innovations in scripting and contracts, including technologies for verification, such as zero knowledge proofs, proof-carrying code and static analysis, as well as approaches to making systems more efficient, e.g. Merkelized Abstract Syntax Trees.
 
 ---
 
@@ -1250,30 +1317,6 @@ https://www.youtube.com/watch?v=zxZoSjnHN84
 
 ---
 
-## Dimitris Karakostas
-
-### Efficient State Management in Distributed Ledgers (2021) [link](https://api.zotero.org/groups/478201/items/3MGKFKWE/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
-
-### Account Management in Proof of Stake Ledgers (2020) [link](https://eprint.iacr.org/2020/525.pdf)  
-
-Blockchain protocols based on Proof-of-Stake (PoS) depend — by nature — on the active participation of stakeholders. If users are offline and abstain from the PoS consensus mechanism, the system’s security is at risk, so it is imperative to explore ways to both maximize the level of participation and minimize the effects of non-participation. One such option is stake representation, such that users can delegate their participation rights and, in the process, form “stake pools”. The core idea is that stake pool operators always participate on behalf of regular users, while the users retain the ownership of their assets. Our work provides a formal PoS wallet construction that enables delegation and stake pool formation. While investigating the construction of addresses in this setting, we distil and explore address malleability, a security property that captures the ability of an attacker to manipulate the delegation information associated with an address. Our analysis consists of identifying multiple levels of malleability, which are taken into account in our paper’s core result. We then introduce the first ideal functionality of a PoS wallet’s core which captures the PoS wallet’s capabilities and is realized as a secure protocol based on standard cryptographic primitives. Finally, we cover how to use the wallet core in conjunction with a PoS ledger, as well as investigate how delegation and stake pools affect a PoS system’s security.
-
-### Securing Proof-of-Work Ledgers via Checkpointing (2020) [link](https://eprint.iacr.org/2020/173.pdf)  
-
-Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
-
-### Cryptocurrency Egalitarianism: A Quantitative Approach (2019) [link](https://arxiv.org/pdf/1907.02434.pdf)  
-
-Since the invention of Bitcoin one decade ago, numerous cryptocurrencies have sprung into existence. Among these, proof-of-work is the most common mechanism for achieving consensus, whilst a number of coins have adopted "ASIC-resistance" as a desirable property, claiming to be more "egalitarian", where egalitarianism refers to the power of each coin to participate in the creation of new coins. While proof-of-work consensus dominates the space, several new cryptocurrencies employ alternative consensus, such as proof-of-stake in which block minting opportunities are based on monetary ownership. A core criticism of proof-of-stake revolves around it being less egalitarian by making the rich richer, as opposed to proof-of-work in which everyone can contribute equally according to their computational power. In this paper, we give the first quantitative definition of a cryptocurrency's egalitarianism. Based on our definition, we measure the egalitarianism of popular cryptocurrencies that (may or may not) employ ASIC-resistance, among them Bitcoin, Ethereum, Litecoin, and Monero. Our simulations show, as expected, that ASIC-resistance increases a cryptocurrency's egalitarianism. We also measure the egalitarianism of a stake-based protocol, Ouroboros, and a hybrid proof-of-stake/proof-of-work cryptocurrency, Decred. We show that stake-based cryptocurrencies, under correctly selected parameters, can be perfectly egalitarian, perhaps contradicting folklore belief.
-
-### A Formal Treatment of Hardware Wallets (2019) [link](https://eprint.iacr.org/2019/034.pdf)  
-
-Bitcoin, being the most successful cryptocurrency, has been repeatedly attacked with many users losing their funds. The industry's response to securing the user's assets is to offer tamper-resistant hardware wallets. Although such wallets are considered to be the most secure means for managing an account, no formal attempt has been previously done to identify, model and formally verify their properties. This paper provides the first formal model of the Bitcoin hardware wallet operations. We identify the properties and security parameters of a Bitcoin wallet and formally define them in the Universal Composition (UC) Framework. We present a modular treatment of a hardware wallet ecosystem, by realizing the wallet functionality in a hybrid setting defined by a set of protocols. This approach allows us to capture in detail the wallet's components, their interaction and the potential threats. We deduce the wallet's security by proving that it is secure under common cryptographic assumptions, provided that there is no deviation in the protocol execution. Finally, we define the attacks that are successful under a protocol deviation, and analyze the security of commercially available wallets.
-
----
-
 ## Manuel Chakravarty
 
 ### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
@@ -1310,27 +1353,54 @@ Plutus and Cardano are available open source, and Plutus Playground provides a w
 
 ---
 
-## Keisuke Tanaka
+## Pablo Lamela Seijas
 
-### Payment Trees: Low Collateral Payments for Payment Channel Networks (2021) [link](https://eprint.iacr.org/2020/1313.pdf)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
-The security of blockchain based decentralized ledgers relies on consensus protocols executed between mutually distrustful parties. Such protocols incur delays which severely limit the throughput of such ledgers. Payment and state channels enable execution of offchain protocols that allow interaction between parties without involving the consensus protocol. Protocols such as Hashed Timelock Contracts (HTLC) and Sprites (FC’19) connect channels into Payment Channel Networks (PCN) allowing payments across a path of payment channels. Such a payment requires each party to lock away funds for an amount of time. The product of funds and locktime is the collateral of the party, i.e., their cost of opportunity to forward a payment. In the case of HTLC, the locktime is linear to the length of the path, making the total collateral invested across the path quadratic in size of its length. Sprites improved on this by reducing the locktime to a constant by utilizing smart contracts. Atomic Multi-Channel Updates (AMCU), published at CCS’19, introduced constant collateral payments without smart contracts. In this work we present the Channel Closure attack on AMCU that allows a malicious adversary to make honest parties lose funds. Furthermore, we propose the Payment Trees protocol that allows payments across a PCN with linear total collateral without the aid of smart contracts. A competitive performance similar to Sprites, and yet compatible to Bitcoin.
+Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
-### Lightweight Virtual Payment Channels (2020) [link](https://eprint.iacr.org/2020/998.pdf)  
+### Efficient static analysis of Marlowe contracts (2020) [link](https://api.zotero.org/groups/478201/items/B93MINW6/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
-Blockchain systems have severe scalability limitations e.g., long confirmation delays. Layer-2 protocols are designed to address such limitations. The most prominent class of such protocols are payment channel networks e.g., the Lightning Network for Bitcoin where pairs of participants create channels that can be concatenated into networks. These allow payments across the network without interaction with the blockchain. A drawback is that all intermediary nodes within a payment path must be online. Virtual Channels, as recently proposed by Dziembowski et al. (CCS'18), allow payments without this limitation. However, these can only be implemented on blockchains with smart contract capability therefore limiting its applicability. Our work proposes the notion of --Lightweight-- Virtual Payment Channels, i.e. only requiring timelocks and multisignatures, enabling Virtual Channels on a larger range of blockchain systems of which a prime example is Bitcoin. More concretely, other contributions of this work are (1) to introduce a fully-fledged formalization of our construction, and (2) to present a simulation based proof of security in Canetti's UC Framework.
+SMT solvers can verify properties automatically and efficiently, and they offer increasing flexibility on the ways those properties can be described. But it is hard to predict how those ways of describing the properties affect the computational cost of verifying them.
+In this paper, we discuss what we learned while implementing and optimising the static analysis for Marlowe, a domain specific language for self-enforcing financial smart-contracts that can be deployed on a blockchain.
 
-### SoK: A Taxonomy for Layer-2 Scalability Related Protocols for Cryptocurrencies (2019) [link](https://eprint.iacr.org/2019/352.pdf)  
+### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
-Blockchain based systems, in particular cryptocurrencies, face a serious limitation: scalability. This holds, especially, in terms of number of transactions per second. Several alternatives are currently being pursued by both the research and practitioner communities. One venue for exploration is on protocols that do not constantly add transactions on the blockchain and therefore do not consume the blockchain’s resources. This is done using off-chain transactions, i.e., protocols that minimize the interaction with the blockchain, also commonly known as Layer-2 approaches. This work relates several existing off-chain channel methods, also known as payment and state channels, channel network constructions methods, and other components as channel and network management protocols, e.g., routing nodes. All these components are crucial to keep the usability of the channel, and are often overlooked. For the best of our knowledge, this work is the first to propose a taxonomy for all the components of the Layer-2. We provide an extensive coverage on the state-of-art protocols available. We also outline their respective approaches, and discuss their advantages and disadvantages.
+Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
+Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
 
-### Impossibility on Tamper-Resilient Cryptography with Uniqueness Properties (2018) [link](https://eprint.iacr.org/2018/564.pdf)  
+### Marlowe: financial contracts on blockchain (2018) [link](https://api.zotero.org/groups/478201/items/L65KWDLX/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
-In this work, we show negative results on the tamper-resilience of a wide class of cryptographic primitives with uniqueness properties, such as unique signatures, verifiable random functions, signatures with unique keys, injective one-way functions, and encryption schemes with a property we call unique-message property. Concretely, we prove that for these primitives, it is impossible to derive their (even extremely weak) tamper-resilience from any common assumption, via black-box reductions. Our proofs exploit the simulatable attack paradigm proposed by Wichs (ITCS ’13), and the tampering model we treat is the plain model, where public parameters and public/secret key pairs are potentially tampered with.
+Blockchains allow the specification of contracts in the form of programs that guarantee their fulfilment. Nevertheless, errors in those programs can cause important, and often irretrievable, monetary loss. General-purpose languages provide a platform on which contracts can be built, but by their very generality they have the potential to exhibit behaviours of an unpredictable kind, and are also not easy to read or comprehend for general users.
+An alternative solution is provided by domain-specific languages (DSLs), which are designed to express programs in a particular field. This paper explores the design of one DSL, Marlowe, targeted at the execution of financial contracts in the style of Peyton Jones et al on blockchains. We present an executable semantics of Marlowe in Haskell, an example of Marlowe in practice, and describe the Meadow tool that allows users to interact in-browser with simulations of Marlowe contracts.
 
-### Memory Lower Bounds of Reductions Revisited (2018) [link](https://eprint.iacr.org/2018/155.pdf)  
+### Scripting smart contracts for distributed ledger technology (2016) [link](http://eprint.iacr.org/2016/1156)  
 
-In Crypto 2017, Auerbach et al. initiated the study on memory-tight reductions and proved two negative results on the memory-tightness of restricted black-box reductions from multi-challenge security to single-challenge security for signatures and an artificial hash function. In this paper, we revisit the results by Auerbach et al. and show that for a large class of reductions treating multi-challenge security, it is impossible to avoid loss of memory-tightness unless we sacrifice the efficiency of their running-time. Specifically, we show three lower bound results. Firstly, we show a memory lower bound of natural black-box reductions from the multi-challenge unforgeability of unique signatures to any computational assumption. Then we show a lower bound of restricted reductions from multi-challenge security to single-challenge security for a wide class of cryptographic primitives with unique keys in the multi-user setting. Finally, we extend the lower bound result shown by Auerbach et al. treating a hash function to one treating any hash function with a large domain.
+We give an overview of the scripting languages used in existing cryptocurrencies, and in particular we review in some detail the scripting languages of Bitcoin, Nxt and Ethereum, in the context of a high-level overview of Distributed Ledger Technology and cryptocurrencies. We survey different approaches, and give an overview of critiques of existing languages. We also cover technologies that might be used to underpin extensions and innovations in scripting and contracts, including technologies for verification, such as zero knowledge proofs, proof-carrying code and static analysis, as well as approaches to making systems more efficient, e.g. Merkelized Abstract Syntax Trees.
+
+---
+
+## Dimitris Karakostas
+
+### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
+
+Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
+
+### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
+
+Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
+
+### Account Management in Proof of Stake Ledgers (2020) [link](https://eprint.iacr.org/2020/525.pdf)  
+
+Blockchain protocols based on Proof-of-Stake (PoS) depend — by nature — on the active participation of stakeholders. If users are offline and abstain from the PoS consensus mechanism, the system’s security is at risk, so it is imperative to explore ways to both maximize the level of participation and minimize the effects of non-participation. One such option is stake representation, such that users can delegate their participation rights and, in the process, form “stake pools”. The core idea is that stake pool operators always participate on behalf of regular users, while the users retain the ownership of their assets. Our work provides a formal PoS wallet construction that enables delegation and stake pool formation. While investigating the construction of addresses in this setting, we distil and explore address malleability, a security property that captures the ability of an attacker to manipulate the delegation information associated with an address. Our analysis consists of identifying multiple levels of malleability, which are taken into account in our paper’s core result. We then introduce the first ideal functionality of a PoS wallet’s core which captures the PoS wallet’s capabilities and is realized as a secure protocol based on standard cryptographic primitives. Finally, we cover how to use the wallet core in conjunction with a PoS ledger, as well as investigate how delegation and stake pools affect a PoS system’s security.
+
+### Cryptocurrency Egalitarianism: A Quantitative Approach (2019) [link](https://arxiv.org/pdf/1907.02434.pdf)  
+
+Since the invention of Bitcoin one decade ago, numerous cryptocurrencies have sprung into existence. Among these, proof-of-work is the most common mechanism for achieving consensus, whilst a number of coins have adopted "ASIC-resistance" as a desirable property, claiming to be more "egalitarian", where egalitarianism refers to the power of each coin to participate in the creation of new coins. While proof-of-work consensus dominates the space, several new cryptocurrencies employ alternative consensus, such as proof-of-stake in which block minting opportunities are based on monetary ownership. A core criticism of proof-of-stake revolves around it being less egalitarian by making the rich richer, as opposed to proof-of-work in which everyone can contribute equally according to their computational power. In this paper, we give the first quantitative definition of a cryptocurrency's egalitarianism. Based on our definition, we measure the egalitarianism of popular cryptocurrencies that (may or may not) employ ASIC-resistance, among them Bitcoin, Ethereum, Litecoin, and Monero. Our simulations show, as expected, that ASIC-resistance increases a cryptocurrency's egalitarianism. We also measure the egalitarianism of a stake-based protocol, Ouroboros, and a hybrid proof-of-stake/proof-of-work cryptocurrency, Decred. We show that stake-based cryptocurrencies, under correctly selected parameters, can be perfectly egalitarian, perhaps contradicting folklore belief.
+
+### A Formal Treatment of Hardware Wallets (2019) [link](https://eprint.iacr.org/2019/034.pdf)  
+
+Bitcoin, being the most successful cryptocurrency, has been repeatedly attacked with many users losing their funds. The industry's response to securing the user's assets is to offer tamper-resistant hardware wallets. Although such wallets are considered to be the most secure means for managing an account, no formal attempt has been previously done to identify, model and formally verify their properties. This paper provides the first formal model of the Bitcoin hardware wallet operations. We identify the properties and security parameters of a Bitcoin wallet and formally define them in the Universal Composition (UC) Framework. We present a modular treatment of a hardware wallet ecosystem, by realizing the wallet functionality in a hybrid setting defined by a set of protocols. This approach allows us to capture in detail the wallet's components, their interaction and the potential threats. We deduce the wallet's security by proving that it is secure under common cryptographic assumptions, provided that there is no deviation in the protocol execution. Finally, we define the attacks that are successful under a protocol deviation, and analyze the security of commercially available wallets.
 
 ---
 
@@ -1426,29 +1496,6 @@ We propose three methods for determination of required number of confirmation bl
 We propose the Ethereum Classic Treasury System (ECTS) whose main purpose is to establish a decentralized funding mechanism for development and maintenance of the Ethereum Classic platform. Anyone can submit a project proposal and the stakeholders will decide on its necessity through a transparent voting procedure. The system is fully verifiable, having no significant influence on ETC performance. The report also takes into account ECIP 1017 that changes Ethereum Classic monetary policy and emission schedule. We expect that the ECTS implementation will increase stability and the outlook of the system, providing additional benefits both for stakeholders and miners from a more stable and predictable system. 
  
 https://www.youtube.com/watch?v=zxZoSjnHN84
-
----
-
-## Pablo Lamela Seijas
-
-### Efficient static analysis of Marlowe contracts (2020) [link](https://api.zotero.org/groups/478201/items/B93MINW6/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-SMT solvers can verify properties automatically and efficiently, and they offer increasing flexibility on the ways those properties can be described. But it is hard to predict how those ways of describing the properties affect the computational cost of verifying them.
-In this paper, we discuss what we learned while implementing and optimising the static analysis for Marlowe, a domain specific language for self-enforcing financial smart-contracts that can be deployed on a blockchain.
-
-### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
-Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
-
-### Marlowe: financial contracts on blockchain (2018) [link](https://api.zotero.org/groups/478201/items/L65KWDLX/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Blockchains allow the specification of contracts in the form of programs that guarantee their fulfilment. Nevertheless, errors in those programs can cause important, and often irretrievable, monetary loss. General-purpose languages provide a platform on which contracts can be built, but by their very generality they have the potential to exhibit behaviours of an unpredictable kind, and are also not easy to read or comprehend for general users.
-An alternative solution is provided by domain-specific languages (DSLs), which are designed to express programs in a particular field. This paper explores the design of one DSL, Marlowe, targeted at the execution of financial contracts in the style of Peyton Jones et al on blockchains. We present an executable semantics of Marlowe in Haskell, an example of Marlowe in practice, and describe the Meadow tool that allows users to interact in-browser with simulations of Marlowe contracts.
-
-### Scripting smart contracts for distributed ledger technology (2016) [link](http://eprint.iacr.org/2016/1156)  
-
-We give an overview of the scripting languages used in existing cryptocurrencies, and in particular we review in some detail the scripting languages of Bitcoin, Nxt and Ethereum, in the context of a high-level overview of Distributed Ledger Technology and cryptocurrencies. We survey different approaches, and give an overview of critiques of existing languages. We also cover technologies that might be used to underpin extensions and innovations in scripting and contracts, including technologies for verification, such as zero knowledge proofs, proof-carrying code and static analysis, as well as approaches to making systems more efficient, e.g. Merkelized Abstract Syntax Trees.
 
 ---
 
@@ -1724,6 +1771,64 @@ Blockchain based systems, in particular cryptocurrencies, face a serious limitat
 
 ---
 
+## Sarah Meiklejohn
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+### Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updateable Structured Reference Strings (2019) [link](https://eprint.iacr.org/2019/099.pdf)  
+
+Zero-knowledge proofs have become an important tool for addressing privacy and scalability concerns in cryptocurrencies and other applications. In many systems each client downloads and verifies every new proof, and so proofs must be small and cheap to verify. The most practical schemes require either a trusted setup, as in (pre-processing) zk-SNARKs, or verification complexity that scales linearly with the complexity of the relation, as in Bulletproofs. The structured reference strings required by most zk-SNARK schemes can be constructed with multi-party computation protocols, but the resulting parameters are specific to an individual relation. Groth et al. discovered a zk-SNARK protocol with a universal and updateable structured reference string, however the string scales quadratically in the size of the supported relations.
+Here we describe a zero-knowledge SNARK, Sonic, which sup- ports a universal and continually updateable structured reference string that scales linearly in size. Sonic proofs are constant size, and in the batch verification context the marginal cost of verification is comparable with the most efficient SNARKs in the literature. We also describe a generally useful technique in which untrusted “helpers” can compute advice which allows batches of proofs to be verified more efficiently.
+
+---
+
+## Alexei Zamyatin
+
+### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
+
+Enabling secure communication across distributed systems is usually studied under the assumption of trust between the different systems and an external adversary trying to compromise the messages. With the appearance of distributed ledgers or blockchains, numerous protocols have emerged, which attempt to achieve trustless communication between distrusting ledgers and participants. Cross-chain communication (CCC) thereby plays a fundamental role in cryptocurrency exchanges, sharding, bootstrapping of new and feature-extension of existing distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and composability.
+
+We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
+
+This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+---
+
+## Alexander Nemish
+
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
+
+### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
+Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
+
+### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
+
+This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
+
+Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
+
+---
+
 ## Tuyet Duong
 
 ### TwinsCoin: A Cryptocurrency via Proof-of-Work and Proof-of-Stake (2018) [link](https://eprint.iacr.org/2017/232.pdf)  
@@ -1791,23 +1896,6 @@ Plutus and Cardano are available open source, and Plutus Playground provides a w
 ### An Ontology for Smart Contracts (2017) [link](https://cryptochainuni.com/wp-content/uploads/Darryl-McAdams-An-Ontology-for-Smart-Contracts.pdf)  
 
 This  paper  introduces  a  basic  ontology  that  attempts  to capture the essential features of many smart contracts, in order to aid in formal reasoning about their behavior. Section II gives a general overview of the proposed ontology, and Section III gives analyses of a number of interesting smart contracts from the literature, through the lens of this ontology. The proposals here are not intended to be the One True Ontology, but rather a useful ontology. A well-designed blockchain should be able to support arbitrary such ontologies
-
----
-
-## Alexander Nemish
-
-### Marlowe: implementing and analysing financial contracts on blockchain (2020) [link](https://api.zotero.org/groups/478201/items/93VVH49W/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Marlowe is a DSL for financial contracts. We describe the implementation of Marlowe on the Cardano blockchain, and the Marlowe Playground web-based development and simulation environment.
-Contracts in Marlowe can be exhaustively analysed prior to running them, thus providing strong guarantees to participants in the contract. The Marlowe system itself has been formally verified using the Isabelle theorem prover, establishing such properties as the conservation of money.
-
-### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
-
-This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
-
-Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
 
 ---
 
@@ -2013,7 +2101,7 @@ Bitcoin and its underlying blockchain protocol have received recently significan
 
 ## Nikos Karayannidis
 
-### Efficient State Management in Distributed Ledgers (2021) [link](https://api.zotero.org/groups/478201/items/3MGKFKWE/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
 
 Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
 
@@ -2045,6 +2133,68 @@ The cryptocurrency domain is a rather new application area for which no clear en
 
 ---
 
+## Aydin Abadi
+
+### Multi-instance Publicly Verifiable Time-lock Puzzle and its Applications (2021) [link](https://fc21.ifca.ai/papers/115.pdf)  
+
+Time-lock puzzles are elegant protocols that enable a party to lock a message such that no one else can unlock it until a certain time elapses. Nevertheless, existing schemes are not suitable for the case where a server is given multiple instances of a puzzle scheme at once and it must unlock them at different points in time. If the schemes are naively used in this setting, then the server has to start solving all puzzles as soon as it receives them, that ultimately imposes significant computation cost and demands a high level of parallelisation. We put forth and formally define a primitive called “multi-instance time-lock puzzle” which allows composing a puzzle’s instances. We propose a candidate construction: “chained time-lock puzzle” (C-TLP). It allows the server, given instances’ composition, to solve puzzles sequentially, without having to run parallel computations on them. C-TLP makes black-box use of a standard time-lock puzzle scheme and is accompanied by a lightweight publicly verifiable algorithm. It is the first time-lock puzzle that offers a combination of the above features. We use C-TLP to build the first “outsourced proofs of retrievability” that can support real-time detection and fair payment while having lower overhead than the state of the art. As another application of C-TLP, we illustrate in certain cases, one can substitute a “verifiabledelay function” with C-TLP, to gain much better efficiency.
+
+### Timed Signatures and Zero-Knowledge Proofs –Timestamping in the Blockchain Era– (2020) [link](https://eprint.iacr.org/2019/644.pdf)  
+
+Timestamping is an important cryptographic primitive with numerous applications. The availability of a decentralized blockchain such as that offered by the Bitcoin protocol offers new possibilities to realise timestamping services. Nevertheless, to our knowledge, there are no recent blockchain-based proposals that are formally proved in a composable setting.
+
+In this work, we put forth the first formal treatment of timestamping cryptographic primitives in the UC framework with respect to a global clock—we refer to the corresponding primitives as timed to indicate this association. We propose timed versions of primitives commonly used for authenticating information, such as digital signatures, non-interactive zero-knowledge proofs, and signatures of knowledge and show how those can be UC-securely implemented by a protocol that makes ideal (blackbox) access to a global transaction ledger based on the ledger proposed by Badertscher et al. [CRYPTO 2017] which is UC realized by the Bitcoin backbone protocol [Eurocrypt 2015]. Our definitions introduce a fine-grained treatment of the different timestamping guarantees, namely security against postdating and backdating attacks; our results treat each of these cases separately and in combination, and shed light on the assumptions that they rely on. Our constructions rely on a relaxation of an ideal beacon functionality, which we implement UC-securely assuming the ledger functionality. Given the many potential uses of such a beacon in cryptographic protocols this result may be of independent interest.
+
+---
+
+## Edgar Weippl
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+---
+
+## Itay Tsabary
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+---
+
+## Nicholas Stifter
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+---
+
+## Aljosha Judmayer
+
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
+
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
+
+### Pay To Win: Cheap, Crowdfundable, Cross-chain Algorithmic Incentive Manipulation Attacks on PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2019/775.pdf)  
+
+The feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016, with various new techniques and approaches having since been proposed. In this paper we extend the attack landscape by presenting a method, which we call Pay-To-Win (P2W), that is capable of facilitating trustless double-spend collusion across different blockchains. Moreover, our technique can also be used to specifically incentivize transaction exclusion or (re)ordering. Attacks using our approach are operated and financed out-of-band i.e., on a funding cryptocurrency, while the consequences are induced in a different target cryptocurrency. We describe a concrete instantiation of our P2W attack which is able to fund double-spending attacks accross different blockchains. For this, we choose Bitcoin as a target and Ethereum as a funding cryptocurrency. Our P2W attack is designed in a way that reimburses collaborators even in the case of an unsuccessful attack. Interestingly, this actually renders our approach approximately one order of magnitude cheaper than comparable bribing techniques (e.g., the whale attack). We demonstrate the technical feasibility of P2W attacks through publishing all artifacts of this paper, ranging from calculations for figures and tables to a fully functional implementation of our most powerful out-of-band attack, consisting of an Ethereum smart contract and a Python client.
+
+---
+
 ## William J. Knottenbelt
 
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
@@ -2058,6 +2208,24 @@ This Systematization of Knowledge (SoK) offers a comprehensive guide for designi
 ### Bitcoin Crypto–Bounties for Quantum Capable Adversaries (2020) [link](https://eprint.iacr.org/2020/186.pdf)  
 
 With the advances in quantum computing taking place over the last few years, researchers have started considering the implications on cryptocurrencies. As most digital signature schemes would be impacted, it is somewhat reassuring that transition schemes to quantum resistant signatures are already being considered for Bitcoin. In this work, we stress the danger of public key reuse, as it prevents users from recovering their funds in the presence of a quantum enabled adversary despite any transition scheme the developers decide to implement. We emphasise this threat by quantifying the damage a functional quantum computer could inflict on Bitcoin (and Bitcoin Cash) by breaking exposed public keys.
+
+---
+
+## Eleftherios Kokoris-Kogias
+
+### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
+
+Enabling secure communication across distributed systems is usually studied under the assumption of trust between the different systems and an external adversary trying to compromise the messages. With the appearance of distributed ledgers or blockchains, numerous protocols have emerged, which attempt to achieve trustless communication between distrusting ledgers and participants. Cross-chain communication (CCC) thereby plays a fundamental role in cryptocurrency exchanges, sharding, bootstrapping of new and feature-extension of existing distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and composability.
+
+We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
+
+This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+
+### BRICK: Asynchronous Payment Channels (2021) [link](https://fc21.ifca.ai/papers/168.pdf)  
+
+Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack. In this paper, we introduce Brick, the first payment channel that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee’s approval for the last valid state.
+
+Additionally, Brick provides sub-second latency because it does not employ heavy-weight consensus. Instead, Brick uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties. We formally define and prove for Brick the properties a payment channel construction should fulfill. We also design incentives for Brick such that honest and rational behavior aligns. Finally, we provide a reference implementation of the smart contracts in Solidity.
 
 ---
 
@@ -2287,15 +2455,6 @@ Bitcoin and its underlying blockchain protocol have received recently significan
 ### Unraveling recursion: compiling an IR with recursion to System F (2019) [link](https://api.zotero.org/groups/478201/items/3HLCVVTF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
 Lambda calculi are often used as intermediate representations for compilers. However, they require extensions to handle higherlevel features of programming languages. In this paper we show how to construct an IR based on System F<sub>ω</sub><sup>µ</sup> which supports recursive functions and datatypes, and describe how to compile it to System F<sub>ω</sub><sup>µ</sup>. Our IR was developed for commercial use at the IOHK company, where it is used as part of a compilation pipeline for smart contracts running on a blockchain.
-
----
-
-## Sarah Meiklejohn
-
-### Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updateable Structured Reference Strings (2019) [link](https://eprint.iacr.org/2019/099.pdf)  
-
-Zero-knowledge proofs have become an important tool for addressing privacy and scalability concerns in cryptocurrencies and other applications. In many systems each client downloads and verifies every new proof, and so proofs must be small and cheap to verify. The most practical schemes require either a trusted setup, as in (pre-processing) zk-SNARKs, or verification complexity that scales linearly with the complexity of the relation, as in Bulletproofs. The structured reference strings required by most zk-SNARK schemes can be constructed with multi-party computation protocols, but the resulting parameters are specific to an individual relation. Groth et al. discovered a zk-SNARK protocol with a universal and updateable structured reference string, however the string scales quadratically in the size of the supported relations.
-Here we describe a zero-knowledge SNARK, Sonic, which sup- ports a universal and continually updateable structured reference string that scales linearly in size. Sonic proofs are constant size, and in the batch verification context the marginal cost of verification is comparable with the most efficient SNARKs in the literature. We also describe a generally useful technique in which untrusted “helpers” can compute advice which allows batches of proofs to be verified more efficiently.
 
 ---
 
@@ -2591,16 +2750,6 @@ We model distributed proof generation for ZK-SNARKs-based blockchains via discre
 
 ---
 
-## Aydin Abadi
-
-### Timed Signatures and Zero-Knowledge Proofs –Timestamping in the Blockchain Era– (2020) [link](https://eprint.iacr.org/2019/644.pdf)  
-
-Timestamping is an important cryptographic primitive with numerous applications. The availability of a decentralized blockchain such as that offered by the Bitcoin protocol offers new possibilities to realise timestamping services. Nevertheless, to our knowledge, there are no recent blockchain-based proposals that are formally proved in a composable setting.
-
-In this work, we put forth the first formal treatment of timestamping cryptographic primitives in the UC framework with respect to a global clock—we refer to the corresponding primitives as timed to indicate this association. We propose timed versions of primitives commonly used for authenticating information, such as digital signatures, non-interactive zero-knowledge proofs, and signatures of knowledge and show how those can be UC-securely implemented by a protocol that makes ideal (blackbox) access to a global transaction ledger based on the ledger proposed by Badertscher et al. [CRYPTO 2017] which is UC realized by the Bitcoin backbone protocol [Eurocrypt 2015]. Our definitions introduce a fine-grained treatment of the different timestamping guarantees, namely security against postdating and backdating attacks; our results treat each of these cases separately and in combination, and shed light on the assumptions that they rely on. Our constructions rely on a relaxation of an ideal beacon functionality, which we implement UC-securely assuming the ledger functionality. Given the many potential uses of such a beacon in cryptographic protocols this result may be of independent interest.
-
----
-
 ## Murdoch, J. Gabbay
 
 ### UTxO- vs account-based smart contract blockchain programming paradigms (2020) [link](https://arxiv.org/pdf/2003.14271.pdf)  
@@ -2707,7 +2856,7 @@ In this work, we investigate this question using the Constructive Cryptography f
 
 ## Mikhail Volkhov
 
-### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://eprint.iacr.org/2020/811.pdf)  
+### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
 
 Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
 To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
@@ -2719,7 +2868,7 @@ prove that Ext-Groth16 is black-box weakly SE and, contrary to Int-Groth16, that
 
 ## Janno Siim
 
-### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://eprint.iacr.org/2020/811.pdf)  
+### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
 
 Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
 To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
@@ -2731,13 +2880,33 @@ prove that Ext-Groth16 is black-box weakly SE and, contrary to Int-Groth16, that
 
 ## Karim Baghery
 
-### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://eprint.iacr.org/2020/811.pdf)  
+### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
 
 Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
 To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
 – Int-Groth16 makes use of a known transformation that encrypts the witness inside the SNARK circuit. We instantiate this transformation with an efficient SNARK-friendly encryption scheme.
 – Ext-Groth16 is based on the SAVER encryption scheme (Lee et al.) that plugs the encrypted witness directly into the verification equation, externally to the circuit. We
 prove that Ext-Groth16 is black-box weakly SE and, contrary to Int-Groth16, that its proofs are fully randomizable.
+
+---
+
+## Roger Wattenhofer
+
+### BRICK: Asynchronous Payment Channels (2021) [link](https://fc21.ifca.ai/papers/168.pdf)  
+
+Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack. In this paper, we introduce Brick, the first payment channel that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee’s approval for the last valid state.
+
+Additionally, Brick provides sub-second latency because it does not employ heavy-weight consensus. Instead, Brick uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties. We formally define and prove for Brick the properties a payment channel construction should fulfill. We also design incentives for Brick such that honest and rational behavior aligns. Finally, we provide a reference implementation of the smart contracts in Solidity.
+
+---
+
+## Zeta Avarikioti
+
+### BRICK: Asynchronous Payment Channels (2021) [link](https://fc21.ifca.ai/papers/168.pdf)  
+
+Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack. In this paper, we introduce Brick, the first payment channel that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee’s approval for the last valid state.
+
+Additionally, Brick provides sub-second latency because it does not employ heavy-weight consensus. Instead, Brick uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties. We formally define and prove for Brick the properties a payment channel construction should fulfill. We also design incentives for Brick such that honest and rational behavior aligns. Finally, we provide a reference implementation of the smart contracts in Solidity.
 
 ---
 
@@ -2755,19 +2924,15 @@ We establish strong security properties for the protocol, and we present and eva
 
 ---
 
-## Pedro Moreno-Sanchez
+## Ittay Eyal
 
-### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
+### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
 
-Enabling secure communication across distributed systems is usually studied under the assumption of trust between the different systems and an external adversary trying to compromise the messages. With the appearance of distributed ledgers or blockchains, numerous protocols have emerged, which attempt to achieve trustless communication between distrusting ledgers and participants. Cross-chain communication (CCC) thereby plays a fundamental role in cryptocurrency exchanges, sharding, bootstrapping of new and feature-extension of existing distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and composability.
-
-We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
-
-This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
 
 ---
 
-## Eleftherios Kokoris-Kogias
+## Pedro Moreno-Sanchez
 
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
 
@@ -2791,15 +2956,51 @@ This Systematization of Knowledge (SoK) offers a comprehensive guide for designi
 
 ---
 
-## Alexei Zamyatin
+## Dmytro Kondratiuk
 
-### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
-Enabling secure communication across distributed systems is usually studied under the assumption of trust between the different systems and an external adversary trying to compromise the messages. With the appearance of distributed ledgers or blockchains, numerous protocols have emerged, which attempt to achieve trustless communication between distrusting ledgers and participants. Cross-chain communication (CCC) thereby plays a fundamental role in cryptocurrency exchanges, sharding, bootstrapping of new and feature-extension of existing distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and composability.
+Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
-We provide the first systematic exposition of protocols for CCC. First, we formalize the underlying research problem and show that CCC is impossible without a trusted third party, contrary to common beliefs in the blockchain community. We then develop a framework to evaluate existing and to design new cross-chain protocols. The framework is based on the use case, the trust model, and the security assumptions of interlinked blockchains. Finally, we identify security and privacy challenges faced by protocols in the cross-chain setting.
+---
 
-This Systematization of Knowledge (SoK) offers a comprehensive guide for designing protocols bridging the numerous distributed ledgers available today. It aims to facilitate clearer communication between academia and industry in the field.
+## Xiangyu Su
+
+### How to Prove Work: With Time or Memory (Extended Abstract) (2021) [link](https://api.zotero.org/groups/478201/items/77Z47JJT/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Proposed by Dwork and Naor (Crypto’ 92) as an anti-spam technique, proof-of-work is attracting more attention with the boom of cryptocurrencies. A proof-of-work scheme involves two kinds of participants, provers and verifiers. Provers intend to solve a puzzle with a solution, while verifiers are in charge of checking the puzzle’s correctness and solution pair. The widely adopted hash-based construction achieves an optimal gap in computational complexity between provers and verifiers. However, in industry, proof-of-work is done by highly dedicated hardware, e.g., “ASIC”, which is not generally accessible, let alone the high energy consumption rates. In this work, we turn our eyes back on the original meaning of “proof of work”. Under a trusted setting, our proposed framework and its constructions are based on computationally hard problems and the unified definition of hard cryptographic primitives by Biryukov and Perrin (Asiacrypt’ 17). The new framework enables us to have a proof-of-work scheme with time-hardness or memory-hardness while cutting down power consumption and reducing the impact of dedicated hardwares.
+
+---
+
+## Jonathan Katz
+
+### RPPLNS: Pay-per-last-N-shares with a Randomised Twist (2021) [link](https://arxiv.org/pdf/2102.07681.pdf)  
+
+“Pay-per-last-N-shares” (PPLNS) is one of the most common payout strategies used by mining pools in Proof-of-Work (PoW) cryptocurrencies. As with any payment scheme, it is imperative to study issues of incentive compatibility of miners within the pool. For PPLNS this question has only been partially answered; we know that reasonably-sized miners within a PPLNS pool prefer following the pool protocol over employing specific deviations. In this paper, we present a novel modification to PPLNS where we randomise the protocol in a natural way. We call our protocol “Randomised pay-per-last-N-shares” (RPPLNS), and note that the randomised structure of the protocol greatly simplifies the study of its incentive compatibility. We show that RPPLNS maintains the strengths of PPLNS (i.e., fairness, variance reduction, and resistance to pool hopping), while also being robust against a richer class of strategic mining than what has been shown for PPLNS.
+
+---
+
+## Xinyu Zhou
+
+### RPPLNS: Pay-per-last-N-shares with a Randomised Twist (2021) [link](https://arxiv.org/pdf/2102.07681.pdf)  
+
+“Pay-per-last-N-shares” (PPLNS) is one of the most common payout strategies used by mining pools in Proof-of-Work (PoW) cryptocurrencies. As with any payment scheme, it is imperative to study issues of incentive compatibility of miners within the pool. For PPLNS this question has only been partially answered; we know that reasonably-sized miners within a PPLNS pool prefer following the pool protocol over employing specific deviations. In this paper, we present a novel modification to PPLNS where we randomise the protocol in a natural way. We call our protocol “Randomised pay-per-last-N-shares” (RPPLNS), and note that the randomised structure of the protocol greatly simplifies the study of its incentive compatibility. We show that RPPLNS maintains the strengths of PPLNS (i.e., fairness, variance reduction, and resistance to pool hopping), while also being robust against a richer class of strategic mining than what has been shown for PPLNS.
+
+---
+
+## Francisco Marmolejo-Cossio
+
+### RPPLNS: Pay-per-last-N-shares with a Randomised Twist (2021) [link](https://arxiv.org/pdf/2102.07681.pdf)  
+
+“Pay-per-last-N-shares” (PPLNS) is one of the most common payout strategies used by mining pools in Proof-of-Work (PoW) cryptocurrencies. As with any payment scheme, it is imperative to study issues of incentive compatibility of miners within the pool. For PPLNS this question has only been partially answered; we know that reasonably-sized miners within a PPLNS pool prefer following the pool protocol over employing specific deviations. In this paper, we present a novel modification to PPLNS where we randomise the protocol in a natural way. We call our protocol “Randomised pay-per-last-N-shares” (RPPLNS), and note that the randomised structure of the protocol greatly simplifies the study of its incentive compatibility. We show that RPPLNS maintains the strengths of PPLNS (i.e., fairness, variance reduction, and resistance to pool hopping), while also being robust against a richer class of strategic mining than what has been shown for PPLNS.
+
+---
+
+## Philip Lazos
+
+### RPPLNS: Pay-per-last-N-shares with a Randomised Twist (2021) [link](https://arxiv.org/pdf/2102.07681.pdf)  
+
+“Pay-per-last-N-shares” (PPLNS) is one of the most common payout strategies used by mining pools in Proof-of-Work (PoW) cryptocurrencies. As with any payment scheme, it is imperative to study issues of incentive compatibility of miners within the pool. For PPLNS this question has only been partially answered; we know that reasonably-sized miners within a PPLNS pool prefer following the pool protocol over employing specific deviations. In this paper, we present a novel modification to PPLNS where we randomise the protocol in a natural way. We call our protocol “Randomised pay-per-last-N-shares” (RPPLNS), and note that the randomised structure of the protocol greatly simplifies the study of its incentive compatibility. We show that RPPLNS maintains the strengths of PPLNS (i.e., fairness, variance reduction, and resistance to pool hopping), while also being robust against a richer class of strategic mining than what has been shown for PPLNS.
 
 ---
 
