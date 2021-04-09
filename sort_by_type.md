@@ -2,10 +2,10 @@
 # Sort By Types
 ---
 ## Table of Contents
-- [conferencePaper](#conferencePaper)
-- [document](#document)
-- [report](#report)
-- [journalArticle](#journalArticle)
+- [conferencePaper](#conferencePaper) (98)
+- [document](#document) (1)
+- [report](#report) (1)
+- [journalArticle](#journalArticle) (2)
 ---
 
 ## conferencePaper
