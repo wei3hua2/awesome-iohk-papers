@@ -53,7 +53,7 @@ const formatGroup = (title, groups) => `
 # ${title}
 ---
 ## Table of Contents
-${_.map(groups, g => '- ['+g.title+'](#'+g.title+')').join('\n')}
+${_.map(groups, g => '- ['+g.title+'](#'+g.title+') ('+g.list.length+')').join('\n')}
 ---
 ${_.map(groups, formatSection).join("")}
 `
