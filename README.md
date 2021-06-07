@@ -8,9 +8,14 @@
 
 ---
 
+* Composition with Knowledge Assumptions (2021)
+* Conclave: A Collective Stake Pool Protocol (2021)
+* Babel Fees via Limited Liabilities (2021)
 * Securing Proof-of-Work Ledgers via Checkpointing (2021)
 * RPPLNS: Pay-per-last-N-shares with a Randomised Twist (2021)
+* Mining in Logarithmic Space (2021)
 * How to Prove Work: With Time or Memory (Extended Abstract) (2021)
+* Cardano Disaster Recovery Plan (2021)
 * Standardized crypto-loans on the Cardano blockchain (2021)
 * SoK: Communication Across Distributed Ledgers (2021)
 * SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021)

@@ -2,49 +2,51 @@
 # Sort By Authors
 ---
 ## Table of Contents
-- [Aggelos Kiayias](#Aggelos Kiayias) (45)
-- [Peter Gaži](#Peter Gaži) (14)
-- [Alexander Russell](#Alexander Russell) (13)
-- [Dionysis Zindros](#Dionysis Zindros) (11)
+- [Aggelos Kiayias](#Aggelos Kiayias) (50)
+- [Peter Gaži](#Peter Gaži) (15)
+- [Alexander Russell](#Alexander Russell) (14)
+- [Dionysis Zindros](#Dionysis Zindros) (12)
+- [Mario Larangeira](#Mario Larangeira) (10)
 - [Roman Oliynykov](#Roman Oliynykov) (9)
-- [Mario Larangeira](#Mario Larangeira) (9)
+- [Christian Badertscher](#Christian Badertscher) (8)
 - [Bernardo David](#Bernardo David) (7)
 - [Vassilis Zikas](#Vassilis Zikas) (7)
-- [Christian Badertscher](#Christian Badertscher) (7)
+- [Markulf Kohlweiss](#Markulf Kohlweiss) (7)
 - [Kostis Karantias](#Kostis Karantias) (6)
 - [Lyudmila Kovalchuk](#Lyudmila Kovalchuk) (6)
 - [Philip Wadler](#Philip Wadler) (6)
 - [James Chapman](#James Chapman) (6)
-- [Markulf Kohlweiss](#Markulf Kohlweiss) (6)
 - [Simon Thompson](#Simon Thompson) (6)
 - [Keisuke Tanaka](#Keisuke Tanaka) (6)
+- [Michael Peyton Jones](#Michael Peyton Jones) (6)
+- [Manuel Chakravarty](#Manuel Chakravarty) (6)
+- [Dimitris Karakostas](#Dimitris Karakostas) (6)
 - [Alexander Chepurnoy](#Alexander Chepurnoy) (5)
 - [Mariia Rodinko](#Mariia Rodinko) (5)
-- [Michael Peyton Jones](#Michael Peyton Jones) (5)
 - [Kenneth MacKenzie](#Kenneth MacKenzie) (5)
 - [Dmytro Kaidalov](#Dmytro Kaidalov) (5)
-- [Manuel Chakravarty](#Manuel Chakravarty) (5)
 - [Pablo Lamela Seijas](#Pablo Lamela Seijas) (5)
-- [Dimitris Karakostas](#Dimitris Karakostas) (5)
 - [Rafael Dowsley](#Rafael Dowsley) (4)
 - [Oleksiy Shevtsov](#Oleksiy Shevtsov) (4)
 - [Andrii Nastenko](#Andrii Nastenko) (4)
 - [Matthias Fitzi](#Matthias Fitzi) (4)
+- [Duncan Coutts](#Duncan Coutts) (4)
+- [Nikos Leonardos](#Nikos Leonardos) (4)
+- [Polina Vinogradova](#Polina Vinogradova) (4)
+- [Thomas Kerber](#Thomas Kerber) (4)
 - [Hong-sheng Zhou](#Hong-sheng Zhou) (3)
 - [Yuyu Wang](#Yuyu Wang) (3)
 - [Chad Nester](#Chad Nester) (3)
 - [Roman Kireev](#Roman Kireev) (3)
-- [Nikos Leonardos](#Nikos Leonardos) (3)
-- [Duncan Coutts](#Duncan Coutts) (3)
-- [Polina Vinogradova](#Polina Vinogradova) (3)
 - [Jann Müller](#Jann Müller) (3)
 - [Orestis Melkonian](#Orestis Melkonian) (3)
 - [Juan A. Garay](#Juan A. Garay) (3)
-- [Thomas Kerber](#Thomas Kerber) (3)
 - [Maxim Jourenko](#Maxim Jourenko) (3)
 - [Sarah Meiklejohn](#Sarah Meiklejohn) (3)
 - [Alexei Zamyatin](#Alexei Zamyatin) (3)
 - [Alexander Nemish](#Alexander Nemish) (3)
+- [Philipp Kant](#Philipp Kant) (3)
+- [Nikos Karayannidis](#Nikos Karayannidis) (3)
 - [Tuyet Duong](#Tuyet Duong) (2)
 - [Goichiro Hanaoka](#Goichiro Hanaoka) (2)
 - [Takahiro Matsuda](#Takahiro Matsuda) (2)
@@ -64,8 +66,6 @@
 - [Alberto Garoffolo](#Alberto Garoffolo) (2)
 - [Petros Wallden](#Petros Wallden) (2)
 - [Alexandru Cojocaru](#Alexandru Cojocaru) (2)
-- [Nikos Karayannidis](#Nikos Karayannidis) (2)
-- [Philipp Kant](#Philipp Kant) (2)
 - [Aydin Abadi](#Aydin Abadi) (2)
 - [Edgar Weippl](#Edgar Weippl) (2)
 - [Itay Tsabary](#Itay Tsabary) (2)
@@ -73,6 +73,8 @@
 - [Aljosha Judmayer](#Aljosha Judmayer) (2)
 - [William J. Knottenbelt](#William J. Knottenbelt) (2)
 - [Eleftherios Kokoris-Kogias](#Eleftherios Kokoris-Kogias) (2)
+- [Jared Corduan](#Jared Corduan) (2)
+- [Nicholas Clarke](#Nicholas Clarke) (2)
 - [Darryl McAdams](#Darryl McAdams) (1)
 - [Sasha Ivanov](#Sasha Ivanov) (1)
 - [Leonid Reyzin](#Leonid Reyzin) (1)
@@ -119,8 +121,6 @@
 - [Wolfgang Jeltsh](#Wolfgang Jeltsh) (1)
 - [Matthias Güdemann](#Matthias Güdemann) (1)
 - [Javier Díaz](#Javier Díaz) (1)
-- [Jared Corduan](#Jared Corduan) (1)
-- [Nicholas Clarke](#Nicholas Clarke) (1)
 - [Kevin Hammond](#Kevin Hammond) (1)
 - [Peter Thompson](#Peter Thompson) (1)
 - [Elias Koutsoupias](#Elias Koutsoupias) (1)
@@ -155,9 +155,33 @@
 
 ## Aggelos Kiayias
 
+### Composition with Knowledge Assumptions (2021) [link](https://eprint.iacr.org/2021/165.pdf)  
+
+Zero-knowledge succinct non-interactive arguments (zk-SNARKs) rely on knowledge assumptions for their security. Meanwhile, as the complexity and scale of cryptographic systems continues to grow, the composition of secure protocols is of vital importance. The current gold standards of composable security, the Universal Composability and Constructive Cryptography frameworks cannot capture knowledge assumptions, as their core proofs of composition prohibit white-box extraction. In this paper, we present a formal model allowing the composition of knowledge assumptions. Despite showing impossibility for the general case, we demonstrate the model’s usefulness when limiting knowledge assumptions to few instances of protocols at a time. We finish by providing the first instance of a simultaneously succinct and composable zk-SNARK, by using existing results within our framework.
+
+### Conclave: A Collective Stake Pool Protocol (2021) [link](https://eprint.iacr.org/2021/742.pdf)  
+
+Proof-of-Stake (PoS) distributed ledgers are the most common alternative to Bitcoin’s Proof-of-Work (PoW) paradigm, replacing the hardware dependency with stake, i.e., assets that a party controls. Similar to PoW’s mining pools, PoS’s stake pools, i.e., collaborative entities comprising of multiple stakeholders, allow a party to earn rewards more regularly, compared to participating on an individual basis. However, stake pools tend to increase centralization, since they are typically managed by a single party that acts on behalf of the pool’s members. In this work we propose Conclave, a formal design of a Collective Stake Pool, i.e., a decentralized pool with no single point of authority. We formalize Conclave as an ideal functionality and implement it as a distributed protocol, based on standard cryptographic primitives. Among Conclave’s building blocks is a weighted threshold signature scheme (WTSS); to that end, we define a WTSS ideal functionality — which might be of independent interest — and propose two constructions based on threshold ECDSA, which enable (1) fast trustless setup and (2) identifiable aborts.
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
+
 ### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
 
 Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
+
+### Mining in Logarithmic Space (2021) [link](https://eprint.iacr.org/2021/623.pdf)  
+
+Blockchains maintain two types of data: Application data and consensus data. Towards long-term blockchain scalability, both of these must be pruned. While a large body of literature has explored the pruning of application data (UTXOs, account balances, and contract state), little has been said about the permanent pruning of consensus data (block headers). We present a protocol which allows pruning the blockchain by garbage collecting old blocks as they become unnecessary. These blocks can simply be discarded and are no longer stored by any miner. We show that all miners can be light miners with no harm to security. Our protocol is based on the notion of superblocks, blocks that have achieved an unusually high difficulty. We leverage them to represent underlying proof-of-work without ever illustrating it, storing it, or transmitting it. After our pruning is applied, the storage and communication requirements for consensus data is reduced exponentially.
+
+We develop new probabilistic mathematical methods to analyze our protocol in the random oracle model. We prove our protocol is both secure and succinct under an uninterrupted honest majority assumption for 1/3 adversaries. Our protocol is the first to achieve always secure, always succinct, and online Non-Interactive Proofs of Proof-of-Work, all necessary components for a logarithmic space mining scheme. Our work has applications beyond mining and also constitutes an improvement in state-of-the-art superlight clients and cross-chain bridges.
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
 
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
 
@@ -408,6 +432,10 @@ https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
 
 ## Peter Gaži
 
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
 ### SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies (2021) [link](https://eprint.iacr.org/2020/1614.pdf)  
 
 A long standing question in the context of cryptocurrencies based on Nakamoto consensus is whether such constructions are incentive compatible, i.e., the intended properties of the system emerge from the appropriate utility model for participants. Bribing and other related attacks, such as front-running or Goldfinger attacks, aim to directly influence the incentives of actors within (or outside) of the targeted cryptocurrency system. The theoretical feasibility of bribing attacks on cryptocurrencies was first highlighted in 2016 by Bonneau, with various different techniques and approaches having since been proposed. Some of these attacks are designed to gain in-band profits, while others intend to break the mechanism design and render the cryptocurrency worthless. In this paper, we systematically expose the large but scattered body of research in this area which has accumulated over the years. We summarize these bribing attacks and similar techniques that leverage on programmatic execution and verification under the term algorithmic incentive manipulation (AIM) attacks, and show that the problem space is not yet fully explored. Based on our analysis we present several research gaps and opportunities that warrant further investigation. In particular, we highlight no- and near-fork attacks as a powerful, yet largely underestimated, AIM category that raises serious security concerns not only for smart contract platforms.
@@ -497,6 +525,10 @@ https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
 ---
 
 ## Alexander Russell
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
 
 ### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
 
@@ -592,6 +624,12 @@ https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
 
 ## Dionysis Zindros
 
+### Mining in Logarithmic Space (2021) [link](https://eprint.iacr.org/2021/623.pdf)  
+
+Blockchains maintain two types of data: Application data and consensus data. Towards long-term blockchain scalability, both of these must be pruned. While a large body of literature has explored the pruning of application data (UTXOs, account balances, and contract state), little has been said about the permanent pruning of consensus data (block headers). We present a protocol which allows pruning the blockchain by garbage collecting old blocks as they become unnecessary. These blocks can simply be discarded and are no longer stored by any miner. We show that all miners can be light miners with no harm to security. Our protocol is based on the notion of superblocks, blocks that have achieved an unusually high difficulty. We leverage them to represent underlying proof-of-work without ever illustrating it, storing it, or transmitting it. After our pruning is applied, the storage and communication requirements for consensus data is reduced exponentially.
+
+We develop new probabilistic mathematical methods to analyze our protocol in the random oracle model. We prove our protocol is both secure and succinct under an uninterrupted honest majority assumption for 1/3 adversaries. Our protocol is the first to achieve always secure, always succinct, and online Non-Interactive Proofs of Proof-of-Work, all necessary components for a logarithmic space mining scheme. Our work has applications beyond mining and also constitutes an improvement in state-of-the-art superlight clients and cross-chain bridges.
+
 ### SoK: Communication Across Distributed Ledgers (2021) [link](https://eprint.iacr.org/2019/1128.pdf)  
 
 Enabling secure communication across distributed systems is usually studied under the assumption of trust between the different systems and an external adversary trying to compromise the messages. With the appearance of distributed ledgers or blockchains, numerous protocols have emerged, which attempt to achieve trustless communication between distrusting ledgers and participants. Cross-chain communication (CCC) thereby plays a fundamental role in cryptocurrency exchanges, sharding, bootstrapping of new and feature-extension of existing distributed ledgers. Unfortunately, existing proposals are designed ad-hoc for specific use-cases, making it hard to gain confidence on their correctness and composability.
@@ -650,57 +688,11 @@ During the last decade, the blockchain space has exploded with a plethora of new
 
 ---
 
-## Roman Oliynykov
-
-### Zendoo: a zk-SNARK Verifiable Cross-Chain Transfer Protocol Enabling Decoupled and Decentralized Sidechains (2020) [link](https://eprint.iacr.org/2020/123.pdf)  
-
-Sidechains are an appealing innovation devised to enable blockchain scalability and extensibility. The basic idea is simple yet powerful: construct a parallel chain - sidechain - with desired features, and provide a way to transfer coins between the mainchain and the sidechain.
-In this paper, we introduce Zendoo, a construction for Bitcoin-like blockchain systems that allows the creation and communication with sidechains of different types without knowing their internal structure. We consider a parent-child relationship between the mainchain and sidechains, where sidechain nodes directly observe the mainchain while mainchain nodes only observe cryptographically authenticated certificates from sidechain maintainers. We use zk-SNARKs to construct a universal verifiable transfer mechanism that is used by sidechains.
-Moreover, we propose a specific sidechain construction, named Latus, that can be built on top of this infrastructure, and realizes a decentralized verifiable blockchain system for payments. We leverage the use of recursive composition of zk-SNARKs to generate succinct proofs of sidechain state progression that are used to generate certificates' validity proofs. This allows the mainchain to effciently verify all operations performed in the sidechain without knowing any details about those operations.
-
-### Models of distributed proof generation for ZK-SNARK-based blockchains (2020) [link](https://api.zotero.org/groups/478201/items/G7RSTUAC/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-We model distributed proof generation for ZK-SNARKs-based blockchains via discrete Markov chains. Two different types of proof construction models are considered: those in which all the proofs to be built are independent (they can be considered as leaves on the Merkle tree) and those in which the proofs are located at all nodes of the Merkle tree, and hence form a partially ordered set.
-
-### Upper Bound Probability of Double Spend Attack on SPECTRE (2020) [link](https://api.zotero.org/groups/478201/items/5GEP8HFA/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-We obtained analytical expressions of upper estimates for success probability of a double spend attack on DAG-based consensus protocol SPECTRE, depending on network parameters. Using such estimates, it is possible to evaluate the number of confirmation blocks that is sufficient for prevention of such attacks.
-
-### Decreasing Security Threshold Against Double Spend Attack in Networks with Slow Synchronization (2019) [link](https://api.zotero.org/groups/478201/items/PX7QCMUI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-We study probability change of double spend attack on Proof-of-Work consensus protocol depending on network parameters in the model with continuous time. We analyze effect of block generation intensity on the network vulnerability to the attack, and provide analytical expressions for the network security threshold and for the upper bound of block generation intensity.
-
-### A Treasury System for Cryptocurrencies: Enabling Better Collaborative Intelligence (2019) [link](https://eprint.iacr.org/2018/435.pdf)  
-
-A treasury system is a community controlled and decentralized collaborative decision-making mechanism for sustainable funding of the underlying blockchain development and maintenance. During each treasury period, project proposals are submitted, discussed, and voted for; top-ranked projects are funded from the treasury. The Dash governance system is a real-world example of such kind of systems. In this work, we, for the first time, provide a rigorous study of the security of the treasury system. We modelled, designed, and implemented a provably secure treasury system that is compatible with most existing blockchain infrastructures, such as Bitcoin, Ethereum, etc. More specifically, the proposed treasury system supports liquid democracy/delegative voting for better collaborative intelligence. Namely, the voters can either vote directly on the proposed projects or delegate their votes to experts. Its core component is a universally composable secure end-to-end verifiable online voting protocol. The integrity of the treasury voting decisions is guaranteed even when all the voting committee members are corrupted. To further improve efficiency, we proposed the world’s first honest verifier zero-knowledge proof for unit vector encryption with logarithmic size communication. This partial result may be of independent interest to other cryptographic protocols. A pilot system is implemented under Java/Scala, and its benchmark results indicate that the proposed system can support tens of thousands of treasury participants with high efficiency.
-
-### Comparison of Block Expectation Time for Various Consensus Algorithms (2018) [link](http://ric.zntu.edu.ua/article/viewFile/154595/154190)  
-
-Context. We consider security properties of decentralized blockchain-based consensus protocols. The object of research is block confirmation time for users to get assurance that their transaction will not be reverted.
-Objective. The goal of the paper is to analyze double-spend attacks on the different blockchain-based systems and compare resulting probabilities of attacker's success.
-Method. We presented two models for two types of attacks on the Ouroboros protocol (for the general and covert adversaries). The models allow calculating the exact number of slots needed to achieve the required level of security. It was shown that the Ouroboros protocol allows achieving the required security level with significantly shorter confirmation period in comparison with Bitcoin. We estimated minimal number of confirmation blocks and compare estimation time for Bitcoin, GHOST and Ouroboros protocols. As a measure of comparison, we considered transaction confirmation time for which the probability of a double-spend attack is less than 0.1%. We use different standard probability distribution and different properties of Markov chains and Random Walks to get comparison of estimated security properties of Bitcoin blockchain against three different models of Bitcoin double spend attack. The splitting attack based on the model where resources of honest participants are divided to compete different chains is applied to Bitcoin and GHOST consensus protocols. Properties of Markov chains and Random Walks are also applied to obtain security estimations for the Ouroboros protocol.
-Results. We developed methods to get specific numbers for average block confirmation time for Ouroboros protocol. We compared minimal number of confirmation blocks needed to ensure a high security for considered protocols: Bitcoin, GHOST and Ouroboros.
-Conclusions. The obtained results allow determination of security bounds for the Bitcoin, GHOST and Ouroboros consensus protocols. Users of the practically deployed blockchain systems may get specific parameters for a given assurance level.
-
-### Number of Confirmation Blocks for Bitcoin and GHOST Consensus Protocols on Networks with Delayed Message Delivery: Extended Abstract (2018) [link](http://doi.acm.org/10.1145/3211933.3211941)  
-
-A specific number of transaction confirmation blocks determines average time of receiving and accepting payments at cryptocurrencies, and the shortest confirmation time for the same level of blockchain security provides the best user properties. Existing papers on transaction confirmation blocks for Bitcoin use implicit assumption of prompt spreading of Bitcoin blocks over the network (that is not always the case for the real world conditions). The newer publications with rigorous analysis and proofs of Bitcoin blockchain properties that take into account network delays provide asymptotic estimates, with no specific numbers for transaction confirmation blocks.
-We propose three methods for determination of required number of confirmation blocks for Bitcoin and GHOST on networks with delayed message delivery with different models that take into account the possibility of faster adversarial node syncronization. For the GHOST we propose the  first (to our knowledge) strict theoretical.
-
-### Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol (2017) [link](https://eprint.iacr.org/2016/889.pdf)  
-
-We present “Ouroboros”, the first blockchain protocol based on proof of stake with rigorous security guarantees. We establish security properties for the protocol comparable to those achieved by the bitcoin blockchain protocol. As the protocol provides a “proof of stake” blockchain discipline, it offers qualitative efficiency advantages over blockchains based on proof of physical resources (e.g., proof of work). We also present a novel reward mechanism for incentivizing Proof of Stake protocols and we prove that, given this mechanism, honest behavior is an approximate Nash equilibrium, thus neutralizing attacks such as selfish mining. We also present initial evidence of the practicality of our protocol in real world settings by providing experimental results on transaction confirmation and processing. 
-https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
-
-### A Proposal for An Ethereum Classic Treasury System (2017) [link](https://api.zotero.org/groups/478201/items/SGNSSMX2/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-We propose the Ethereum Classic Treasury System (ECTS) whose main purpose is to establish a decentralized funding mechanism for development and maintenance of the Ethereum Classic platform. Anyone can submit a project proposal and the stakeholders will decide on its necessity through a transparent voting procedure. The system is fully verifiable, having no significant influence on ETC performance. The report also takes into account ECIP 1017 that changes Ethereum Classic monetary policy and emission schedule. We expect that the ECTS implementation will increase stability and the outlook of the system, providing additional benefits both for stakeholders and miners from a more stable and predictable system. 
- 
-https://www.youtube.com/watch?v=zxZoSjnHN84
-
----
-
 ## Mario Larangeira
+
+### Conclave: A Collective Stake Pool Protocol (2021) [link](https://eprint.iacr.org/2021/742.pdf)  
+
+Proof-of-Stake (PoS) distributed ledgers are the most common alternative to Bitcoin’s Proof-of-Work (PoW) paradigm, replacing the hardware dependency with stake, i.e., assets that a party controls. Similar to PoW’s mining pools, PoS’s stake pools, i.e., collaborative entities comprising of multiple stakeholders, allow a party to earn rewards more regularly, compared to participating on an individual basis. However, stake pools tend to increase centralization, since they are typically managed by a single party that acts on behalf of the pool’s members. In this work we propose Conclave, a formal design of a Collective Stake Pool, i.e., a decentralized pool with no single point of authority. We formalize Conclave as an ideal functionality and implement it as a distributed protocol, based on standard cryptographic primitives. Among Conclave’s building blocks is a weighted threshold signature scheme (WTSS); to that end, we define a WTSS ideal functionality — which might be of independent interest — and propose two constructions based on threshold ECDSA, which enable (1) fast trustless setup and (2) identifiable aborts.
 
 ### How to Prove Work: With Time or Memory (Extended Abstract) (2021) [link](https://api.zotero.org/groups/478201/items/77Z47JJT/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
@@ -758,6 +750,114 @@ A Mobile Ad-Hoc Network (MANET) automatically reorganizes itself, allowing movin
 ### Kaleidoscope: An Efficient Poker Protocol with Payment Distribution and Penalty Enforcement (2018) [link](https://eprint.iacr.org/2017/899.pdf)  
 
 The research on secure poker protocols without trusted intermediaries has a long history that dates back to modern cryptography’s infancy. Two main challenges towards bringing it into real-life are enforcing the distribution of the rewards, and penalizing misbehaving/aborting parties. Using recent advances on cryptocurrencies and blockchain technologies, Andrychowicz et al. (IEEE S&P 2014 and FC 2014 BITCOIN Workshop) were able to address those problems. Improving on these results, Kumaresan et al. (CCS 2015) and Bentov et al. (ASIACRYPT 2017) proposed specific purpose poker protocols that made significant progress towards meeting the real-world deployment requirements. However, their protocols still lack either efficiency or a formal security proof in a strong model. Specifically, the work of Kumaresan et al. relies on Bitcoin and simple contracts, but is not very efficient as it needs numerous interactions with the cryptocurrency network as well as a lot of collateral. Bentov et al. achieve further improvements by using stateful contracts and off-chain execution: they show a solution based on general multiparty computation that has a security proof in a strong model, but is also not very efficient. Alternatively, it proposes to use tailor-made poker protocols as a building block to improve the efficiency. However, a security proof is unfortunately still missing for the latter case: the security properties the tailor-made protocol would need to meet were not even specified, let alone proven to be met by a given protocol. Our solution closes this undesirable gap as it concurrently: (1) enforces the rewards’ distribution; (2) enforces penalties on misbehaving parties; (3) has efficiency comparable to the tailor-made protocols; (4) has a security proof in a simulation-based model of security. Combining techniques from the above works, from tailor-made poker protocols and from efficient zero-knowledge proofs for shuffles, and performing optimizations, we obtain a solution that satisfies all four desired criteria and does not incur a big burden on the blockchain.
+
+---
+
+## Roman Oliynykov
+
+### Zendoo: a zk-SNARK Verifiable Cross-Chain Transfer Protocol Enabling Decoupled and Decentralized Sidechains (2020) [link](https://eprint.iacr.org/2020/123.pdf)  
+
+Sidechains are an appealing innovation devised to enable blockchain scalability and extensibility. The basic idea is simple yet powerful: construct a parallel chain - sidechain - with desired features, and provide a way to transfer coins between the mainchain and the sidechain.
+In this paper, we introduce Zendoo, a construction for Bitcoin-like blockchain systems that allows the creation and communication with sidechains of different types without knowing their internal structure. We consider a parent-child relationship between the mainchain and sidechains, where sidechain nodes directly observe the mainchain while mainchain nodes only observe cryptographically authenticated certificates from sidechain maintainers. We use zk-SNARKs to construct a universal verifiable transfer mechanism that is used by sidechains.
+Moreover, we propose a specific sidechain construction, named Latus, that can be built on top of this infrastructure, and realizes a decentralized verifiable blockchain system for payments. We leverage the use of recursive composition of zk-SNARKs to generate succinct proofs of sidechain state progression that are used to generate certificates' validity proofs. This allows the mainchain to effciently verify all operations performed in the sidechain without knowing any details about those operations.
+
+### Models of distributed proof generation for ZK-SNARK-based blockchains (2020) [link](https://api.zotero.org/groups/478201/items/G7RSTUAC/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+We model distributed proof generation for ZK-SNARKs-based blockchains via discrete Markov chains. Two different types of proof construction models are considered: those in which all the proofs to be built are independent (they can be considered as leaves on the Merkle tree) and those in which the proofs are located at all nodes of the Merkle tree, and hence form a partially ordered set.
+
+### Upper Bound Probability of Double Spend Attack on SPECTRE (2020) [link](https://api.zotero.org/groups/478201/items/5GEP8HFA/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+We obtained analytical expressions of upper estimates for success probability of a double spend attack on DAG-based consensus protocol SPECTRE, depending on network parameters. Using such estimates, it is possible to evaluate the number of confirmation blocks that is sufficient for prevention of such attacks.
+
+### Decreasing Security Threshold Against Double Spend Attack in Networks with Slow Synchronization (2019) [link](https://api.zotero.org/groups/478201/items/PX7QCMUI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+We study probability change of double spend attack on Proof-of-Work consensus protocol depending on network parameters in the model with continuous time. We analyze effect of block generation intensity on the network vulnerability to the attack, and provide analytical expressions for the network security threshold and for the upper bound of block generation intensity.
+
+### A Treasury System for Cryptocurrencies: Enabling Better Collaborative Intelligence (2019) [link](https://eprint.iacr.org/2018/435.pdf)  
+
+A treasury system is a community controlled and decentralized collaborative decision-making mechanism for sustainable funding of the underlying blockchain development and maintenance. During each treasury period, project proposals are submitted, discussed, and voted for; top-ranked projects are funded from the treasury. The Dash governance system is a real-world example of such kind of systems. In this work, we, for the first time, provide a rigorous study of the security of the treasury system. We modelled, designed, and implemented a provably secure treasury system that is compatible with most existing blockchain infrastructures, such as Bitcoin, Ethereum, etc. More specifically, the proposed treasury system supports liquid democracy/delegative voting for better collaborative intelligence. Namely, the voters can either vote directly on the proposed projects or delegate their votes to experts. Its core component is a universally composable secure end-to-end verifiable online voting protocol. The integrity of the treasury voting decisions is guaranteed even when all the voting committee members are corrupted. To further improve efficiency, we proposed the world’s first honest verifier zero-knowledge proof for unit vector encryption with logarithmic size communication. This partial result may be of independent interest to other cryptographic protocols. A pilot system is implemented under Java/Scala, and its benchmark results indicate that the proposed system can support tens of thousands of treasury participants with high efficiency.
+
+### Comparison of Block Expectation Time for Various Consensus Algorithms (2018) [link](http://ric.zntu.edu.ua/article/viewFile/154595/154190)  
+
+Context. We consider security properties of decentralized blockchain-based consensus protocols. The object of research is block confirmation time for users to get assurance that their transaction will not be reverted.
+Objective. The goal of the paper is to analyze double-spend attacks on the different blockchain-based systems and compare resulting probabilities of attacker's success.
+Method. We presented two models for two types of attacks on the Ouroboros protocol (for the general and covert adversaries). The models allow calculating the exact number of slots needed to achieve the required level of security. It was shown that the Ouroboros protocol allows achieving the required security level with significantly shorter confirmation period in comparison with Bitcoin. We estimated minimal number of confirmation blocks and compare estimation time for Bitcoin, GHOST and Ouroboros protocols. As a measure of comparison, we considered transaction confirmation time for which the probability of a double-spend attack is less than 0.1%. We use different standard probability distribution and different properties of Markov chains and Random Walks to get comparison of estimated security properties of Bitcoin blockchain against three different models of Bitcoin double spend attack. The splitting attack based on the model where resources of honest participants are divided to compete different chains is applied to Bitcoin and GHOST consensus protocols. Properties of Markov chains and Random Walks are also applied to obtain security estimations for the Ouroboros protocol.
+Results. We developed methods to get specific numbers for average block confirmation time for Ouroboros protocol. We compared minimal number of confirmation blocks needed to ensure a high security for considered protocols: Bitcoin, GHOST and Ouroboros.
+Conclusions. The obtained results allow determination of security bounds for the Bitcoin, GHOST and Ouroboros consensus protocols. Users of the practically deployed blockchain systems may get specific parameters for a given assurance level.
+
+### Number of Confirmation Blocks for Bitcoin and GHOST Consensus Protocols on Networks with Delayed Message Delivery: Extended Abstract (2018) [link](http://doi.acm.org/10.1145/3211933.3211941)  
+
+A specific number of transaction confirmation blocks determines average time of receiving and accepting payments at cryptocurrencies, and the shortest confirmation time for the same level of blockchain security provides the best user properties. Existing papers on transaction confirmation blocks for Bitcoin use implicit assumption of prompt spreading of Bitcoin blocks over the network (that is not always the case for the real world conditions). The newer publications with rigorous analysis and proofs of Bitcoin blockchain properties that take into account network delays provide asymptotic estimates, with no specific numbers for transaction confirmation blocks.
+We propose three methods for determination of required number of confirmation blocks for Bitcoin and GHOST on networks with delayed message delivery with different models that take into account the possibility of faster adversarial node syncronization. For the GHOST we propose the  first (to our knowledge) strict theoretical.
+
+### Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol (2017) [link](https://eprint.iacr.org/2016/889.pdf)  
+
+We present “Ouroboros”, the first blockchain protocol based on proof of stake with rigorous security guarantees. We establish security properties for the protocol comparable to those achieved by the bitcoin blockchain protocol. As the protocol provides a “proof of stake” blockchain discipline, it offers qualitative efficiency advantages over blockchains based on proof of physical resources (e.g., proof of work). We also present a novel reward mechanism for incentivizing Proof of Stake protocols and we prove that, given this mechanism, honest behavior is an approximate Nash equilibrium, thus neutralizing attacks such as selfish mining. We also present initial evidence of the practicality of our protocol in real world settings by providing experimental results on transaction confirmation and processing. 
+https://www.youtube.com/playlist?list=PLnPTB0CuBOBw9H7dynFu9U25vqFWRw1UX
+
+### A Proposal for An Ethereum Classic Treasury System (2017) [link](https://api.zotero.org/groups/478201/items/SGNSSMX2/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+We propose the Ethereum Classic Treasury System (ECTS) whose main purpose is to establish a decentralized funding mechanism for development and maintenance of the Ethereum Classic platform. Anyone can submit a project proposal and the stakeholders will decide on its necessity through a transparent voting procedure. The system is fully verifiable, having no significant influence on ETC performance. The report also takes into account ECIP 1017 that changes Ethereum Classic monetary policy and emission schedule. We expect that the ECTS implementation will increase stability and the outlook of the system, providing additional benefits both for stakeholders and miners from a more stable and predictable system. 
+ 
+https://www.youtube.com/watch?v=zxZoSjnHN84
+
+---
+
+## Christian Badertscher
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Security Limitations of Classical-Client Delegated Quantum Computing (2020) [link](https://arxiv.org/pdf/2007.01668.pdf)  
+
+Secure delegated quantum computing allows a computationally weak client to outsource an arbitrary quantum computation to an untrusted quantum server in a privacy-preserving manner. One of the promising candidates to achieve classical delegation of quantum computation is classical-client remote state preparation (RSP<sub>CC</sub>), where a client remotely prepares a quantum state using a classical channel. However, the privacy loss incurred by employing RSP<sub>CC</sub> as a sub-module is unclear.
+In this work, we investigate this question using the Constructive Cryptography framework by Maurer and Renner (ICS'11). We first identify the goal of RSP<sub>CC</sub> as the construction of ideal RSP resources from classical channels and then reveal the security limitations of using RSP<sub>CC</sub>. First, we uncover a fundamental relationship between constructing ideal RSP resources (from classical channels) and the task of cloning quantum states. Any classically constructed ideal RSP resource must leak to the server the full classical description (possibly in an encoded form) of the generated quantum state, even if we target computational security only. As a consequence, we find that the realization of common RSP resources, without weakening their guarantees drastically, is impossible due to the no-cloning theorem. Second, the above result does not rule out that a specific RSP<sub>CC</sub> protocol can replace the quantum channel at least in some contexts, such as the Universal Blind Quantum Computing (UBQC) protocol of Broadbent et al. (FOCS '09). However, we show that the resulting UBQC protocol cannot maintain its proven composable security as soon as RSPCC is used as a subroutine. Third, we show that replacing the quantum channel of the above UBQC protocol by the RSP<sub>CC</sub> protocol QFactory of Cojocaru et al. (Asiacrypt '19), preserves the weaker, game-based, security of UBQC.
+
+### Universal Composition with Global Subroutines: Capturing Global Setup within plain UC (2020) [link](https://eprint.iacr.org/2020/1209.pdf)  
+
+The Global and Externalized UC frameworks [Canetti-Dodis-Pass-Walfish, TCC 07] extend the plain UC framework to additionally handle protocols that use a "global setup'", namely a mechanism that is also used by entities outside the protocol. These frameworks have broad applicability: Examples include public-key infrastructures, common reference strings, shared synchronization mechanisms, global blockchains, or even abstractions such as the random oracle. However, the need to work in a specialized framework has been a source of confusion, incompatibility, and an impediment to broader use.
+
+We show how security in the presence of a global setup can be captured within the plain UC framework, thus significantly simplifying the treatment. This is done as follows:
+
+- We extend UC-emulation to the case where both the emulating protocol π and the emulated protocol ϕ make subroutine calls to protocol γ that is accessible also outside π and ϕ. As usual, this notion considers only a single instance of ϕ or π (alongside γ).
+
+- We extend the UC theorem to hold even with respect to the new notion of UC emulation. That is, we show that if π UC-emulates ϕ in the presence of γ, then ρ<sup>ϕ→π</sup> UC-emulates ρ for any protocol ρ, even when ρ uses γ directly, and in addition calls many instances of ϕ, all of which use the same instance of γ. We prove this extension using the existing UC theorem as a black box, thus further simplifying the treatment.
+
+We also exemplify how our treatment can be used to streamline, within the plain UC model, proofs of security of systems that involve global set-up, thus providing greater simplicity and flexibility.
+
+### Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy (2020) [link](https://eprint.iacr.org/2020/1021.pdf)  
+
+Distributed ledgers, such as those arising from blockchain protocols, have been touted as the centerpiece of an upcoming security-critical information technology infrastructure. Their basic properties---consistency and liveness---can be guaranteed under specific constraints about the resources of an adversary relative to the resources of the nodes that follow the protocol. Given the intended long-livedness of these protocols, perhaps the most fundamental open security question currently is their behavior and potential resilience to temporary spikes in adversarial resources.
+
+In this work we give the first thorough treatment of self-healing properties of distributed ledgers covering both proof-of-work (PoW) and proof-of-stake (PoS) protocols. Our results quantify the vulnerability period that corresponds to an adversarial spike and classify three types of currently deployed protocols with respect to their self-healing ability: PoW-based blockchains, PoS-based blockchains, and iterated Byzantine Fault Tolerant (iBFT) protocols.
+
+### Consistency for Functional Encryption (2020) [link](https://eprint.iacr.org/2020/137.pdf)  
+
+In functional encryption (FE) a sender, Alice, encrypts plaintexts that a receiver, Bob, can obtain functional evaluations of, while Charlie is responsible for initializing the encryption keys and issuing the decryption keys. Standard notions of security for FE deal with a malicious Bob and how the confidentiality of Alice's messages can be maintained taking into account the leakage that occurs due to the functional keys that are revealed to the adversary via various forms of indistinguishability experiments that correspond to IND-CPA, IND-CCA and simulation-based security. In this work we provide a complete and systematic investigation of Consistency, a natural security property for FE, that deals with attacks that can be mounted by Alice, Charlie or a collusion of the two against Bob. We develop three main types of consistency notions according to which set of parties is corrupted and investigate their relation to the standard security properties of FE.
+
+We then provide explicit constructions that achieve consistency either directly via a construction based on MDDH for specific function classes of inner products over a modulo group or generically for all the consistency types via compilers using standard cryptographic tools. Finally, we put forth a universally composable treatment of FE and we show that our consistency notions naturally complement FE security by proving how they imply (and are implied by) UC security depending on which set of parties is corrupted thereby yielding a complete characterization of consistency for FE.
+
+### Ouroboros Chronos: Permissionless Clock Synchronization via Proof-of-Stake (2019) [link](https://eprint.iacr.org/2019/838.pdf)  
+
+Clock synchronization allows parties to establish a common notion of global time by leveraging a weaker synchrony assumption, i.e., local clocks with approximately the same speed. The problem has long been a prominent goal for fault-tolerant distributed computing with a number of ingenious solutions in various settings. However, despite intensive investigation, the existing solutions do not apply to common blockchain protocols, which are designed to tolerate variable---and potentially adversarial---participation patterns, e.g., sleepiness and dynamic availability. Furthermore, because such blockchain protocols rely on freshly joining (or re-joining) parties to have a common notion of time, e.g., a global clock which allows knowledge of the current protocol round, it is not clear if or how they can operate without such a strong synchrony assumption.
+
+In this work, we show how to solve the global synchronization problem by leveraging proof of stake (PoS). Concretely, we design and analyze a PoS blockchain protocol in the above dynamic-participation setting, that does not require a global clock but merely assumes that parties have local clocks advancing at approximately the same speed. Central to our construction is a novel synchronization mechanism that can be thought as the blockchain-era analogue of classical synchronizers: It enables joining parties---even if upon joining their local time is off by an arbitrary amount---to quickly calibrate their local clocks so that they all show approximately the same time. As a direct implication of our blockchain construction---since the blockchain can be joined and observed by any interested party---we obtain a permissionless PoS implementation of a global clock that may be used by higher level protocols that need access to global time.
+
+### Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability (2018) [link](https://eprint.iacr.org/2018/378.pdf)  
+
+Proof-of-stake-based (in short, PoS-based) blockchains aim to overcome scalability, efficiency, and composability limitations of the proof-of-work paradigm, which underlies the security of several mainstream cryptocurrencies including Bitcoin.
+Our work puts forth the first (global universally) composable (GUC) treatment of PoS-based blockchains in a setting that captures—for the first time in GUC—arbitrary numbers of parties that may not be fully operational, e.g., due to network problems, reboots, or updates of their OS that affect all or just some of their local resources including their network interface and clock. This setting, which we refer to as dynamic availability, naturally captures decentralized environments within which real-world deployed blockchain protocols are assumed to operate.
+We observe that none of the existing PoS-based blockchain protocols can realize the ledger functionality under dynamic availability in the same way that bitcoin does (using only the information available in the genesis block). To address this we propose a new PoS-based protocol, “Ouroboros Genesis”, that adapts one of the latest cryptographically-secure PoS-based blockchain protocols with a novel chain selection rule. The rule enables new or offline parties to safely (re-)join and bootstrap their blockchain from the genesis block without any trusted advice—such as checkpoints—or assumptions regarding past availability. We say that such a blockchain protocol can “bootstrap from genesis.”
+We prove the GUC security of Ouroboros Genesis against a fully adaptive adversary controlling less than half of the total stake. Our model allows adversarial scheduling of messages in a network with delays and captures the dynamic availability of participants in the worst case. Importantly, our protocol is effectively independent of both the maximum network delay and the minimum level of availability— both of which are run-time parameters. Proving the security of our construction against an adaptive adversary requires a novel martingale technique that may be of independent interest in the analysis of blockchain protocols.
+
+### But Why Does It Work? A Rational Protocol Design Treatment of Bitcoin. (2018) [link](https://eprint.iacr.org/2018/138.pdf)  
+
+An exciting recent line of work has focused on formally investigating the core cryptographic assumptions underlying the security of Bitcoin. In a nutshell, these works conclude that Bitcoin is secure if and only if the majority of the mining power is honest. Despite their great impact, however, these works do not address an incisive question asked by positivists and Bitcoin critics, which is fuelled by the fact that Bitcoin indeed works in reality: Why should the real-world system adhere to these assumptions?
+
+In this work we employ the machinery from the Rational Protocol Design (RPD) framework by Garay et al. [FOCS’13] to analyze Bitcoin and address questions such as the above. We show assuming a natural class of incentives for the miners’ behavior—i.e., rewarding them for adding blocks to the blockchain but having them pay for mining—where one can reserve the honest majority assumption as a fallback, or even, depending on the application, completely replace it by the assumption that the miners aim to maximize their revenue.
+
+Our results underscore the appropriateness of RPD as a “rational cryptography” framework for analyzing Bitcoin. Along the way, we devise significant extensions to the original RPD machinery that broaden its applicability to cryptocurrencies, which may be of independent interest.
 
 ---
 
@@ -875,30 +975,23 @@ Our results underscore the appropriateness of RPD as a “rational cryptography�
 
 ---
 
-## Christian Badertscher
+## Markulf Kohlweiss
 
-### Security Limitations of Classical-Client Delegated Quantum Computing (2020) [link](https://arxiv.org/pdf/2007.01668.pdf)  
+### Composition with Knowledge Assumptions (2021) [link](https://eprint.iacr.org/2021/165.pdf)  
 
-Secure delegated quantum computing allows a computationally weak client to outsource an arbitrary quantum computation to an untrusted quantum server in a privacy-preserving manner. One of the promising candidates to achieve classical delegation of quantum computation is classical-client remote state preparation (RSP<sub>CC</sub>), where a client remotely prepares a quantum state using a classical channel. However, the privacy loss incurred by employing RSP<sub>CC</sub> as a sub-module is unclear.
-In this work, we investigate this question using the Constructive Cryptography framework by Maurer and Renner (ICS'11). We first identify the goal of RSP<sub>CC</sub> as the construction of ideal RSP resources from classical channels and then reveal the security limitations of using RSP<sub>CC</sub>. First, we uncover a fundamental relationship between constructing ideal RSP resources (from classical channels) and the task of cloning quantum states. Any classically constructed ideal RSP resource must leak to the server the full classical description (possibly in an encoded form) of the generated quantum state, even if we target computational security only. As a consequence, we find that the realization of common RSP resources, without weakening their guarantees drastically, is impossible due to the no-cloning theorem. Second, the above result does not rule out that a specific RSP<sub>CC</sub> protocol can replace the quantum channel at least in some contexts, such as the Universal Blind Quantum Computing (UBQC) protocol of Broadbent et al. (FOCS '09). However, we show that the resulting UBQC protocol cannot maintain its proven composable security as soon as RSPCC is used as a subroutine. Third, we show that replacing the quantum channel of the above UBQC protocol by the RSP<sub>CC</sub> protocol QFactory of Cojocaru et al. (Asiacrypt '19), preserves the weaker, game-based, security of UBQC.
+Zero-knowledge succinct non-interactive arguments (zk-SNARKs) rely on knowledge assumptions for their security. Meanwhile, as the complexity and scale of cryptographic systems continues to grow, the composition of secure protocols is of vital importance. The current gold standards of composable security, the Universal Composability and Constructive Cryptography frameworks cannot capture knowledge assumptions, as their core proofs of composition prohibit white-box extraction. In this paper, we present a formal model allowing the composition of knowledge assumptions. Despite showing impossibility for the general case, we demonstrate the model’s usefulness when limiting knowledge assumptions to few instances of protocols at a time. We finish by providing the first instance of a simultaneously succinct and composable zk-SNARK, by using existing results within our framework.
 
-### Universal Composition with Global Subroutines: Capturing Global Setup within plain UC (2020) [link](https://eprint.iacr.org/2020/1209.pdf)  
+### Mining for Privacy: How to Bootstrap a Snarky Blockchain (2021) [link](https://eprint.iacr.org/2020/401.pdf)  
 
-The Global and Externalized UC frameworks [Canetti-Dodis-Pass-Walfish, TCC 07] extend the plain UC framework to additionally handle protocols that use a "global setup'", namely a mechanism that is also used by entities outside the protocol. These frameworks have broad applicability: Examples include public-key infrastructures, common reference strings, shared synchronization mechanisms, global blockchains, or even abstractions such as the random oracle. However, the need to work in a specialized framework has been a source of confusion, incompatibility, and an impediment to broader use.
+Non-interactive zero-knowledge proofs, and more specifically succinct non-interactive zero-knowledge arguments (zk-SNARKS), have been proven to be the “swiss army knife” of the blockchain and distributed ledger space, with a variety of applications in privacy, interoperability and scalability. Many commonly used SNARK systems rely on a structured reference string, the secure generation of which turns out to be their Achilles heel: If the randomness used for the generation is known, the soundness of the proof system can be broken with devastating consequences for the underlying blockchain system that utilises them. In this work we describe and analyze, for the first time, a blockchain mechanism that produces a secure SRS with the characteristic that security is shown for the exact same conditions under which the blockchain protocol is proven to be secure. Our mechanism makes use of the recent discovery of updateable structure reference strings to perform this secure generation in a fully distributed manner. In this way, the SRS emanates from the normal operation of the blockchain protocol itself without the need of additional security assumptions or off-chain computation and/or verification. We provide concrete guidelines for the parameterisation of this system which allows for the completion of a secure setup in a reasonable period of time. We also provide an incentive scheme that, when paired with the update mechanism, properly incentivises participants into contributing to secure reference string generation.
 
-We show how security in the presence of a global setup can be captured within the plain UC framework, thus significantly simplifying the treatment. This is done as follows:
+### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
 
-- We extend UC-emulation to the case where both the emulating protocol π and the emulated protocol ϕ make subroutine calls to protocol γ that is accessible also outside π and ϕ. As usual, this notion considers only a single instance of ϕ or π (alongside γ).
-
-- We extend the UC theorem to hold even with respect to the new notion of UC emulation. That is, we show that if π UC-emulates ϕ in the presence of γ, then ρ<sup>ϕ→π</sup> UC-emulates ρ for any protocol ρ, even when ρ uses γ directly, and in addition calls many instances of ϕ, all of which use the same instance of γ. We prove this extension using the existing UC theorem as a black box, thus further simplifying the treatment.
-
-We also exemplify how our treatment can be used to streamline, within the plain UC model, proofs of security of systems that involve global set-up, thus providing greater simplicity and flexibility.
-
-### Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy (2020) [link](https://eprint.iacr.org/2020/1021.pdf)  
-
-Distributed ledgers, such as those arising from blockchain protocols, have been touted as the centerpiece of an upcoming security-critical information technology infrastructure. Their basic properties---consistency and liveness---can be guaranteed under specific constraints about the resources of an adversary relative to the resources of the nodes that follow the protocol. Given the intended long-livedness of these protocols, perhaps the most fundamental open security question currently is their behavior and potential resilience to temporary spikes in adversarial resources.
-
-In this work we give the first thorough treatment of self-healing properties of distributed ledgers covering both proof-of-work (PoW) and proof-of-stake (PoS) protocols. Our results quantify the vulnerability period that corresponds to an adversarial spike and classify three types of currently deployed protocols with respect to their self-healing ability: PoW-based blockchains, PoS-based blockchains, and iterated Byzantine Fault Tolerant (iBFT) protocols.
+Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
+To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
+– Int-Groth16 makes use of a known transformation that encrypts the witness inside the SNARK circuit. We instantiate this transformation with an efficient SNARK-friendly encryption scheme.
+– Ext-Groth16 is based on the SAVER encryption scheme (Lee et al.) that plugs the encrypted witness directly into the verification equation, externally to the circuit. We
+prove that Ext-Groth16 is black-box weakly SE and, contrary to Int-Groth16, that its proofs are fully randomizable.
 
 ### Consistency for Functional Encryption (2020) [link](https://eprint.iacr.org/2020/137.pdf)  
 
@@ -906,26 +999,18 @@ In functional encryption (FE) a sender, Alice, encrypts plaintexts that a receiv
 
 We then provide explicit constructions that achieve consistency either directly via a construction based on MDDH for specific function classes of inner products over a modulo group or generically for all the consistency types via compilers using standard cryptographic tools. Finally, we put forth a universally composable treatment of FE and we show that our consistency notions naturally complement FE security by proving how they imply (and are implied by) UC security depending on which set of parties is corrupted thereby yielding a complete characterization of consistency for FE.
 
-### Ouroboros Chronos: Permissionless Clock Synchronization via Proof-of-Stake (2019) [link](https://eprint.iacr.org/2019/838.pdf)  
+### Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updateable Structured Reference Strings (2019) [link](https://eprint.iacr.org/2019/099.pdf)  
 
-Clock synchronization allows parties to establish a common notion of global time by leveraging a weaker synchrony assumption, i.e., local clocks with approximately the same speed. The problem has long been a prominent goal for fault-tolerant distributed computing with a number of ingenious solutions in various settings. However, despite intensive investigation, the existing solutions do not apply to common blockchain protocols, which are designed to tolerate variable---and potentially adversarial---participation patterns, e.g., sleepiness and dynamic availability. Furthermore, because such blockchain protocols rely on freshly joining (or re-joining) parties to have a common notion of time, e.g., a global clock which allows knowledge of the current protocol round, it is not clear if or how they can operate without such a strong synchrony assumption.
+Zero-knowledge proofs have become an important tool for addressing privacy and scalability concerns in cryptocurrencies and other applications. In many systems each client downloads and verifies every new proof, and so proofs must be small and cheap to verify. The most practical schemes require either a trusted setup, as in (pre-processing) zk-SNARKs, or verification complexity that scales linearly with the complexity of the relation, as in Bulletproofs. The structured reference strings required by most zk-SNARK schemes can be constructed with multi-party computation protocols, but the resulting parameters are specific to an individual relation. Groth et al. discovered a zk-SNARK protocol with a universal and updateable structured reference string, however the string scales quadratically in the size of the supported relations.
+Here we describe a zero-knowledge SNARK, Sonic, which sup- ports a universal and continually updateable structured reference string that scales linearly in size. Sonic proofs are constant size, and in the batch verification context the marginal cost of verification is comparable with the most efficient SNARKs in the literature. We also describe a generally useful technique in which untrusted “helpers” can compute advice which allows batches of proofs to be verified more efficiently.
 
-In this work, we show how to solve the global synchronization problem by leveraging proof of stake (PoS). Concretely, we design and analyze a PoS blockchain protocol in the above dynamic-participation setting, that does not require a global clock but merely assumes that parties have local clocks advancing at approximately the same speed. Central to our construction is a novel synchronization mechanism that can be thought as the blockchain-era analogue of classical synchronizers: It enables joining parties---even if upon joining their local time is off by an arbitrary amount---to quickly calibrate their local clocks so that they all show approximately the same time. As a direct implication of our blockchain construction---since the blockchain can be joined and observed by any interested party---we obtain a permissionless PoS implementation of a global clock that may be used by higher level protocols that need access to global time.
+### Kachina - Foundations of Private Smart Contracts (2019) [link](https://eprint.iacr.org/2020/543.pdf)  
 
-### Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability (2018) [link](https://eprint.iacr.org/2018/378.pdf)  
+Smart contracts present a uniform approach for deploying distributed computation and have become a popular means to develop security critical applications. A major barrier to adoption for many applications is the public nature of existing systems, such as Ethereum. Several systems satisfying various definitions of privacy and requiring various trust assumptions have been proposed; however, none achieved the universality and uniformity that Ethereum achieved for non-private contracts: One unified method to construct most contracts. We provide a unified security model for private smart contracts which is based on the Universal Composition (UC) model and propose a novel core protocol, Kachina, for deploying privacy-preserving smart contracts, which encompasses previous systems. We demonstrate the Kachina method of smart contract development, using it to construct a contract that implements privacy-preserving payments, along the lines of Zerocash, which is provably secure in the UC setting and facilitates concurrency.
 
-Proof-of-stake-based (in short, PoS-based) blockchains aim to overcome scalability, efficiency, and composability limitations of the proof-of-work paradigm, which underlies the security of several mainstream cryptocurrencies including Bitcoin.
-Our work puts forth the first (global universally) composable (GUC) treatment of PoS-based blockchains in a setting that captures—for the first time in GUC—arbitrary numbers of parties that may not be fully operational, e.g., due to network problems, reboots, or updates of their OS that affect all or just some of their local resources including their network interface and clock. This setting, which we refer to as dynamic availability, naturally captures decentralized environments within which real-world deployed blockchain protocols are assumed to operate.
-We observe that none of the existing PoS-based blockchain protocols can realize the ledger functionality under dynamic availability in the same way that bitcoin does (using only the information available in the genesis block). To address this we propose a new PoS-based protocol, “Ouroboros Genesis”, that adapts one of the latest cryptographically-secure PoS-based blockchain protocols with a novel chain selection rule. The rule enables new or offline parties to safely (re-)join and bootstrap their blockchain from the genesis block without any trusted advice—such as checkpoints—or assumptions regarding past availability. We say that such a blockchain protocol can “bootstrap from genesis.”
-We prove the GUC security of Ouroboros Genesis against a fully adaptive adversary controlling less than half of the total stake. Our model allows adversarial scheduling of messages in a network with delays and captures the dynamic availability of participants in the worst case. Importantly, our protocol is effectively independent of both the maximum network delay and the minimum level of availability— both of which are run-time parameters. Proving the security of our construction against an adaptive adversary requires a novel martingale technique that may be of independent interest in the analysis of blockchain protocols.
+### Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake (2019) [link](https://eprint.iacr.org/2018/1132.pdf)  
 
-### But Why Does It Work? A Rational Protocol Design Treatment of Bitcoin. (2018) [link](https://eprint.iacr.org/2018/138.pdf)  
-
-An exciting recent line of work has focused on formally investigating the core cryptographic assumptions underlying the security of Bitcoin. In a nutshell, these works conclude that Bitcoin is secure if and only if the majority of the mining power is honest. Despite their great impact, however, these works do not address an incisive question asked by positivists and Bitcoin critics, which is fuelled by the fact that Bitcoin indeed works in reality: Why should the real-world system adhere to these assumptions?
-
-In this work we employ the machinery from the Rational Protocol Design (RPD) framework by Garay et al. [FOCS’13] to analyze Bitcoin and address questions such as the above. We show assuming a natural class of incentives for the miners’ behavior—i.e., rewarding them for adding blocks to the blockchain but having them pay for mining—where one can reserve the honest majority assumption as a fallback, or even, depending on the application, completely replace it by the assumption that the miners aim to maximize their revenue.
-
-Our results underscore the appropriateness of RPD as a “rational cryptography” framework for analyzing Bitcoin. Along the way, we devise significant extensions to the original RPD machinery that broaden its applicability to cryptocurrencies, which may be of independent interest.
+We present Ouroboros Crypsinous, the first formally analyzed privacy-preserving proof-of-stake blockchain protocol. To model its security we give a thorough treatment of private ledgers in the (G)UC setting that might be of independent interest. To prove our protocol secure against adaptive attacks, we introduce a new coin evolution technique relying on SNARKs, and key-private forward-secure encryption. The latter primitive—and the associated construction—can be of independent interest. We stress that existing approaches to private blockchain, such as the proof-of-work-based Zerocash are analyzed only against static corruptions.
 
 ---
 
@@ -1065,44 +1150,9 @@ System F, also known as the polymorphic λ-calculus, is a typed λ-calculus inde
 
 ---
 
-## Markulf Kohlweiss
-
-### Mining for Privacy: How to Bootstrap a Snarky Blockchain (2021) [link](https://eprint.iacr.org/2020/401.pdf)  
-
-Non-interactive zero-knowledge proofs, and more specifically succinct non-interactive zero-knowledge arguments (zk-SNARKS), have been proven to be the “swiss army knife” of the blockchain and distributed ledger space, with a variety of applications in privacy, interoperability and scalability. Many commonly used SNARK systems rely on a structured reference string, the secure generation of which turns out to be their Achilles heel: If the randomness used for the generation is known, the soundness of the proof system can be broken with devastating consequences for the underlying blockchain system that utilises them. In this work we describe and analyze, for the first time, a blockchain mechanism that produces a secure SRS with the characteristic that security is shown for the exact same conditions under which the blockchain protocol is proven to be secure. Our mechanism makes use of the recent discovery of updateable structure reference strings to perform this secure generation in a fully distributed manner. In this way, the SRS emanates from the normal operation of the blockchain protocol itself without the need of additional security assumptions or off-chain computation and/or verification. We provide concrete guidelines for the parameterisation of this system which allows for the completion of a secure setup in a reasonable period of time. We also provide an incentive scheme that, when paired with the update mechanism, properly incentivises participants into contributing to secure reference string generation.
-
-### Another Look at Extraction and Randomization of Groth's zk-SNARK (2021) [link](https://fc21.ifca.ai/papers/262.pdf)  
-
-Due to the simplicity and performance of zk-SNARKs they are widely used in real-world cryptographic protocols, including blockchain and smart contract systems. Simulation Extractability (SE) is a necessary security property for a NIZK argument to achieve Universal Composability (UC), a common requirement for such protocols. Most of the works that investigated SE focus on its strong variant which implies proof nonmalleability. In this work we investigate a relaxed weaker notion, that allows proof randomization, while guaranteeing statement non-malleability, which we argue to be a more natural security property. First, we show that it is already achievable by Groth16, arguably the most efficient and widely deployed SNARK nowadays. Second, we show that because of this, Groth16 can be efficiently transformed into a black-box weakly SE NIZK, which is sufficient for UC protocols.
-To support the second claim, we present and compare two practical constructions, both of which strike different performance tradeoffs:
-– Int-Groth16 makes use of a known transformation that encrypts the witness inside the SNARK circuit. We instantiate this transformation with an efficient SNARK-friendly encryption scheme.
-– Ext-Groth16 is based on the SAVER encryption scheme (Lee et al.) that plugs the encrypted witness directly into the verification equation, externally to the circuit. We
-prove that Ext-Groth16 is black-box weakly SE and, contrary to Int-Groth16, that its proofs are fully randomizable.
-
-### Consistency for Functional Encryption (2020) [link](https://eprint.iacr.org/2020/137.pdf)  
-
-In functional encryption (FE) a sender, Alice, encrypts plaintexts that a receiver, Bob, can obtain functional evaluations of, while Charlie is responsible for initializing the encryption keys and issuing the decryption keys. Standard notions of security for FE deal with a malicious Bob and how the confidentiality of Alice's messages can be maintained taking into account the leakage that occurs due to the functional keys that are revealed to the adversary via various forms of indistinguishability experiments that correspond to IND-CPA, IND-CCA and simulation-based security. In this work we provide a complete and systematic investigation of Consistency, a natural security property for FE, that deals with attacks that can be mounted by Alice, Charlie or a collusion of the two against Bob. We develop three main types of consistency notions according to which set of parties is corrupted and investigate their relation to the standard security properties of FE.
-
-We then provide explicit constructions that achieve consistency either directly via a construction based on MDDH for specific function classes of inner products over a modulo group or generically for all the consistency types via compilers using standard cryptographic tools. Finally, we put forth a universally composable treatment of FE and we show that our consistency notions naturally complement FE security by proving how they imply (and are implied by) UC security depending on which set of parties is corrupted thereby yielding a complete characterization of consistency for FE.
-
-### Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updateable Structured Reference Strings (2019) [link](https://eprint.iacr.org/2019/099.pdf)  
-
-Zero-knowledge proofs have become an important tool for addressing privacy and scalability concerns in cryptocurrencies and other applications. In many systems each client downloads and verifies every new proof, and so proofs must be small and cheap to verify. The most practical schemes require either a trusted setup, as in (pre-processing) zk-SNARKs, or verification complexity that scales linearly with the complexity of the relation, as in Bulletproofs. The structured reference strings required by most zk-SNARK schemes can be constructed with multi-party computation protocols, but the resulting parameters are specific to an individual relation. Groth et al. discovered a zk-SNARK protocol with a universal and updateable structured reference string, however the string scales quadratically in the size of the supported relations.
-Here we describe a zero-knowledge SNARK, Sonic, which sup- ports a universal and continually updateable structured reference string that scales linearly in size. Sonic proofs are constant size, and in the batch verification context the marginal cost of verification is comparable with the most efficient SNARKs in the literature. We also describe a generally useful technique in which untrusted “helpers” can compute advice which allows batches of proofs to be verified more efficiently.
-
-### Kachina - Foundations of Private Smart Contracts (2019) [link](https://eprint.iacr.org/2020/543.pdf)  
-
-Smart contracts present a uniform approach for deploying distributed computation and have become a popular means to develop security critical applications. A major barrier to adoption for many applications is the public nature of existing systems, such as Ethereum. Several systems satisfying various definitions of privacy and requiring various trust assumptions have been proposed; however, none achieved the universality and uniformity that Ethereum achieved for non-private contracts: One unified method to construct most contracts. We provide a unified security model for private smart contracts which is based on the Universal Composition (UC) model and propose a novel core protocol, Kachina, for deploying privacy-preserving smart contracts, which encompasses previous systems. We demonstrate the Kachina method of smart contract development, using it to construct a contract that implements privacy-preserving payments, along the lines of Zerocash, which is provably secure in the UC setting and facilitates concurrency.
-
-### Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake (2019) [link](https://eprint.iacr.org/2018/1132.pdf)  
-
-We present Ouroboros Crypsinous, the first formally analyzed privacy-preserving proof-of-stake blockchain protocol. To model its security we give a thorough treatment of private ledgers in the (G)UC setting that might be of independent interest. To prove our protocol secure against adaptive attacks, we introduce a new coin evolution technique relying on SNARKs, and key-private forward-secure encryption. The latter primitive—and the associated construction—can be of independent interest. We stress that existing approaches to private blockchain, such as the proof-of-work-based Zerocash are analyzed only against static corruptions.
-
----
-
 ## Simon Thompson
 
-### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://fc21.ifca.ai/wtsc/WTSC21paper14.pdf)  
 
 Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
@@ -1160,6 +1210,112 @@ In this work, we show negative results on the tamper-resilience of a wide class 
 ### Memory Lower Bounds of Reductions Revisited (2018) [link](https://eprint.iacr.org/2018/155.pdf)  
 
 In Crypto 2017, Auerbach et al. initiated the study on memory-tight reductions and proved two negative results on the memory-tightness of restricted black-box reductions from multi-challenge security to single-challenge security for signatures and an artificial hash function. In this paper, we revisit the results by Auerbach et al. and show that for a large class of reductions treating multi-challenge security, it is impossible to avoid loss of memory-tightness unless we sacrifice the efficiency of their running-time. Specifically, we show three lower bound results. Firstly, we show a memory lower bound of natural black-box reductions from the multi-challenge unforgeability of unique signatures to any computational assumption. Then we show a lower bound of restricted reductions from multi-challenge security to single-challenge security for a wide class of cryptographic primitives with unique keys in the multi-user setting. Finally, we extend the lower bound result shown by Auerbach et al. treating a hash function to one treating any hash function with a large domain.
+
+---
+
+## Michael Peyton Jones
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
+
+### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
+
+### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
+
+### The Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/T24L95MI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Bitcoin and Ethereum, hosting the two currently most valuable and popular cryptocurrencies, use two rather different ledger models, known as the UTXO model and the account model, respectively. At the same time, these two public blockchains differ strongly in the expressiveness of the smart contracts that they support. This is no coincidence. Ethereum chose the account model explicitly to facilitate more expressive smart contracts. On the other hand, Bitcoin chose UTXO also for good reasons, including that its semantic model stays simple in a complex concurrent and distributed computing environment. This raises the question of whether it is possible to have expressive smart contracts, while keeping the semantic simplicity of the UTXO model.
+In this paper, we answer this question affirmatively. We present Extended UTXO (EUTXO), an extension to Bitcoin’s UTXO model that supports a substantially more expressive form of validation scripts, including scripts that implement general state machines and enforce invariants across entire transaction chains.
+To demonstrate the power of this model, we also introduce a form of state machines suitable for execution on a ledger, based on Mealy machines and called Constraint Emitting Machines (CEM). We formalise CEMs, show how to compile them to EUTXO, and show a weak bisimulation between the two systems. All of our work is formalised using the Agda proof assistant.
+
+### Unraveling recursion: compiling an IR with recursion to System F (2019) [link](https://api.zotero.org/groups/478201/items/3HLCVVTF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Lambda calculi are often used as intermediate representations for compilers. However, they require extensions to handle higherlevel features of programming languages. In this paper we show how to construct an IR based on System F<sub>ω</sub><sup>µ</sup> which supports recursive functions and datatypes, and describe how to compile it to System F<sub>ω</sub><sup>µ</sup>. Our IR was developed for commercial use at the IOHK company, where it is used as part of a compilation pipeline for smart contracts running on a blockchain.
+
+### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
+
+This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
+
+Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
+
+---
+
+## Manuel Chakravarty
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
+
+### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
+
+State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
+
+A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
+
+In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
+
+We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
+
+### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
+
+### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
+
+### The Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/T24L95MI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Bitcoin and Ethereum, hosting the two currently most valuable and popular cryptocurrencies, use two rather different ledger models, known as the UTXO model and the account model, respectively. At the same time, these two public blockchains differ strongly in the expressiveness of the smart contracts that they support. This is no coincidence. Ethereum chose the account model explicitly to facilitate more expressive smart contracts. On the other hand, Bitcoin chose UTXO also for good reasons, including that its semantic model stays simple in a complex concurrent and distributed computing environment. This raises the question of whether it is possible to have expressive smart contracts, while keeping the semantic simplicity of the UTXO model.
+In this paper, we answer this question affirmatively. We present Extended UTXO (EUTXO), an extension to Bitcoin’s UTXO model that supports a substantially more expressive form of validation scripts, including scripts that implement general state machines and enforce invariants across entire transaction chains.
+To demonstrate the power of this model, we also introduce a form of state machines suitable for execution on a ledger, based on Mealy machines and called Constraint Emitting Machines (CEM). We formalise CEMs, show how to compile them to EUTXO, and show a weak bisimulation between the two systems. All of our work is formalised using the Agda proof assistant.
+
+### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
+
+This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
+
+Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
+
+---
+
+## Dimitris Karakostas
+
+### Conclave: A Collective Stake Pool Protocol (2021) [link](https://eprint.iacr.org/2021/742.pdf)  
+
+Proof-of-Stake (PoS) distributed ledgers are the most common alternative to Bitcoin’s Proof-of-Work (PoW) paradigm, replacing the hardware dependency with stake, i.e., assets that a party controls. Similar to PoW’s mining pools, PoS’s stake pools, i.e., collaborative entities comprising of multiple stakeholders, allow a party to earn rewards more regularly, compared to participating on an individual basis. However, stake pools tend to increase centralization, since they are typically managed by a single party that acts on behalf of the pool’s members. In this work we propose Conclave, a formal design of a Collective Stake Pool, i.e., a decentralized pool with no single point of authority. We formalize Conclave as an ideal functionality and implement it as a distributed protocol, based on standard cryptographic primitives. Among Conclave’s building blocks is a weighted threshold signature scheme (WTSS); to that end, we define a WTSS ideal functionality — which might be of independent interest — and propose two constructions based on threshold ECDSA, which enable (1) fast trustless setup and (2) identifiable aborts.
+
+### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
+
+Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
+
+### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
+
+Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
+
+### Account Management in Proof of Stake Ledgers (2020) [link](https://eprint.iacr.org/2020/525.pdf)  
+
+Blockchain protocols based on Proof-of-Stake (PoS) depend — by nature — on the active participation of stakeholders. If users are offline and abstain from the PoS consensus mechanism, the system’s security is at risk, so it is imperative to explore ways to both maximize the level of participation and minimize the effects of non-participation. One such option is stake representation, such that users can delegate their participation rights and, in the process, form “stake pools”. The core idea is that stake pool operators always participate on behalf of regular users, while the users retain the ownership of their assets. Our work provides a formal PoS wallet construction that enables delegation and stake pool formation. While investigating the construction of addresses in this setting, we distil and explore address malleability, a security property that captures the ability of an attacker to manipulate the delegation information associated with an address. Our analysis consists of identifying multiple levels of malleability, which are taken into account in our paper’s core result. We then introduce the first ideal functionality of a PoS wallet’s core which captures the PoS wallet’s capabilities and is realized as a secure protocol based on standard cryptographic primitives. Finally, we cover how to use the wallet core in conjunction with a PoS ledger, as well as investigate how delegation and stake pools affect a PoS system’s security.
+
+### Cryptocurrency Egalitarianism: A Quantitative Approach (2019) [link](https://arxiv.org/pdf/1907.02434.pdf)  
+
+Since the invention of Bitcoin one decade ago, numerous cryptocurrencies have sprung into existence. Among these, proof-of-work is the most common mechanism for achieving consensus, whilst a number of coins have adopted "ASIC-resistance" as a desirable property, claiming to be more "egalitarian", where egalitarianism refers to the power of each coin to participate in the creation of new coins. While proof-of-work consensus dominates the space, several new cryptocurrencies employ alternative consensus, such as proof-of-stake in which block minting opportunities are based on monetary ownership. A core criticism of proof-of-stake revolves around it being less egalitarian by making the rich richer, as opposed to proof-of-work in which everyone can contribute equally according to their computational power. In this paper, we give the first quantitative definition of a cryptocurrency's egalitarianism. Based on our definition, we measure the egalitarianism of popular cryptocurrencies that (may or may not) employ ASIC-resistance, among them Bitcoin, Ethereum, Litecoin, and Monero. Our simulations show, as expected, that ASIC-resistance increases a cryptocurrency's egalitarianism. We also measure the egalitarianism of a stake-based protocol, Ouroboros, and a hybrid proof-of-stake/proof-of-work cryptocurrency, Decred. We show that stake-based cryptocurrencies, under correctly selected parameters, can be perfectly egalitarian, perhaps contradicting folklore belief.
+
+### A Formal Treatment of Hardware Wallets (2019) [link](https://eprint.iacr.org/2019/034.pdf)  
+
+Bitcoin, being the most successful cryptocurrency, has been repeatedly attacked with many users losing their funds. The industry's response to securing the user's assets is to offer tamper-resistant hardware wallets. Although such wallets are considered to be the most secure means for managing an account, no formal attempt has been previously done to identify, model and formally verify their properties. This paper provides the first formal model of the Bitcoin hardware wallet operations. We identify the properties and security parameters of a Bitcoin wallet and formally define them in the Universal Composition (UC) Framework. We present a modular treatment of a hardware wallet ecosystem, by realizing the wallet functionality in a hybrid setting defined by a set of protocols. This approach allows us to capture in detail the wallet's components, their interaction and the potential threats. We deduce the wallet's security by proving that it is secure under common cryptographic assumptions, provided that there is no deviation in the protocol execution. Finally, we define the attacks that are successful under a protocol deviation, and analyze the security of commercially available wallets.
 
 ---
 
@@ -1221,36 +1377,6 @@ We propose three methods for determination of required number of confirmation bl
 We propose the Ethereum Classic Treasury System (ECTS) whose main purpose is to establish a decentralized funding mechanism for development and maintenance of the Ethereum Classic platform. Anyone can submit a project proposal and the stakeholders will decide on its necessity through a transparent voting procedure. The system is fully verifiable, having no significant influence on ETC performance. The report also takes into account ECIP 1017 that changes Ethereum Classic monetary policy and emission schedule. We expect that the ECTS implementation will increase stability and the outlook of the system, providing additional benefits both for stakeholders and miners from a more stable and predictable system. 
  
 https://www.youtube.com/watch?v=zxZoSjnHN84
-
----
-
-## Michael Peyton Jones
-
-### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
-
-### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
-
-### The Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/T24L95MI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Bitcoin and Ethereum, hosting the two currently most valuable and popular cryptocurrencies, use two rather different ledger models, known as the UTXO model and the account model, respectively. At the same time, these two public blockchains differ strongly in the expressiveness of the smart contracts that they support. This is no coincidence. Ethereum chose the account model explicitly to facilitate more expressive smart contracts. On the other hand, Bitcoin chose UTXO also for good reasons, including that its semantic model stays simple in a complex concurrent and distributed computing environment. This raises the question of whether it is possible to have expressive smart contracts, while keeping the semantic simplicity of the UTXO model.
-In this paper, we answer this question affirmatively. We present Extended UTXO (EUTXO), an extension to Bitcoin’s UTXO model that supports a substantially more expressive form of validation scripts, including scripts that implement general state machines and enforce invariants across entire transaction chains.
-To demonstrate the power of this model, we also introduce a form of state machines suitable for execution on a ledger, based on Mealy machines and called Constraint Emitting Machines (CEM). We formalise CEMs, show how to compile them to EUTXO, and show a weak bisimulation between the two systems. All of our work is formalised using the Agda proof assistant.
-
-### Unraveling recursion: compiling an IR with recursion to System F (2019) [link](https://api.zotero.org/groups/478201/items/3HLCVVTF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Lambda calculi are often used as intermediate representations for compilers. However, they require extensions to handle higherlevel features of programming languages. In this paper we show how to construct an IR based on System F<sub>ω</sub><sup>µ</sup> which supports recursive functions and datatypes, and describe how to compile it to System F<sub>ω</sub><sup>µ</sup>. Our IR was developed for commercial use at the IOHK company, where it is used as part of a compilation pipeline for smart contracts running on a blockchain.
-
-### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
-
-This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
-
-Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
 
 ---
 
@@ -1317,45 +1443,9 @@ https://www.youtube.com/watch?v=zxZoSjnHN84
 
 ---
 
-## Manuel Chakravarty
-
-### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
-
-State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
-
-A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
-
-In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
-
-We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
-
-### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
-
-### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
-
-### The Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/T24L95MI/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Bitcoin and Ethereum, hosting the two currently most valuable and popular cryptocurrencies, use two rather different ledger models, known as the UTXO model and the account model, respectively. At the same time, these two public blockchains differ strongly in the expressiveness of the smart contracts that they support. This is no coincidence. Ethereum chose the account model explicitly to facilitate more expressive smart contracts. On the other hand, Bitcoin chose UTXO also for good reasons, including that its semantic model stays simple in a complex concurrent and distributed computing environment. This raises the question of whether it is possible to have expressive smart contracts, while keeping the semantic simplicity of the UTXO model.
-In this paper, we answer this question affirmatively. We present Extended UTXO (EUTXO), an extension to Bitcoin’s UTXO model that supports a substantially more expressive form of validation scripts, including scripts that implement general state machines and enforce invariants across entire transaction chains.
-To demonstrate the power of this model, we also introduce a form of state machines suitable for execution on a ledger, based on Mealy machines and called Constraint Emitting Machines (CEM). We formalise CEMs, show how to compile them to EUTXO, and show a weak bisimulation between the two systems. All of our work is formalised using the Agda proof assistant.
-
-### Functional Blockchain Contracts (2019) [link](https://api.zotero.org/groups/478201/items/MK4NWDIF/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Distributed cryptographic ledgers —aka blockchains —should be a functional programmer’s dream. Their aim is immutability: once a block has been added to the chain it should not be altered or removed. The seminal blockchain, Bitcoin, uses a graph-based model that is purely functional in nature. But Bitcoin has limited support for smart contracts and distributed applications. The seminal smart-contract platform, Ethereum, uses an imperative and object-oriented model of accounts. Ethereum has been subject to numerous exploits, often linked to its use of shared mutable state by way of its imperative and object-oriented features in a concurrent and distributed system. Coding a distributed application for Ethereum requires two languages: Javascript to run off-chain, which submits transaction written in Solidity to run on-chain.
-
-This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
-
-Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
-
----
-
 ## Pablo Lamela Seijas
 
-### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://fc21.ifca.ai/wtsc/WTSC21paper14.pdf)  
 
 Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
@@ -1377,30 +1467,6 @@ An alternative solution is provided by domain-specific languages (DSLs), which a
 ### Scripting smart contracts for distributed ledger technology (2016) [link](http://eprint.iacr.org/2016/1156)  
 
 We give an overview of the scripting languages used in existing cryptocurrencies, and in particular we review in some detail the scripting languages of Bitcoin, Nxt and Ethereum, in the context of a high-level overview of Distributed Ledger Technology and cryptocurrencies. We survey different approaches, and give an overview of critiques of existing languages. We also cover technologies that might be used to underpin extensions and innovations in scripting and contracts, including technologies for verification, such as zero knowledge proofs, proof-carrying code and static analysis, as well as approaches to making systems more efficient, e.g. Merkelized Abstract Syntax Trees.
-
----
-
-## Dimitris Karakostas
-
-### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
-
-Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most vulnerable when mining participation is low. During these periods an attacker can mount devastating attacks, such as double spending or censorship of transactions. Checkpointing has been proposed as a mechanism to mitigate such 51% attacks. The core idea is to employ an external set of parties that securely run an assisting service which guarantees the ledger's properties and can be relied upon at times when the invested hashing power is low. We realize the assisting service in two ways, via checkpointing and timestamping, and show that a ledger, which employs either, is secure with high probability, even in the presence of an adversarial mining majority. We put forth the first rigorous study of checkpointing as a mechanism to protect PoW ledgers from 51% attacks. Notably, our design is the first to offer both consistency and liveness guarantees, even under adversarial mining majorities. Our liveness analysis also identifies a previously undocumented attack, namely front-running, which enables Denial-of-Service against existing checkpointed ledger systems. We showcase the liveness guarantees of our mechanism by evaluating the checkpointed version of Ethereum Classic, a blockchain which recently suffered a 51% attack, and build a federated distributed checkpointing service, which provides high assurance with low performance requirements. Finally, we prove the security of our timestamping mechanism, build a fully decentralized timestamping solution, by utilizing a secure distributed ledger, and evaluate its performance on the existing Bitcoin and Ethereum systems.
-
-### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
-
-Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
-
-### Account Management in Proof of Stake Ledgers (2020) [link](https://eprint.iacr.org/2020/525.pdf)  
-
-Blockchain protocols based on Proof-of-Stake (PoS) depend — by nature — on the active participation of stakeholders. If users are offline and abstain from the PoS consensus mechanism, the system’s security is at risk, so it is imperative to explore ways to both maximize the level of participation and minimize the effects of non-participation. One such option is stake representation, such that users can delegate their participation rights and, in the process, form “stake pools”. The core idea is that stake pool operators always participate on behalf of regular users, while the users retain the ownership of their assets. Our work provides a formal PoS wallet construction that enables delegation and stake pool formation. While investigating the construction of addresses in this setting, we distil and explore address malleability, a security property that captures the ability of an attacker to manipulate the delegation information associated with an address. Our analysis consists of identifying multiple levels of malleability, which are taken into account in our paper’s core result. We then introduce the first ideal functionality of a PoS wallet’s core which captures the PoS wallet’s capabilities and is realized as a secure protocol based on standard cryptographic primitives. Finally, we cover how to use the wallet core in conjunction with a PoS ledger, as well as investigate how delegation and stake pools affect a PoS system’s security.
-
-### Cryptocurrency Egalitarianism: A Quantitative Approach (2019) [link](https://arxiv.org/pdf/1907.02434.pdf)  
-
-Since the invention of Bitcoin one decade ago, numerous cryptocurrencies have sprung into existence. Among these, proof-of-work is the most common mechanism for achieving consensus, whilst a number of coins have adopted "ASIC-resistance" as a desirable property, claiming to be more "egalitarian", where egalitarianism refers to the power of each coin to participate in the creation of new coins. While proof-of-work consensus dominates the space, several new cryptocurrencies employ alternative consensus, such as proof-of-stake in which block minting opportunities are based on monetary ownership. A core criticism of proof-of-stake revolves around it being less egalitarian by making the rich richer, as opposed to proof-of-work in which everyone can contribute equally according to their computational power. In this paper, we give the first quantitative definition of a cryptocurrency's egalitarianism. Based on our definition, we measure the egalitarianism of popular cryptocurrencies that (may or may not) employ ASIC-resistance, among them Bitcoin, Ethereum, Litecoin, and Monero. Our simulations show, as expected, that ASIC-resistance increases a cryptocurrency's egalitarianism. We also measure the egalitarianism of a stake-based protocol, Ouroboros, and a hybrid proof-of-stake/proof-of-work cryptocurrency, Decred. We show that stake-based cryptocurrencies, under correctly selected parameters, can be perfectly egalitarian, perhaps contradicting folklore belief.
-
-### A Formal Treatment of Hardware Wallets (2019) [link](https://eprint.iacr.org/2019/034.pdf)  
-
-Bitcoin, being the most successful cryptocurrency, has been repeatedly attacked with many users losing their funds. The industry's response to securing the user's assets is to offer tamper-resistant hardware wallets. Although such wallets are considered to be the most secure means for managing an account, no formal attempt has been previously done to identify, model and formally verify their properties. This paper provides the first formal model of the Bitcoin hardware wallet operations. We identify the properties and security parameters of a Bitcoin wallet and formally define them in the Universal Composition (UC) Framework. We present a modular treatment of a hardware wallet ecosystem, by realizing the wallet functionality in a hybrid setting defined by a set of protocols. This approach allows us to capture in detail the wallet's components, their interaction and the potential threats. We deduce the wallet's security by proving that it is secure under common cryptographic assumptions, provided that there is no deviation in the protocol execution. Finally, we define the attacks that are successful under a protocol deviation, and analyze the security of commercially available wallets.
 
 ---
 
@@ -1529,6 +1595,108 @@ Two of the most significant challenges in the design of blockchain protocols is 
 
 ---
 
+## Duncan Coutts
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Introduction to the design of the Data Diffusion and Networking for Cardano Shelley* (2020) [link](https://api.zotero.org/groups/478201/items/5P4V3WEG/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+
+
+### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
+
+Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
+
+The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
+
+### Formal specification for a Cardano wallet (2018) [link](https://api.zotero.org/groups/478201/items/NRWXWEYR/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+This document is a formal specification of a wallet for Cardano (or any UTxO-based cryptocurrency).  The purpose of this document is to help understand some of the subtleties and give a reasonable starting point for tests and implementations.
+To the best of our knowledge, no other existing cryptocurrency wallet comes with such a formal specification.
+We have therefore attempted to formalise the core functionality of the existing wallet and let our knowledge of the difficulties with the current implementation be a guide in deciding which aspects of the wallet needed more careful thought.  We also state and (partially) prove various properties of the wallet models we develop, not only to prove its correctness but also to try and capture our intuitions about what a cryptocurrency wallet is, exactly.
+
+---
+
+## Nikos Leonardos
+
+### Mining in Logarithmic Space (2021) [link](https://eprint.iacr.org/2021/623.pdf)  
+
+Blockchains maintain two types of data: Application data and consensus data. Towards long-term blockchain scalability, both of these must be pruned. While a large body of literature has explored the pruning of application data (UTXOs, account balances, and contract state), little has been said about the permanent pruning of consensus data (block headers). We present a protocol which allows pruning the blockchain by garbage collecting old blocks as they become unnecessary. These blocks can simply be discarded and are no longer stored by any miner. We show that all miners can be light miners with no harm to security. Our protocol is based on the notion of superblocks, blocks that have achieved an unusually high difficulty. We leverage them to represent underlying proof-of-work without ever illustrating it, storing it, or transmitting it. After our pruning is applied, the storage and communication requirements for consensus data is reduced exponentially.
+
+We develop new probabilistic mathematical methods to analyze our protocol in the random oracle model. We prove our protocol is both secure and succinct under an uninterrupted honest majority assumption for 1/3 adversaries. Our protocol is the first to achieve always secure, always succinct, and online Non-Interactive Proofs of Proof-of-Work, all necessary components for a logarithmic space mining scheme. Our work has applications beyond mining and also constitutes an improvement in state-of-the-art superlight clients and cross-chain bridges.
+
+### Full Analysis of Nakamoto Consensus in Bounded-Delay Networks (2020) [link](https://eprint.iacr.org/2020/277.pdf)  
+
+Nakamoto consensus, arguably the most exciting development in distributed computing in the last few years, is in a sense a recasting of the traditional state-machine-replication problem in an unauthenticated setting, where furthermore parties come and go without warning. The protocol relies on a cryptographic primitive known as proof of work (PoW) which is used to throttle message passing with the PoW difficulty level being adjusted appropriately throughout the course of the protocol execution.
+
+While the original formulation was only accompanied by rudimentary analysis, significant and steady progress has been made in abstracting out the protocol’s properties and providing a formal analysis under various restrictions, starting with the work by Garay, Kiayias and Leonardos [Eurocrypt ’15], for a simplified version of the protocol which excluded PoW difficulty adjustment and assumed a fixed number of parties as well as synchronous communication rounds. These assumptions have since been somewhat relaxed, first by Pass, Seeman and Shelat [Eurocrypt ’17] who also focused on the simplified version of the protocol but on the bounded-delay model of communication, and by Garay, Kiayias and Leonardos [Crypto ’17] who looked into the full protocol including the PoW difficulty adjustment mechanism with a variable number of parties but assuming synchronous communication and a predetermined schedule of participation. Despite the above progress, the full analysis of the protocol in the more realistic setting of bounded delays and dynamic participation has remained elusive.
+
+This paper’s main result is the proof that Nakamoto’s protocol achieves, under suitable conditions, consistency and liveness in bounded-delay networks with adaptive (as opposed to predetermined) dynamic participation assuming, as before, that the majority of the computational power favors the honest parties. While our techniques draw from previous analyses, our objective is significantly more challenging, demanding the introduction of new techniques and insights in order to realize it.
+
+### Compact Storage of Superblocks for NIPoPoW Applications (2019) [link](https://eprint.iacr.org/2019/1444.pdf)  
+
+Blocks in proof-of-work (PoW) blockchains satisfy the PoW equation H(B) ≤ T. If additionally a block satisfies H(B) ≤ T2<sup>−µ</sup>, it is called a µ-superblock. Superblocks play an important role in the construction of compact blockchain proofs which allows the compression of PoW blockchains into so-called Non-Interactive Proofs of Proof-ofWork (NIPoPoWs). These certificates are essential for the construction of superlight clients, which are blockchain wallets that can synchronize exponentially faster than traditional SPV clients. 
+
+In this work, we measure the distribution of superblocks in the Bitcoin blockchain. We find that the superblock distribution within the blockchain follows expectation, hence we empirically verify that the distribution of superblocks within the Bitcoin blockchain has not been adversarially biased. NIPoPoWs require that each block in a blockchain points to a sample of previous blocks in the blockchain. These pointers form a data structure called the interlink. We give efficient ways to store the interlink data structure. Repeated superblock references within an interlink can be omitted with no harm to security. Hence, it is more efficient to store a set of superblocks rather than a list. We show that, in honest executions, this simple observation reduces the number of superblock references by approximately a half in expectation. We then verify our theoretical result by measuring the improvement over existing blockchains in terms of the interlink sizes (which we improve by 79%) and the sizes of succinct NIPoPoWs (which we improve by 25%). As such, we show that deduplication allows superlight clients to synchronize 25% faster.
+
+### The Bitcoin Backbone Protocol with Chains of Variable Difficulty (2017) [link](http://eprint.iacr.org/2016/1048)  
+
+Bitcoin’s innovative and distributedly maintained blockchain data structure hinges on the adequate degree of difficulty of so-called “proofs of work,” which miners have to produce in order for transactions to be inserted. Importantly, these proofs of work have to be hard enough so that miners have an opportunity to unify their views in the presence of an adversary who interferes but has bounded computational power, but easy enough to be solvable regularly and enable the miners to make progress. As such, as the miners’ population evolves over time, so should the difficulty of these proofs. Bitcoin provides this adjustment mechanism, with empirical evidence of a constant block generation rate against such population changes.
+
+In this paper we provide the first (to our knowledge) formal analysis of Bitcoin’s target (re)calculation function in the cryptographic setting, i.e., against all possible adversaries aiming to subvert the protocol’s properties. We extend the q-bounded synchronous model of the Bitcoin backbone protocol [Eurocrypt 2015], which posed the basic properties of Bitcoin’s underlying blockchain data structure and shows how a robust public transaction ledger can be built on top of them, to environments that may introduce or suspend parties in each round. We provide a set of necessary conditions with respect to the way the population evolves under which the “Bitcoin backbone with chains of variable difficulty” provides a robust transaction ledger in the presence of an actively malicious adversary controlling a fraction of the miners strictly below 50% in each instant of the execution. Our work introduces new analysis techniques and tools to the area of blockchain systems that may prove useful in analyzing other blockchain protocols.
+
+---
+
+## Polina Vinogradova
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
+
+### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
+
+### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
+
+### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
+
+Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
+
+The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
+
+---
+
+## Thomas Kerber
+
+### Composition with Knowledge Assumptions (2021) [link](https://eprint.iacr.org/2021/165.pdf)  
+
+Zero-knowledge succinct non-interactive arguments (zk-SNARKs) rely on knowledge assumptions for their security. Meanwhile, as the complexity and scale of cryptographic systems continues to grow, the composition of secure protocols is of vital importance. The current gold standards of composable security, the Universal Composability and Constructive Cryptography frameworks cannot capture knowledge assumptions, as their core proofs of composition prohibit white-box extraction. In this paper, we present a formal model allowing the composition of knowledge assumptions. Despite showing impossibility for the general case, we demonstrate the model’s usefulness when limiting knowledge assumptions to few instances of protocols at a time. We finish by providing the first instance of a simultaneously succinct and composable zk-SNARK, by using existing results within our framework.
+
+### Mining for Privacy: How to Bootstrap a Snarky Blockchain (2021) [link](https://eprint.iacr.org/2020/401.pdf)  
+
+Non-interactive zero-knowledge proofs, and more specifically succinct non-interactive zero-knowledge arguments (zk-SNARKS), have been proven to be the “swiss army knife” of the blockchain and distributed ledger space, with a variety of applications in privacy, interoperability and scalability. Many commonly used SNARK systems rely on a structured reference string, the secure generation of which turns out to be their Achilles heel: If the randomness used for the generation is known, the soundness of the proof system can be broken with devastating consequences for the underlying blockchain system that utilises them. In this work we describe and analyze, for the first time, a blockchain mechanism that produces a secure SRS with the characteristic that security is shown for the exact same conditions under which the blockchain protocol is proven to be secure. Our mechanism makes use of the recent discovery of updateable structure reference strings to perform this secure generation in a fully distributed manner. In this way, the SRS emanates from the normal operation of the blockchain protocol itself without the need of additional security assumptions or off-chain computation and/or verification. We provide concrete guidelines for the parameterisation of this system which allows for the completion of a secure setup in a reasonable period of time. We also provide an incentive scheme that, when paired with the update mechanism, properly incentivises participants into contributing to secure reference string generation.
+
+### Kachina - Foundations of Private Smart Contracts (2019) [link](https://eprint.iacr.org/2020/543.pdf)  
+
+Smart contracts present a uniform approach for deploying distributed computation and have become a popular means to develop security critical applications. A major barrier to adoption for many applications is the public nature of existing systems, such as Ethereum. Several systems satisfying various definitions of privacy and requiring various trust assumptions have been proposed; however, none achieved the universality and uniformity that Ethereum achieved for non-private contracts: One unified method to construct most contracts. We provide a unified security model for private smart contracts which is based on the Universal Composition (UC) model and propose a novel core protocol, Kachina, for deploying privacy-preserving smart contracts, which encompasses previous systems. We demonstrate the Kachina method of smart contract development, using it to construct a contract that implements privacy-preserving payments, along the lines of Zerocash, which is provably secure in the UC setting and facilitates concurrency.
+
+### Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake (2019) [link](https://eprint.iacr.org/2018/1132.pdf)  
+
+We present Ouroboros Crypsinous, the first formally analyzed privacy-preserving proof-of-stake blockchain protocol. To model its security we give a thorough treatment of private ledgers in the (G)UC setting that might be of independent interest. To prove our protocol secure against adaptive attacks, we introduce a new coin evolution technique relying on SNARKs, and key-private forward-secure encryption. The latter primitive—and the associated construction—can be of independent interest. We stress that existing approaches to private blockchain, such as the proof-of-work-based Zerocash are analyzed only against static corruptions.
+
+---
+
 ## Hong-sheng Zhou
 
 ### Leakage-Resilient Cryptography from Puncturable Primitives and Obfuscation (2018) [link](https://eprint.iacr.org/2018/781.pdf)  
@@ -1609,72 +1777,6 @@ Plutus and Cardano are available open source, and Plutus Playground provides a w
 
 ---
 
-## Nikos Leonardos
-
-### Full Analysis of Nakamoto Consensus in Bounded-Delay Networks (2020) [link](https://eprint.iacr.org/2020/277.pdf)  
-
-Nakamoto consensus, arguably the most exciting development in distributed computing in the last few years, is in a sense a recasting of the traditional state-machine-replication problem in an unauthenticated setting, where furthermore parties come and go without warning. The protocol relies on a cryptographic primitive known as proof of work (PoW) which is used to throttle message passing with the PoW difficulty level being adjusted appropriately throughout the course of the protocol execution.
-
-While the original formulation was only accompanied by rudimentary analysis, significant and steady progress has been made in abstracting out the protocol’s properties and providing a formal analysis under various restrictions, starting with the work by Garay, Kiayias and Leonardos [Eurocrypt ’15], for a simplified version of the protocol which excluded PoW difficulty adjustment and assumed a fixed number of parties as well as synchronous communication rounds. These assumptions have since been somewhat relaxed, first by Pass, Seeman and Shelat [Eurocrypt ’17] who also focused on the simplified version of the protocol but on the bounded-delay model of communication, and by Garay, Kiayias and Leonardos [Crypto ’17] who looked into the full protocol including the PoW difficulty adjustment mechanism with a variable number of parties but assuming synchronous communication and a predetermined schedule of participation. Despite the above progress, the full analysis of the protocol in the more realistic setting of bounded delays and dynamic participation has remained elusive.
-
-This paper’s main result is the proof that Nakamoto’s protocol achieves, under suitable conditions, consistency and liveness in bounded-delay networks with adaptive (as opposed to predetermined) dynamic participation assuming, as before, that the majority of the computational power favors the honest parties. While our techniques draw from previous analyses, our objective is significantly more challenging, demanding the introduction of new techniques and insights in order to realize it.
-
-### Compact Storage of Superblocks for NIPoPoW Applications (2019) [link](https://eprint.iacr.org/2019/1444.pdf)  
-
-Blocks in proof-of-work (PoW) blockchains satisfy the PoW equation H(B) ≤ T. If additionally a block satisfies H(B) ≤ T2<sup>−µ</sup>, it is called a µ-superblock. Superblocks play an important role in the construction of compact blockchain proofs which allows the compression of PoW blockchains into so-called Non-Interactive Proofs of Proof-ofWork (NIPoPoWs). These certificates are essential for the construction of superlight clients, which are blockchain wallets that can synchronize exponentially faster than traditional SPV clients. 
-
-In this work, we measure the distribution of superblocks in the Bitcoin blockchain. We find that the superblock distribution within the blockchain follows expectation, hence we empirically verify that the distribution of superblocks within the Bitcoin blockchain has not been adversarially biased. NIPoPoWs require that each block in a blockchain points to a sample of previous blocks in the blockchain. These pointers form a data structure called the interlink. We give efficient ways to store the interlink data structure. Repeated superblock references within an interlink can be omitted with no harm to security. Hence, it is more efficient to store a set of superblocks rather than a list. We show that, in honest executions, this simple observation reduces the number of superblock references by approximately a half in expectation. We then verify our theoretical result by measuring the improvement over existing blockchains in terms of the interlink sizes (which we improve by 79%) and the sizes of succinct NIPoPoWs (which we improve by 25%). As such, we show that deduplication allows superlight clients to synchronize 25% faster.
-
-### The Bitcoin Backbone Protocol with Chains of Variable Difficulty (2017) [link](http://eprint.iacr.org/2016/1048)  
-
-Bitcoin’s innovative and distributedly maintained blockchain data structure hinges on the adequate degree of difficulty of so-called “proofs of work,” which miners have to produce in order for transactions to be inserted. Importantly, these proofs of work have to be hard enough so that miners have an opportunity to unify their views in the presence of an adversary who interferes but has bounded computational power, but easy enough to be solvable regularly and enable the miners to make progress. As such, as the miners’ population evolves over time, so should the difficulty of these proofs. Bitcoin provides this adjustment mechanism, with empirical evidence of a constant block generation rate against such population changes.
-
-In this paper we provide the first (to our knowledge) formal analysis of Bitcoin’s target (re)calculation function in the cryptographic setting, i.e., against all possible adversaries aiming to subvert the protocol’s properties. We extend the q-bounded synchronous model of the Bitcoin backbone protocol [Eurocrypt 2015], which posed the basic properties of Bitcoin’s underlying blockchain data structure and shows how a robust public transaction ledger can be built on top of them, to environments that may introduce or suspend parties in each round. We provide a set of necessary conditions with respect to the way the population evolves under which the “Bitcoin backbone with chains of variable difficulty” provides a robust transaction ledger in the presence of an actively malicious adversary controlling a fraction of the miners strictly below 50% in each instant of the execution. Our work introduces new analysis techniques and tools to the area of blockchain systems that may prove useful in analyzing other blockchain protocols.
-
----
-
-## Duncan Coutts
-
-### Introduction to the design of the Data Diffusion and Networking for Cardano Shelley* (2020) [link](https://api.zotero.org/groups/478201/items/5P4V3WEG/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-
-
-### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
-
-Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
-
-The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
-
-### Formal specification for a Cardano wallet (2018) [link](https://api.zotero.org/groups/478201/items/NRWXWEYR/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-This document is a formal specification of a wallet for Cardano (or any UTxO-based cryptocurrency).  The purpose of this document is to help understand some of the subtleties and give a reasonable starting point for tests and implementations.
-To the best of our knowledge, no other existing cryptocurrency wallet comes with such a formal specification.
-We have therefore attempted to formalise the core functionality of the existing wallet and let our knowledge of the difficulties with the current implementation be a guide in deciding which aspects of the wallet needed more careful thought.  We also state and (partially) prove various properties of the wallet models we develop, not only to prove its correctness but also to try and capture our intuitions about what a cryptocurrency wallet is, exactly.
-
----
-
-## Polina Vinogradova
-
-### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-A prominent use case of Ethereum smart contracts is the creation of a wide range of user-defined tokens or assets by way of smart contracts. User-defined assets are non-native on Ethereum; i.e., they are not directly supported by the ledger, but require repetitive custom code. This makes them unnecessarily inefficient, expensive, and complex. It also makes them insecure as numerous incidents on Ethereum have demonstrated. Even without stateful smart contracts, the lack of perfect fungibility of Bitcoin assets allows for implementing user-defined tokens as layer-two solutions, which also adds an additional layer of complexity. In this paper, we explore an alternative design based on Bitcoin-style UTXO ledgers. Instead of introducing general scripting capabilities together with the associated security risks, we propose an extension of the UTXO model, where we replace the accounting structure of a single cryptocurrency with a new structure that manages an unbounded number of user defined, native tokens, which we call token bundles. Token creation is controlled by forging policy scripts that, just like Bitcoin validator scripts, use a small domain-specific language with bounded computational expressiveness, thus favouring Bitcoin’s security and computational austerity. The resulting approach is lightweight, i.e., custom asset creation and transfer is cheap, and it avoids use of any global state in the form of an asset registry or similar. The proposed UTXOma model and the semantics of the scripting language have been formalised in the Agda proof assistant.
-
-### Native Custom Tokens in the Extended UTXO Model (2020) [link](https://api.zotero.org/groups/478201/items/ECHGYNKV/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-User-defined tokens —both fungible ERC-20 and non-fungible ERC-721 tokens— are central to the majority of contracts deployed on Ethereum. User-defined tokens are nonnative on Ethereum; i.e., they are not directly supported by the ledger, but require custom code. This makes them unnecessarily inefficient, expensive, and complex. The Extended UTXO Model (EUTXO) (WTSC'20) has been introduced as a generalisation of Bitcoinstyle UTXO ledgers, allowing support of more expressive smart contracts, approaching the functionality available to contracts on Ethereum. Specifically, a bisimulation argument established a formal relationship between the EUTXO ledger and a general form of state machines. Nevertheless, transaction outputs in the EUTXO model lock integral quantities of a single native cryptocurrency only, just like Bitcoin. In this paper, we study a generalisation of the EUTXO ledger model with native user-defined tokens. Following the approach proposed in a companion paper [4] for the simpler case of plain Bitcoin-style UTXO ledgers, we generalise transaction outputs to lock not merely coins of a single cryptocurrency, but entire token bundles, including custom tokens whose forging is controlled by forging policy scripts. We show that this leads to a rich ledger model that supports a broad range of interesting use cases. Our main technical contribution is a formalisation of the multi-asset EUTXO ledger in Agda, which we use to establish that the ledger with custom tokens is strictly more expressive than the original EUTXO ledger. In particular, we state and prove a transfer result for inductive and temporal properties from state machines to the multi-asset EUTXO ledger, which was out of scope for the single-currency EUTXO ledger. In practical terms, the resulting system is the basis for the smart contract system of the Cardano blockchain.
-
-### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
-
-Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
-
-The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
-
----
-
 ## Jann Müller
 
 ### UTXOma:UTXO with Multi-Asset Support (2020) [link](https://api.zotero.org/groups/478201/items/6EY4YE7D/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
@@ -1739,22 +1841,6 @@ In this paper we provide the first (to our knowledge) formal analysis of Bitcoin
 
 ---
 
-## Thomas Kerber
-
-### Mining for Privacy: How to Bootstrap a Snarky Blockchain (2021) [link](https://eprint.iacr.org/2020/401.pdf)  
-
-Non-interactive zero-knowledge proofs, and more specifically succinct non-interactive zero-knowledge arguments (zk-SNARKS), have been proven to be the “swiss army knife” of the blockchain and distributed ledger space, with a variety of applications in privacy, interoperability and scalability. Many commonly used SNARK systems rely on a structured reference string, the secure generation of which turns out to be their Achilles heel: If the randomness used for the generation is known, the soundness of the proof system can be broken with devastating consequences for the underlying blockchain system that utilises them. In this work we describe and analyze, for the first time, a blockchain mechanism that produces a secure SRS with the characteristic that security is shown for the exact same conditions under which the blockchain protocol is proven to be secure. Our mechanism makes use of the recent discovery of updateable structure reference strings to perform this secure generation in a fully distributed manner. In this way, the SRS emanates from the normal operation of the blockchain protocol itself without the need of additional security assumptions or off-chain computation and/or verification. We provide concrete guidelines for the parameterisation of this system which allows for the completion of a secure setup in a reasonable period of time. We also provide an incentive scheme that, when paired with the update mechanism, properly incentivises participants into contributing to secure reference string generation.
-
-### Kachina - Foundations of Private Smart Contracts (2019) [link](https://eprint.iacr.org/2020/543.pdf)  
-
-Smart contracts present a uniform approach for deploying distributed computation and have become a popular means to develop security critical applications. A major barrier to adoption for many applications is the public nature of existing systems, such as Ethereum. Several systems satisfying various definitions of privacy and requiring various trust assumptions have been proposed; however, none achieved the universality and uniformity that Ethereum achieved for non-private contracts: One unified method to construct most contracts. We provide a unified security model for private smart contracts which is based on the Universal Composition (UC) model and propose a novel core protocol, Kachina, for deploying privacy-preserving smart contracts, which encompasses previous systems. We demonstrate the Kachina method of smart contract development, using it to construct a contract that implements privacy-preserving payments, along the lines of Zerocash, which is provably secure in the UC setting and facilitates concurrency.
-
-### Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake (2019) [link](https://eprint.iacr.org/2018/1132.pdf)  
-
-We present Ouroboros Crypsinous, the first formally analyzed privacy-preserving proof-of-stake blockchain protocol. To model its security we give a thorough treatment of private ledgers in the (G)UC setting that might be of independent interest. To prove our protocol secure against adaptive attacks, we introduce a new coin evolution technique relying on SNARKs, and key-private forward-secure encryption. The latter primitive—and the associated construction—can be of independent interest. We stress that existing approaches to private blockchain, such as the proof-of-work-based Zerocash are analyzed only against static corruptions.
-
----
-
 ## Maxim Jourenko
 
 ### Payment Trees: Low Collateral Payments for Payment Channel Networks (2021) [link](https://eprint.iacr.org/2020/1313.pdf)  
@@ -1810,7 +1896,7 @@ The feasibility of bribing attacks on cryptocurrencies was first highlighted in 
 
 ## Alexander Nemish
 
-### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://fc21.ifca.ai/wtsc/WTSC21paper14.pdf)  
 
 Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
@@ -1826,6 +1912,50 @@ Distributed cryptographic ledgers —aka blockchains —should be a functional p
 This paper describes Plutus Platform, a functional blockchain smart contract system for coding distributed applications on top of the Cardano blockchain. Most blockchain programming platforms depend on a custom language, such as Ethereum’s Solidity, but Plutus is provided as a set of libraries for Haskell. Both off-chain and on-chain code are written in Haskell: off-chain code using the Plutus library, and on-chain code in a subset of Haskell using Template Haskell. On-chain code is compiled to a tiny functional language called Plutus Core, which is System F<sub>ω</sub> with iso-recursive types and suitable primitives.
 
 Plutus and Cardano are available open source, and Plutus Playground provides a web-based IDE that enables users to try out the system and to develop simple applications.
+
+---
+
+## Philipp Kant
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
+
+State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
+
+A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
+
+In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
+
+We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
+
+### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
+
+Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
+
+The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
+
+---
+
+## Nikos Karayannidis
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
+
+### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
+
+Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
+
+### Updatable Blockchains (2020) [link](https://eprint.iacr.org/2020/887.pdf)  
+
+Software updates for blockchain systems become a real challenge when they impact the underlying consensus mechanism. The activation of such changes might jeopardize the integrity of the blockchain by resulting in chain splits. Moreover, the software update process should be handed over to the community and this means that the blockchain should support updates without relying on a trusted party. In this paper, we introduce the notion of updatable blockchains and show how to construct blockchains that satisfy this definition. Informally, an updatable blockchain is a secure blockchain and in addition it allows to update its protocol preserving the history of the chain. In this work, we focus only on the processes that allow securely switching from one blockchain protocol to another assuming that the blockchain protocols are correct. That is, we do not aim at providing a mechanism that allows reaching consensus on what is the code of the new blockchain protocol. We just assume that such a mechanism exists (like the one proposed in NDSS 2019 by Zhang et. al), and show how to securely go from the old protocol to the new one. The contribution of this paper can be summarized as follows. We provide the first formal definition of updatable ledgers and propose the description of two compilers. These compilers take a blockchain and turn it into an updatable blockchain. The first compiler requires the structure of the current and the updated blockchain to be very similar (only the structure of the blocks can be different) but it allows for an update process more simple, efficient. The second compiler that we propose is very generic (i.e., makes few assumptions on the similarities between the structure of the current blockchain and the update blockchain). The drawback of this compiler is that it requires the new blockchain to be resilient against a specific adversarial behaviour and requires all the honest parties to be online during the update process. However, we show how to get rid of the latest requirement (the honest parties being online during the update) in the case of proof-of-work and proof-of-stake ledgers.
 
 ---
 
@@ -2099,40 +2229,6 @@ Bitcoin and its underlying blockchain protocol have received recently significan
 
 ---
 
-## Nikos Karayannidis
-
-### Efficient State Management in Distributed Ledgers (2021) [link](https://eprint.iacr.org/2021/183.pdf)  
-
-Distributed ledgers implement a storage layer, on top of which a shared state is maintained in a decentralized manner. In UTxO based ledgers, like Bitcoin, the shared state is the set of all unspent outputs (UTxOs), which serve as inputs to future transactions. The continuously increasing size of this shared state will gradually render its maintenance unaffordable. Our work investigates techniques that minimize the shared state of the distributed ledger, i.e., the in-memory UTxO set. To this end, we follow two directions: a) we propose novel transaction optimization techniques to be followed by wallets, so as to create transactions that reduce the shared state cost and b) propose a novel fee scheme that incentivizes the creation of “state-friendly” transactions. We devise an abstract ledger model, expressed via a series of algebraic operators, and define the transaction optimization problem of minimizing the shared state; we also propose a multi-layered algorithm that approximates the optimal solution to this problem. Finally, we define the necessary conditions such that a ledger’s fee scheme incentivizes proper state management and propose a state efficient fee function for Bitcoin.
-
-### Updatable Blockchains (2020) [link](https://eprint.iacr.org/2020/887.pdf)  
-
-Software updates for blockchain systems become a real challenge when they impact the underlying consensus mechanism. The activation of such changes might jeopardize the integrity of the blockchain by resulting in chain splits. Moreover, the software update process should be handed over to the community and this means that the blockchain should support updates without relying on a trusted party. In this paper, we introduce the notion of updatable blockchains and show how to construct blockchains that satisfy this definition. Informally, an updatable blockchain is a secure blockchain and in addition it allows to update its protocol preserving the history of the chain. In this work, we focus only on the processes that allow securely switching from one blockchain protocol to another assuming that the blockchain protocols are correct. That is, we do not aim at providing a mechanism that allows reaching consensus on what is the code of the new blockchain protocol. We just assume that such a mechanism exists (like the one proposed in NDSS 2019 by Zhang et. al), and show how to securely go from the old protocol to the new one. The contribution of this paper can be summarized as follows. We provide the first formal definition of updatable ledgers and propose the description of two compilers. These compilers take a blockchain and turn it into an updatable blockchain. The first compiler requires the structure of the current and the updated blockchain to be very similar (only the structure of the blocks can be different) but it allows for an update process more simple, efficient. The second compiler that we propose is very generic (i.e., makes few assumptions on the similarities between the structure of the current blockchain and the update blockchain). The drawback of this compiler is that it requires the new blockchain to be resilient against a specific adversarial behaviour and requires all the honest parties to be online during the update process. However, we show how to get rid of the latest requirement (the honest parties being online during the update) in the case of proof-of-work and proof-of-stake ledgers.
-
----
-
-## Philipp Kant
-
-### Hydra: Fast Isomorphic State Channels (2021) [link](https://eprint.iacr.org/2020/299.pdf)  
-
-State channels are an attractive layer-two solution for improving the throughput and latency of blockchains. They offer optimistic offchain settlement of payments and expedient offchain evolution of smart contracts between multiple parties without imposing any additional assumptions beyond those of the underlying blockchain. In the case of disputes, or if a party fails to respond, cryptographic evidence collected in the offchain channel is used to settle the last confirmed state onchain, such that in-progress contracts can be continued under mainchain consensus.
-
-A serious disadvantage present in current layer-two state channel protocols is that existing layer-one smart contract infrastructure and contract code cannot be reused offchain without change.
-
-In this paper, we introduce Hydra, an isomorphic multi-party state channel. Hydra simplifies offchain protocol and smart contract development by directly adopting the layer-one smart contract system, in this way allowing the same code to be used both on- and offchain. Taking advantage of the extended UTxO model, we develop a fast off-chain protocol for evolution of Hydra heads (our isomorphic state channels) that has smaller round complexity than all previous proposals and enables the state channel processing to advance on-demand, concurrently and asynchronously.
-
-We establish strong security properties for the protocol, and we present and evaluate extensive simulation results that demonstrate that Hydra approaches the physical limits of the network in terms of transaction confirmation time and throughput while keeping storage requirements at the lowest possible. Finally, our experimental methodology may be of independent interest in the general context of evaluating consensus protocols.
-
-### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
-
-Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
-
-The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
-
----
-
 ## Aydin Abadi
 
 ### Multi-instance Publicly Verifiable Time-lock Puzzle and its Applications (2021) [link](https://fc21.ifca.ai/papers/115.pdf)  
@@ -2226,6 +2322,38 @@ This Systematization of Knowledge (SoK) offers a comprehensive guide for designi
 Off-chain protocols (channels) are a promising solution to the scalability and privacy challenges of blockchain payments. Current proposals, however, require synchrony assumptions to preserve the safety of a channel, leaking to an adversary the exact amount of time needed to control the network for a successful attack. In this paper, we introduce Brick, the first payment channel that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties, called wardens. Hence, if a party wants to close a channel unilaterally, it can only get the committee’s approval for the last valid state.
 
 Additionally, Brick provides sub-second latency because it does not employ heavy-weight consensus. Instead, Brick uses consistent broadcast to announce updates and close the channel, a light-weight abstraction that is powerful enough to preserve safety and liveness to any rational parties. We formally define and prove for Brick the properties a payment channel construction should fulfill. We also design incentives for Brick such that honest and rational behavior aligns. Finally, we provide a reference implementation of the smart contracts in Solidity.
+
+---
+
+## Jared Corduan
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
+
+Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
+
+The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
+
+---
+
+## Nicholas Clarke
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
+
+Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
+
+The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
 
 ---
 
@@ -2674,30 +2802,6 @@ The cryptocurrency domain is a rather new application area for which no clear en
 
 ---
 
-## Jared Corduan
-
-### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
-
-Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
-
-The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
-
----
-
-## Nicholas Clarke
-
-### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-Agile software development and Formal Methods are traditionally seen as being in conflict. From an Agile perspective, there is pressure to deliver quickly, building vertical prototypes and doing many iterations /sprints, refining the requirements; from a Formal Methods perspective, there is pressure to deliver correctly and any change in requirements often necessitates changes in the formal specification and might even impact all arguments of correctness.
-
-Over the years, the need to "be agile" has become a kind of mantra in software development management, and there is a prevalent prejudice that using formal methods was an impediment to being agile. In this paper, we contribute to the refutation of this stereotype, by providing a real-world example of using good practices from formal methods and agile software engineering to deliver software that is simultaneously reliable, effective, testable, and that can also be iterated and delivered rapidly. We thus present how a lightweight software engineering methodology, drawing from appropriate formal methods techniques and providing the benefits of agile software development, can look like. Our methodology is informed and motivated by practical experience. We have devised and adapted it in the light of experience in delivering a large-scale software system that needs to meet complex real-world requirements: the Cardano blockchain and its cryptocurrency ada.
-
-The cryptocurrency domain is a rather new application area for which no clear engineering habit exists, so it is fitting well for agile methods. At the same time, there is a lot of real monetary value at stake, making it a good fit for using formal methods to ensure high quality and correctness. This paper reports on the issues that have been faced and overcome, and provides a number of real-world lessons that can be used to leverage the benefits of both agile and formal methods in other situations.
-
----
-
 ## Kevin Hammond
 
 ### Flexible Formality: Practical Experience with Agile Formal Methods (2020) [link](https://api.zotero.org/groups/478201/items/4UGLHV3B/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
@@ -2958,7 +3062,7 @@ This Systematization of Knowledge (SoK) offers a comprehensive guide for designi
 
 ## Dmytro Kondratiuk
 
-### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://fc21.ifca.ai/wtsc/WTSC21paper14.pdf)  
 
 Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 

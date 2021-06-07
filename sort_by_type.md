@@ -2,13 +2,27 @@
 # Sort By Types
 ---
 ## Table of Contents
-- [conferencePaper](#conferencePaper) (98)
+- [conferencePaper](#conferencePaper) (102)
+- [report](#report) (2)
 - [document](#document) (1)
-- [report](#report) (1)
 - [journalArticle](#journalArticle) (2)
 ---
 
 ## conferencePaper
+
+### Composition with Knowledge Assumptions (2021) [link](https://eprint.iacr.org/2021/165.pdf)  
+
+Zero-knowledge succinct non-interactive arguments (zk-SNARKs) rely on knowledge assumptions for their security. Meanwhile, as the complexity and scale of cryptographic systems continues to grow, the composition of secure protocols is of vital importance. The current gold standards of composable security, the Universal Composability and Constructive Cryptography frameworks cannot capture knowledge assumptions, as their core proofs of composition prohibit white-box extraction. In this paper, we present a formal model allowing the composition of knowledge assumptions. Despite showing impossibility for the general case, we demonstrate the model’s usefulness when limiting knowledge assumptions to few instances of protocols at a time. We finish by providing the first instance of a simultaneously succinct and composable zk-SNARK, by using existing results within our framework.
+
+### Conclave: A Collective Stake Pool Protocol (2021) [link](https://eprint.iacr.org/2021/742.pdf)  
+
+Proof-of-Stake (PoS) distributed ledgers are the most common alternative to Bitcoin’s Proof-of-Work (PoW) paradigm, replacing the hardware dependency with stake, i.e., assets that a party controls. Similar to PoW’s mining pools, PoS’s stake pools, i.e., collaborative entities comprising of multiple stakeholders, allow a party to earn rewards more regularly, compared to participating on an individual basis. However, stake pools tend to increase centralization, since they are typically managed by a single party that acts on behalf of the pool’s members. In this work we propose Conclave, a formal design of a Collective Stake Pool, i.e., a decentralized pool with no single point of authority. We formalize Conclave as an ideal functionality and implement it as a distributed protocol, based on standard cryptographic primitives. Among Conclave’s building blocks is a weighted threshold signature scheme (WTSS); to that end, we define a WTSS ideal functionality — which might be of independent interest — and propose two constructions based on threshold ECDSA, which enable (1) fast trustless setup and (2) identifiable aborts.
+
+### Babel Fees via Limited Liabilities (2021) [link](https://arxiv.org/pdf/2106.01161.pdf)  
+
+Custom currencies (ERC-20) on Ethereum are wildly popular, but they are second class to the primary currency Ether. Custom currencies are more complex and more expensive to handle than the primary currency as their accounting is not natively performed by the underlying ledger, but instead in user-defined contract code. Furthermore, and quite importantly, transaction fees can only be paid in Ether.
+In this paper, we focus on being able to pay transaction fees in custom currencies. We achieve this by way of a mechanism permitting short term liabilities to pay transaction fees in conjunction with offers of custom currencies to compensate for those liabilities. This enables block producers to accept custom currencies in exchange for settling liabilities of transactions that they process.
+We present formal ledger rules to handle liabilities together with the concept of babel fees to pay transaction fees in custom currencies. We also discuss how clients can determine what fees they have to pay, and we present a solution to the knapsack problem variant that block producers have to solve in the presence of babel fees to optimise their profits.
 
 ### Securing Proof-of-Work Ledgers via Checkpointing (2021) [link](https://eprint.iacr.org/2020/173.pdf)  
 
@@ -18,11 +32,17 @@ Distributed ledgers based on the Proof-of-Work (PoW) paradigm are typically most
 
 “Pay-per-last-N-shares” (PPLNS) is one of the most common payout strategies used by mining pools in Proof-of-Work (PoW) cryptocurrencies. As with any payment scheme, it is imperative to study issues of incentive compatibility of miners within the pool. For PPLNS this question has only been partially answered; we know that reasonably-sized miners within a PPLNS pool prefer following the pool protocol over employing specific deviations. In this paper, we present a novel modification to PPLNS where we randomise the protocol in a natural way. We call our protocol “Randomised pay-per-last-N-shares” (RPPLNS), and note that the randomised structure of the protocol greatly simplifies the study of its incentive compatibility. We show that RPPLNS maintains the strengths of PPLNS (i.e., fairness, variance reduction, and resistance to pool hopping), while also being robust against a richer class of strategic mining than what has been shown for PPLNS.
 
+### Mining in Logarithmic Space (2021) [link](https://eprint.iacr.org/2021/623.pdf)  
+
+Blockchains maintain two types of data: Application data and consensus data. Towards long-term blockchain scalability, both of these must be pruned. While a large body of literature has explored the pruning of application data (UTXOs, account balances, and contract state), little has been said about the permanent pruning of consensus data (block headers). We present a protocol which allows pruning the blockchain by garbage collecting old blocks as they become unnecessary. These blocks can simply be discarded and are no longer stored by any miner. We show that all miners can be light miners with no harm to security. Our protocol is based on the notion of superblocks, blocks that have achieved an unusually high difficulty. We leverage them to represent underlying proof-of-work without ever illustrating it, storing it, or transmitting it. After our pruning is applied, the storage and communication requirements for consensus data is reduced exponentially.
+
+We develop new probabilistic mathematical methods to analyze our protocol in the random oracle model. We prove our protocol is both secure and succinct under an uninterrupted honest majority assumption for 1/3 adversaries. Our protocol is the first to achieve always secure, always succinct, and online Non-Interactive Proofs of Proof-of-Work, all necessary components for a logarithmic space mining scheme. Our work has applications beyond mining and also constitutes an improvement in state-of-the-art superlight clients and cross-chain bridges.
+
 ### How to Prove Work: With Time or Memory (Extended Abstract) (2021) [link](https://api.zotero.org/groups/478201/items/77Z47JJT/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
 
 Proposed by Dwork and Naor (Crypto’ 92) as an anti-spam technique, proof-of-work is attracting more attention with the boom of cryptocurrencies. A proof-of-work scheme involves two kinds of participants, provers and verifiers. Provers intend to solve a puzzle with a solution, while verifiers are in charge of checking the puzzle’s correctness and solution pair. The widely adopted hash-based construction achieves an optimal gap in computational complexity between provers and verifiers. However, in industry, proof-of-work is done by highly dedicated hardware, e.g., “ASIC”, which is not generally accessible, let alone the high energy consumption rates. In this work, we turn our eyes back on the original meaning of “proof of work”. Under a trusted setting, our proposed framework and its constructions are based on computationally hard problems and the unified definition of hard cryptographic primitives by Biryukov and Perrin (Asiacrypt’ 17). The new framework enables us to have a proof-of-work scheme with time-hardness or memory-hardness while cutting down power consumption and reducing the impact of dedicated hardwares.
 
-### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://api.zotero.org/groups/478201/items/TCJ5QQ2C/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+### Standardized crypto-loans on the Cardano blockchain (2021) [link](https://fc21.ifca.ai/wtsc/WTSC21paper14.pdf)  
 
 Crypto-loans are innovative financial instruments that allow trustless peer-to-peer lending, and potentially providing a safe and convenient source of liquidity for cryptocurrency holders. In this paper we explore a smart contract framework for building standardized crypto-loans using the Marlowe domain-specific language and with the ACTUS standard at its core.
 
@@ -552,19 +572,23 @@ We give an overview of the scripting languages used in existing cryptocurrencies
 
 ---
 
+## report
+
+### Cardano Disaster Recovery Plan (2021) [link](https://api.zotero.org/groups/478201/items/RR93NMSD/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+The version of the Ouroboros protocol used in the current implementation of Cardano operates as expected (i.e., provides network-wide consistency and liveness) as long as two "disaster" events do not occur. These events are extremely unlikely to occur in the actual protocol deployment, but they may occur in standalone test deployments or under extremely unlikely real world circumstances (some examples are given below). This document describes these events in detail and the corresponding mitigating actions that need to be undertaken should they occur.
+
+### Introduction to the design of the Data Diffusion and Networking for Cardano Shelley* (2020) [link](https://api.zotero.org/groups/478201/items/5P4V3WEG/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
+
+
+
+---
+
 ## document
 
 ### The Architecture of Decentralised Finance Platforms: A New Open Finance Paradigm (2020) [link](http://dx.doi.org/10.2139/ssrn.3666029)  
 
 The evolving merger of payments technology with technology underpinning investment markets’ infrastructure can have a great impact on the mode of supply of financial services, notwithstanding technical, legal and regulatory restrictions. One-stop-shop multi-purpose and multi-asset platforms will be a key characteristic of post-COVID-19 finance bringing a radical transformation of the marketplace. Anticipated benefits range from a drastic reduction of intermediary rents and transaction costs to repatriation of investor control and alteration of today’s narrow asset allocation strategies. To facilitate this transformation, we offer a model of decentralised finance that goes far beyond so-called “autonomous” finance. As the technical and regulatory challenges of increasing automation and integration in the supply of investment services will be considerable, a proactive approach is required to resolve these problems. Integrated decentralised platforms are the most promising route to: (a) counter the competitive threat of BigTech, (b) reform investment industry’s narrow asset allocation practices whose fragility has been badly exposed by the pandemic, and, (c) spread equally the dividend of financial development.
-
----
-
-## report
-
-### Introduction to the design of the Data Diffusion and Networking for Cardano Shelley* (2020) [link](https://api.zotero.org/groups/478201/items/5P4V3WEG/file/view?key=Qcjdk4erSuUZ8jvAah59Asef)  
-
-
 
 ---
 
